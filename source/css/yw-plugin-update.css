@@ -1,0 +1,314 @@
+/**
+ * The Event Calendar Update
+ * 
+ */
+#tribe-bar-form input[type=text] {
+  background: white;
+}
+
+.events-list .tribe-events-loop {
+  max-width: none;
+}
+
+.yw-btn-s {
+  -webkit-appearance: button;
+  background: #666;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  font-size: 13px;
+  height: auto;
+  letter-spacing: 0;
+  line-height: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.tribe-bar-submit {
+  margin-left: 0px;
+  width: 15%;
+  padding: 0;
+  line-height: 77px;
+}
+
+.single-tribe_events #tribe-events-content .tribe-events-event-meta dd {
+  margin: 2px 0 10px;
+}
+
+.tribe-events-single-section dl dd {
+  font-size: 0.9em;
+  color: gray;
+  margin-top: 2px;
+}
+
+/**
+ * WooCommerce 
+ */
+.yw-single-product {
+  padding: 20px 0px;
+}
+.yw-single-product a {
+  color: #4e4e4e;
+}
+.yw-single-product a:hover {
+  color: #c52d2f;
+}
+.yw-single-product div.product form.cart input {
+  height: 3.3em;
+}
+.yw-single-product div.product form.cart button {
+  line-height: 0px;
+  height: 3.3em;
+  width: 25%;
+}
+.yw-single-product div.product form.cart div.quantity {
+  width: 30%;
+  margin: 0px;
+}
+.yw-single-product div.product form.cart div.quantity input {
+  width: 30px;
+  float: left;
+  overflow: hidden;
+}
+.yw-single-product div.product form.cart div.quantity .qty {
+  width: 40%;
+}
+.yw-single-product div.product form.cart table.variations td {
+  color: #4e4e4e;
+}
+
+.product {
+  margin-top: 20px;
+}
+.product p.price {
+  margin-top: 40px;
+  font-size: 2em;
+}
+
+h2.product_category_title {
+  margin-top: 0px;
+  font-weight: 100;
+}
+
+.pd-s-des {
+  color: #9a9b9b;
+}
+
+#shop {
+  padding: 20px 10%;
+}
+#shop h1 {
+  color: #4e4e4e;
+}
+
+.shop-nav {
+  padding: 20px 10% 0px 10%;
+}
+
+#carousel-shop {
+  height: 280;
+}
+#carousel-shop i {
+  font-size: 30px;
+}
+#carousel-shop img {
+  height: 250px;
+}
+#carousel-shop .prev,
+#carousel-shop .next {
+  position: absolute;
+  top: 50%;
+  color: #000;
+  display: inline-block;
+  margin-top: -25px;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  z-index: 5;
+}
+#carousel-shop .prev:hover,
+#carousel-shop .next:hover {
+  color: #4e4e4e;
+}
+#carousel-shop .prev {
+  left: 0px;
+}
+#carousel-shop .next {
+  right: 0px;
+}
+#carousel-shop .carousel-indicators {
+  bottom: -30px;
+}
+#carousel-shop .carousel-indicators li {
+  background-color: #000;
+}
+#carousel-shop .carousel-indicators li:hover {
+  background-color: #4e4e4e;
+}
+
+.module-name {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #9b9b9b;
+  text-align: center;
+  font-size: 0;
+}
+.module-name.decorative i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 95px;
+  height: 1px;
+  background: #9b9b9b;
+  margin-right: 18px;
+}
+.module-name.decorative span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.woocommerce-Tabs-panel {
+  background-color: transparent;
+}
+
+/**
+ * WP-Crowdfunding
+ */
+.wpneo-wrapper {
+  padding: 40px 80px;
+}
+
+.wpneo-listings .wpneo-listing-content {
+  font-size: 0.85em;
+}
+.wpneo-listings .wpneo-listing-content h5 {
+  margin: 0;
+  padding: 8px 20px;
+}
+
+.wpneo-listings .wpneo-listing-content p.wpneo-author {
+  font-size: 1em;
+  padding: 0 20px;
+}
+
+p.wpneo-short-description {
+  font-size: 0.95em;
+  padding: 8px 20px 10px;
+}
+
+.wpneo-location .wpneo-meta-name,
+.wpneo-location .wpneo-meta-desc {
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #9a9b9b;
+}
+
+.wpneo-funding-goal .wpneo-meta-desc,
+.wpneo-fund-raised .wpneo-meta-desc,
+.wpneo-time-remaining .wpneo-meta-desc {
+  font-size: 1em;
+}
+
+.wpneo-raised-bar {
+  padding: 0px 20px;
+}
+
+.wpneo-funding-goal,
+.wpneo-fund-raised,
+.wpneo-time-remaining {
+  padding: 10px 0px;
+}
+
+.wpneo-raised-percent {
+  border-top: 0px;
+  padding: 0px 20px 5px;
+}
+
+#main-slider.crowdfunding .carousel .item {
+  height: 100vh;
+  min-height: 500px;
+}
+#main-slider.crowdfunding .carousel-content {
+  margin-top: 200px;
+}
+#main-slider.crowdfunding .carousel-content .btn-slide {
+  margin-top: 35px;
+  background: #23282D;
+}
+#main-slider.crowdfunding .carousel-indicators {
+  bottom: 80px;
+  padding-left: 15px;
+}
+#main-slider.crowdfunding .carousel-indicators .active:after {
+  background: #23282D;
+  border: 1px solid #23282D;
+}
+#main-slider.crowdfunding .row {
+  text-align: center;
+}
+#main-slider.crowdfunding .carousel .slide-margin {
+  margin-top: 0px;
+}
+#main-slider.crowdfunding .next,
+#main-slider.crowdfunding .prev {
+  background-color: transparent;
+}
+#main-slider.crowdfunding .next i,
+#main-slider.crowdfunding .prev i {
+  font-size: 20pt;
+}
+
+.wpneo-listings .wpneo-listing-content .woocommerce {
+  width: 100%;
+}
+
+.wpneo-project-summary .wpneo-project-summary-inner h2 {
+  margin-top: 0px;
+}
+
+.yw-project-head {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.yw-project-head .wpneo-author-info {
+  font-size: 1em;
+}
+.yw-project-head .wpneo-author-info a {
+  font-size: 1em;
+  color: #9a9b9b;
+}
+
+.wpneo-project-title {
+  margin-bottom: 10px;
+}
+
+.project-funding-info ul li .funding-amount {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.project-funding-info ul li .funding-amount .info-text {
+  color: #9a9b9b;
+}
+
+.wpneo-single-sidebar .btn-primary {
+  margin-top: 0px;
+  background-color: #23282D;
+}
+.wpneo-single-sidebar .btn-primary:hover {
+  background-color: #9a9b9b;
+}
+.wpneo-single-sidebar .form-control {
+  display: inline;
+}
+
+.wpneo-project-summary-inner .woocommerce {
+  padding: 0px;
+}
+
+.wpneo-project-creator-info-wrapper {
+  margin-top: 30px;
+}
