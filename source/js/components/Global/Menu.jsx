@@ -13,7 +13,7 @@ export default class Menu extends Component {
             activeClassName='Menu-link--active'
             className='Menu-link'
             exact
-            to={ routeCodes.DASHBOARD }
+            to={ routeCodes.MAINPAGE }
           >
             Main
           </NavLink>
@@ -22,7 +22,7 @@ export default class Menu extends Component {
             className='Menu-link'
             to={ routeCodes.ABOUT }
           >
-            About
+            關於我們
           </NavLink>
         </div>
       </div>
