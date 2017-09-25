@@ -10,6 +10,8 @@ import Section8 from './Section8';
 import Section9 from './Section9';
 import Section10 from './Section10';
 
+
+
 export default class MainPage extends Component {
   render() {
     return (

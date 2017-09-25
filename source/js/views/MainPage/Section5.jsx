@@ -16,13 +16,11 @@ export default class Section5 extends Component {
                     <h4>團隊孵化率</h4>
 
                     <div>
-                      <ProgressBar bsStyle="success" now={40} />
+                      <ProgressBar bsStyle="success" min={0} max={100} now={40} />
                       <ProgressBar bsStyle="info" now={20} />
                       <ProgressBar bsStyle="warning" now={60} />
                       <ProgressBar bsStyle="danger" now={80} />
                     </div>
-
-
 
                     <div className="progress">
                       <div className="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" >

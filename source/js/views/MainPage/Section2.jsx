@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Row, Col } from 'react-bootstrap';
 
 export default class Section2 extends Component {
   render() {
@@ -14,7 +15,9 @@ export default class Section2 extends Component {
             </div>
 
               <div className="features">
-                <div className="row">
+
+                <Row>
+
                 <div className="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                   <div className="feature-wrap">
                     <i className="fa fa-bullhorn"></i>
@@ -62,8 +65,8 @@ export default class Section2 extends Component {
                     <h4>Cultivate new talents</h4>
                   </div>
                 </div>
+              </Row>
 
-              </div>
 
             </div>
 
