@@ -61,6 +61,7 @@
     "material-ui": "^0.19.1",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
+    "react-bootstrap": "^0.31.3",
     "react-dom": "^15.5.4",
     "react-redux": "^4.4.8",
     "react-router": "^4.1.1",

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { ProgressBar } from 'react-bootstrap';
 
 export default class Section5 extends Component {
   render() {
@@ -13,6 +14,16 @@ export default class Section5 extends Component {
                   <p >成立以來，藝文創薈致力於成立文化團體，推動文化發展，取得了滿意的成果，未來必將繼續努力，誠邀您的加入。</p>
                   <div className="progress-wrap">
                     <h4>團隊孵化率</h4>
+
+                    <div>
+                      <ProgressBar bsStyle="success" now={40} />
+                      <ProgressBar bsStyle="info" now={20} />
+                      <ProgressBar bsStyle="warning" now={60} />
+                      <ProgressBar bsStyle="danger" now={80} />
+                    </div>
+
+
+
                     <div className="progress">
                       <div className="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" >
                         <span className="bar-width">85%</span>

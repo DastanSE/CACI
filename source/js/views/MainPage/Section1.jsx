@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
-
+import { Carousel } from 'react-bootstrap';
 export default class Section1 extends Component {
   render() {
     return (
       <div className='Section1'>
-        <section className="home-slider main-slider">
+        {/* <section className="home-slider main-slider">
           <div id="carousel-home" className="no-margin carousel slide" data-ride="carousel">
             <ol className="carousel-indicators">
-              <li data-target="#carousel-home" data-slide-to="0" className="active"></li>
-              <li data-target="#carousel-home" data-slide-to="1"></li>
+              <li data-target="#carousel-home" data-slide-to="0" className="active"><img className="img-responsive" src="../../assets/img/services/services2.png"></img></li>
+              <li data-target="#carousel-home" data-slide-to="1"><img className="img-responsive" src="../../assets/img/services/services2.png"></img></li>
               <li data-target="#carousel-home" data-slide-to="2"></li>
               <li data-target="#carousel-home" data-slide-to="3"></li>
               <li data-target="#carousel-home" data-slide-to="4"></li>
             </ol>
+
             <div className="carousel-inner" role="listbox">
               <div className="item active" >
                 <div className="container">
@@ -52,7 +53,30 @@ export default class Section1 extends Component {
             </a>
           </div>
 
-        </section>
+        </section> */}
+        <Carousel>
+          <Carousel.Item>
+            <img width={900} height={500} alt="900x500"  src="../../assets/img/us.jpg"/>
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img width={900} height={500} alt="900x500" src="../../assets/img/2017夏令营.png"/>
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img width={900} height={500} alt="900x500" src="/assets/img/舞蹈大赛.jpg"/>
+            <Carousel.Caption>
+              <h3>Third slide label</h3>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
       </div>
     );
   }

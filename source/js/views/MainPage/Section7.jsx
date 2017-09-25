@@ -24,7 +24,7 @@ export default class Section7 extends Component {
                         <div className="tab-pane fade active in" id="tab1">
                           <div className="media">
                             <div className="pull-left">
-                              <img className="img-responsive" src="/images/hk.jpg"></img>
+                              <img className="img-responsive" src="../../assets/img/hk.jpg"></img>
                             </div>
                             <div className="media-body">
                               <h4 >香港</h4>
@@ -35,7 +35,7 @@ export default class Section7 extends Component {
                         <div className="tab-pane fade" id="tab2">
                           <div className="media">
                             <div className="pull-left">
-                              <img className="img-responsive" src="/images/tw.jpg"></img>
+                              <img className="img-responsive" src="../../assets/img/tw.jpg"></img>
                             </div>
                             <div className="media-body">
                               <h4>台北</h4>
@@ -47,7 +47,7 @@ export default class Section7 extends Component {
                         <div className="tab-pane fade" id="tab3">
                           <div className="media">
                             <div className="pull-left">
-                              <img className="img-responsive" src="/images/mac.png"></img>
+                              <img className="img-responsive" src="../../assets/img/mac.png"></img>
                             </div>
                             <div className="media-body">
                               <h4>澳門</h4>
@@ -58,7 +58,7 @@ export default class Section7 extends Component {
                         <div className="tab-pane fade" id="tab4">
                           <div className="media">
                             <div className="pull-left">
-                              <img className="img-responsive" src="/images/bj.jpg"></img>
+                              <img className="img-responsive" src="../../assets/img/bj.jpg"></img>
                             </div>
                             <div className="media-body">
                               <h4>內地</h4>
@@ -69,7 +69,7 @@ export default class Section7 extends Component {
                         <div className="tab-pane fade" id="tab5">
                           <div className="media">
                             <div className="pull-left">
-                              <img className="img-responsive" src="/images/invite.jpg"></img>
+                              <img className="img-responsive" src="../../assets/img/invite.jpg"></img>
                             </div>
                             <div className="media-body">
                               <h4>誠邀</h4>
@@ -92,7 +92,7 @@ export default class Section7 extends Component {
                   <h4>關於我們</h4>
                   <div className="media testimonial-inner">
                     <div className="pull-left">
-                      <img className="img-responsive img-circle" src="/images/icon.png"></img>
+                      <img className="img-responsive img-circle" src="../../assets/img/icon.png"></img>
                     </div>
                     <div className="media-body">
                       <p>「藝文創薈(北京)文化傳播有限公司」，總部設於香港，同時於台北、澳門、北京設有辦事處，主要從事港台及國外文化項目內地融資、演出項目打包、演藝人才培養及轉介、活動訂制、文化項目咨詢五大範疇，致力於促進由創作人、投資人、演藝人、文化消費者四大群體所組成的兩岸文化鏈條，打造當代的中國藝術文化的品牌。</p>
@@ -100,7 +100,7 @@ export default class Section7 extends Component {
                   </div>
                   <div className="media testimonial-inner">
                     <div className="pull-left">
-                      <img className="img-responsive img-circle" src="/images/yjc.jpg"></img>
+                      <img className="img-responsive img-circle" src="../../assets/img/yjc.jpg"></img>
                     </div>
                     <div className="media-body">
                       <p>公司同時擁有自己的文化投資基金池、藝文孵化器、製作團隊、文化產品經紀團隊、演藝公司咨詢團隊、傳媒發佈平台等戰略板塊，每年度推出具亮點的核心作品。</p>

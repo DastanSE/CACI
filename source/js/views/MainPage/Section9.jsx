@@ -12,16 +12,16 @@ export default class Section9 extends Component {
             </div>
             <div className="row">
               <div className="col-sm-3 col-xs-6 ">
-                 <img className="img-responsive img-circle" src="/imglili/1.jpg" ></img>
+                 <img className="img-responsive img-circle" src="../imglili/1.jpg" ></img>
               </div>
                <div className="col-sm-3 col-xs-6 ">
-                 <img className="img-responsive img-circle" src="/imglili/3.jpg"></img>
+                 <img className="img-responsive img-circle" src="../imglili/3.jpg"></img>
               </div>
                <div className="col-sm-3 col-xs-6 ">
-                 <img className="img-responsive img-circle" src="/imglili/2.jpg"></img>
+                 <img className="img-responsive img-circle" src="../imglili/2.jpg"></img>
               </div>
                <div className="col-sm-3 col-xs-6 ">
-                 <img className="img-responsive img-circle" src="/imglili/4.jpg"></img>
+                 <img className="img-responsive img-circle" src="../imglili/4.jpg"></img>
               </div>
            </div>
           </div>
