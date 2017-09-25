@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 import { Carousel } from 'react-bootstrap';
+
+const sectionData = [
+  {
+
+  }
+];
 export default class Section1 extends Component {
   render() {
     return (
@@ -55,21 +61,21 @@ export default class Section1 extends Component {
 
         </section> */}
         <Carousel>
-          <Carousel.Item>
+          <Carousel.Item animateIn={true} >
             <img width={900} height={500} alt="900x500"  src="../../assets/img/us.jpg"/>
             <Carousel.Caption>
               <h3>First slide label</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item animateIn={true} >
             <img width={900} height={500} alt="900x500" src="../../assets/img/2017夏令营.png"/>
             <Carousel.Caption>
               <h3>Second slide label</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item animateIn={true} >
             <img width={900} height={500} alt="900x500" src="/assets/img/舞蹈大赛.jpg"/>
             <Carousel.Caption>
               <h3>Third slide label</h3>

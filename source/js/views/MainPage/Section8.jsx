@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Row, Col } from 'react-bootstrap';
+
+const lianmengData = ["舞蹈", "音樂", "美術", "建築", "戲劇", "文學", "電影", "體育"];
 
 export default class Section8 extends Component {
   render() {
@@ -12,7 +15,17 @@ export default class Section8 extends Component {
                 <p className="lead" >Art Alliance</p>
               </div>
             </div>
-            <div className="row lianmeng">
+            <Row className="lianmeng">
+
+              {
+                lianmengData.map((name, index) =>
+                <Col key={index} sm={3} xs={6}>
+                  <a href="#">{name}</a>
+                </Col>
+                )
+              }
+            </Row>
+            {/* <div className="row lianmeng">
               <div className="col-sm-3 col-xs-6 lm">
                 <a href="http://caci.hk/dance">舞蹈</a>
               </div>
@@ -37,7 +50,7 @@ export default class Section8 extends Component {
               <div className="col-sm-3 col-xs-6 lm">
                 <a href="#">體育</a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
