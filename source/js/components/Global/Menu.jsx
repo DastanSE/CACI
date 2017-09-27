@@ -28,7 +28,7 @@ export default class Menu extends Component {
                 <NavLink
                   activeClassName=''
                   className='menu-item menu-item-type-post_type menu-item-object-page menu-item-807'
-                  to={ routeCodes.ABOUT }
+                  to={ routeCodes.CONTACT }
                 >
                   關於我們
                 </NavLink>
