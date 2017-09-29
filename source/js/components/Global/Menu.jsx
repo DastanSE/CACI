@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import { NavBar, Nav, NavItem, MenuItem, NavDropdown } from 'react-bootstrap';
 import { routeCodes } from '../../views/App';
 
 
 export default class Menu extends Component {
+
   render() {
     return (
       <nav id="float_banner" className="navbar-home navbar navbar-inverse" role="navigation">

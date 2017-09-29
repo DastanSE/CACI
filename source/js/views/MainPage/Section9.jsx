@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
 //import ScrollAnimation from 'react-animate-on-scroll';
 
+
 export const Section9 = (props) => {
   return (
     <div className='Section9'>
@@ -12,6 +13,7 @@ export const Section9 = (props) => {
               <h2>场地租赁</h2>
               <p className="lead">Venue Rental</p>
             </div>
+
           {/* </ScrollAnimation> */}
             <Row>
               <Col sm={3} xs={6}>
