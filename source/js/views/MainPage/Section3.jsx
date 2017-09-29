@@ -6,7 +6,7 @@ export default class Section3 extends Component {
       <div className='Section3'>
         <section id="recent-works">
           <div className="container">
-            <div className="center wow fadeInDown">
+            <div className="center wow fadeInDown animated">
               <h2>近期活動</h2>
               <p className="lead">Recent Activities</p>
             </div>

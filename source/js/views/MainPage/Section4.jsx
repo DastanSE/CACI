@@ -6,13 +6,13 @@ export default class Section4 extends Component {
       <div className='Section4'>
         <section id="services" className="service-item">
           <div className="container">
-            <div className="center wow fadeInDown">
+            <div className="center wow fadeInDown animated">
               <h2>我們的服務</h2>
               <p className="lead">Our services</p>
             </div>
             <div className="row">
               <div className="col-sm-6 col-md-4">
-                <div className="media services-wrap wow fadeInDown">
+                <div className="media services-wrap wow fadeInDown animated">
                   <div className="pull-left">
                     <img className="img-responsive" src="../../assets/img/services/services1.png"></img>
                   </div>
@@ -23,7 +23,7 @@ export default class Section4 extends Component {
                 </div>
               </div>
               <div className="col-sm-6 col-md-4">
-                <div className="media services-wrap wow fadeInDown">
+                <div className="media services-wrap wow fadeInDown animated">
                   <div className="pull-left">
                     <img className="img-responsive" src="../../assets/img/services/services2.png"></img>
                   </div>
@@ -34,7 +34,7 @@ export default class Section4 extends Component {
                 </div>
               </div>
               <div className="col-sm-6 col-md-4">
-                <div className="media services-wrap wow fadeInDown">
+                <div className="media services-wrap wow fadeInDown animated">
                   <div className="pull-left">
                     <img className="img-responsive" src="../../assets/img/services/services3.png"></img>
                   </div>
@@ -45,7 +45,7 @@ export default class Section4 extends Component {
                 </div>
               </div>
               <div className="col-sm-6 col-md-6">
-                <div className="media services-wrap wow fadeInDown">
+                <div className="media services-wrap wow fadeInDown animated">
                   <div className="pull-left">
                     <img className="img-responsive" src="../../assets/img/services/services4.png"></img>
                   </div>
@@ -56,7 +56,7 @@ export default class Section4 extends Component {
                 </div>
               </div>
               <div className="col-sm-6 col-md-6">
-                <div className="media services-wrap wow fadeInDown">
+                <div className="media services-wrap wow fadeInDown animated">
                   <div className="pull-left">
                     <img className="img-responsive" src="../../assets/img/services/services5.png"></img>
                   </div>

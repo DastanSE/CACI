@@ -9,7 +9,7 @@
 }
 
 #lianmeng {
-	background: url(../images/lianmeng.jpg);
+	background: url(../../../assets/img/lianmeng.jpg);
 	background-size: 100% 100%
 }
 
@@ -855,10 +855,10 @@ footer p {
 	display: block;
 	padding: 5px 24px 10px;
 	width: 100%!important;
-       
+
         overflow:hidden;
         color: gray;
-	
+
 }
 
 .cards article .img-box {

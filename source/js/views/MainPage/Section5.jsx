@@ -8,22 +8,14 @@ export default class Section5 extends Component {
         <section id="middle">
           <div className="container">
             <div className="row">
-              <div className="col-sm-6 wow fadeInDown">
+              <div className="col-sm-6 wow fadeInDown animated">
                 <div className="skill">
                   <h2>我們的成果</h2>
                   <p >成立以來，藝文創薈致力於成立文化團體，推動文化發展，取得了滿意的成果，未來必將繼續努力，誠邀您的加入。</p>
                   <div className="progress-wrap">
                     <h4>團隊孵化率</h4>
-
-                    <div>
-                      <ProgressBar bsStyle="success" min={0} max={100} now={40} />
-                      <ProgressBar bsStyle="info" now={20} />
-                      <ProgressBar bsStyle="warning" now={60} />
-                      <ProgressBar bsStyle="danger" now={80} />
-                    </div>
-
                     <div className="progress">
-                      <div className="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" >
+                      <div className="progress-bar  color1"  role="progressbar" aria-valuenow="85" style={{width: '85%'}} aria-valuemin="0" aria-valuemax="100" >
                         <span className="bar-width">85%</span>
                       </div>
                     </div>
@@ -31,7 +23,7 @@ export default class Section5 extends Component {
                   <div className="progress-wrap">
                     <h4>眾籌成功率</h4>
                     <div className="progress">
-                      <div className="progress-bar color2" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" >
+                      <div className="progress-bar color2"  role="progressbar" style={{width: '55%'}} aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" >
                         <span className="bar-width">55%</span>
                       </div>
                     </div>
@@ -39,7 +31,7 @@ export default class Section5 extends Component {
                   <div className="progress-wrap">
                     <h4>活動發起率</h4>
                     <div className="progress">
-                      <div className="progress-bar color3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" >
+                      <div className="progress-bar color3" role="progressbar" style={{width: '80%'}} aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
                         <span className="bar-width">80%</span>
                       </div>
                     </div>
@@ -47,7 +39,7 @@ export default class Section5 extends Component {
                   <div className="progress-wrap">
                     <h4>合作誠意度</h4>
                     <div className="progress">
-                      <div className="progress-bar color4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+                      <div className="progress-bar color4" role="progressbar" style={{width: '100%'}} aria-valuenow="100" aria-valuemin="100" aria-valuemax="100" >
                         <span className="bar-width">100%</span>
                       </div>
                     </div>
@@ -55,7 +47,7 @@ export default class Section5 extends Component {
                 </div>
               </div>
 
-              <div className="col-sm-6 wow fadeInDown">
+              <div className="col-sm-6 wow fadeInDown animated">
                 <div className="accordion">
                   <h2>媒體報導</h2>
                   <div className="panel-group" id="accordion1">

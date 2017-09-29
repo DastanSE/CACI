@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-export default class Section10 extends Component {
-  render() {
-    return (
-      <div className='Section10'>
-        <section id="conatcat-info">
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-8">
-                <div className="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+export const Section10 = (props) => {
+  return (
+    <div className='Section10'>
+      <section id="conatcat-info">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-8">
+              {/* <ScrollAnimation animateIn='fadeIn' offset={0}> */}
+                <div className="media contact-info wow" data-wow-duration="1000ms" data-wow-delay="600ms">
                   <div className="pull-left">
                     <i className="fa fa-phone"></i>
                   </div>
@@ -20,12 +20,14 @@ export default class Section10 extends Component {
                     </p>
                   </div>
                 </div>
-              </div>
+              {/* </ScrollAnimation> */}
+
             </div>
           </div>
+        </div>
 
-        </section>
-      </div>
-    );
-  }
+      </section>
+    </div>
+  );
+
 }
