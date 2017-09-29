@@ -11,9 +11,7 @@ export default class RepertoireCards extends Component {
       <div>
         <article className={ typeFilterBy + "article-item jumu-cards"}>
           <a className="link-wrap2" href="" target="_blank">
-
             <div className="img-box2">
-
               <p className="type">{type}</p>
               <p className="time">{time}</p>
               <img src="" alt="images" width="370" height="200"  />
