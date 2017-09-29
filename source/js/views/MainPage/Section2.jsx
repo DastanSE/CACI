@@ -21,6 +21,7 @@ export default class Section2 extends Component {
                 <div className="row">
                   {/* <ScrollAnimation animateIn='fadeIn'></ScrollAnimation> */}
                 <div className="col-md-4 col-sm-6 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="600ms">
+
                   <div className="feature-wrap">
                     <i className="fa fa-bullhorn"></i>
                     <h3>熱愛藝術與科創</h3>
@@ -67,8 +68,8 @@ export default class Section2 extends Component {
                     <h4>Cultivate new talents</h4>
                   </div>
                 </div>
+              </Row>
 
-              </div>
 
             </div>
 

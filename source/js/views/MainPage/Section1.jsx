@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import { Carousel } from 'react-bootstrap';
 
 const sectionData = [
@@ -25,7 +26,6 @@ const sectionData = [
 export default class Section1 extends Component {
   render() {
     return (
-
         <section className="no-margin">
         <Carousel id="main-slider"
           prevIcon={<a className="prev hidden-xs" href="#carousel-home" data-slide="prev"><i className="fa fa-chevron-left"></i></a>}
@@ -47,6 +47,7 @@ export default class Section1 extends Component {
           }
         </Carousel>
       </section>
+
 
     );
   }

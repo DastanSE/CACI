@@ -19,6 +19,8 @@ const styles = {
   }
 }
 
+
+
 export default class MainPage extends Component {
   render() {
     return (
