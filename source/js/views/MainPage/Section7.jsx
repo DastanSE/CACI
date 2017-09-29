@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col, Well, Fade, Image } from 'react-bootstrap';
-import ScrollAnimation from 'react-animate-on-scroll';
+// import ScrollAnimation from 'react-animate-on-scroll';
 
 export default class Section7 extends Component {
   constructor(props) {
@@ -15,7 +15,7 @@ export default class Section7 extends Component {
         <section id="content">
           <div className="container">
             <Row>
-              <ScrollAnimation animateIn='fadeIn wow' offset={0}>
+              {/* <ScrollAnimation animateIn='fadeIn wow' offset={0}> */}
                 <Col xs={12} sm={8}>
                   <div className="tab-wrap">
                     <div className="media">
@@ -92,9 +92,9 @@ export default class Section7 extends Component {
                   </div>
 
                 </Col>
-              </ScrollAnimation>
+              {/* </ScrollAnimation> */}
 
-              <ScrollAnimation animateIn='fadeIn' offset={0}>
+              {/* <ScrollAnimation animateIn='fadeIn' offset={0}> */}
                  <Col xs={12} sm={4}>
                   <div className="testimonial">
                     <h4>關於我們</h4>
@@ -116,7 +116,7 @@ export default class Section7 extends Component {
                     </div>
                   </div>
                 </Col>
-              </ScrollAnimation>
+              {/* </ScrollAnimation> */}
 
             </Row>
 

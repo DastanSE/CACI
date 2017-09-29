@@ -22,6 +22,13 @@ export default class Menu extends Component {
           <div className="collapse navbar-collapse navbar-right">
             <ul id="menu-body-menu" className="nav navbar-nav">
               <li id="menu-item-25" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+                <NavLink
+                  activeClassName=''
+                  className='menu-item menu-item-type-post_type menu-item-object-page menu-item-807'
+                  to={ routeCodes.ABOUT }
+                >
+                  關於我們
+                </NavLink>
               </li>
 
               <li id="menu-item-807" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-807">
@@ -30,7 +37,7 @@ export default class Menu extends Component {
                   className='menu-item menu-item-type-post_type menu-item-object-page menu-item-807'
                   to={ routeCodes.CONTACT }
                 >
-                  關於我們
+                  聯繫我們
                 </NavLink>
               </li>
             </ul>
