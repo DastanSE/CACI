@@ -59,8 +59,9 @@ export default class ResourceSection extends Component {
               </div>
             </div>
 
-            <div className='col-sm-3 ' style={ { height: 310 } }>
+            <div className='col-sm-3'>
               <FlippingCard
+                className='lastFlipping'
                 frontText='專家評估與指導'
                 backText='[北京大學歌劇研究院]、[北京大學產業技術研究院]、[北京電影學院表演系]、[山東藝術學院京劇學系] [南京藝術學院音樂學系
                 ]、[臺灣國立戲曲學院]、[德州三一大學]、[香港浸會大學視覺系]、[香港演藝學院舞蹈學院]

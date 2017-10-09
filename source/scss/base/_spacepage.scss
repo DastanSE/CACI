@@ -155,11 +155,13 @@
   width: 100% !important;
   height: 150px;
 
-  overflow: hidden;
+  overflow: scroll;
   vertical-align: middle;
   background-color: rgba(0, 0, 0, 0.48);
 }
-
+.lastFlipping {
+  height: 350px;
+}
 .quickFlipCta {
   width: auto;
 }
