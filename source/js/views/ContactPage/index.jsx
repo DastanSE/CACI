@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Form from './Form';
 
-const Marker = text => (
+const Marker = ({ text }) => (
   <div>
     <i className='fa fa-map-marker' style={ { width: 15, height: 30, color: 'red' } }>
       {text}
@@ -14,17 +14,6 @@ export default class ContactPage extends Component {
   render() {
     return (
       <div>
-        {/* <div id="right-menu">
-          <ul>
-            <li><a href="http://caci.hk/" onclick="kk(this)">首页</a></li>
-            <li><a href="http://caci.hk/yiwen-space/" onclick="kk(this)">孵化進駐</a></li>
-            <li><a href="http://caci-bj.com/" onclick="kk(this)">商店藝廊</a></li>
-            <li><a href="http://caci.hk/repertoire/" onclick="kk(this)">劇目採購</a></li>
-            <li><a href="http://caci.hk/events/" onclick="kk(this)">活動信息</a></li>
-            <li><a href="http://caci.hk/article/" onclick="kk(this)">藝文資訊</a></li>
-            <li><a href="javascript:scroll(0,0)" onclick="kk(this)"> ▲ </a></li>
-          </ul>
-        </div> */}
         <section id='contact-info'>
           <div className='center'>
             <h2>怎麼聯繫我們?</h2>
@@ -43,10 +32,7 @@ export default class ContactPage extends Component {
                     </p>
                   </address>
                   <div className='gmap' style={ { width: 250, height: 250 } }>
-                    <GoogleMapReact
-                      defaultCenter={ { lat: 22.27, lng: 114.18 } }
-                      defaultZoom={ 12 }
-                    >
+                    <GoogleMapReact defaultCenter={ { lat: 22.27, lng: 114.18 } } defaultZoom={ 12 }>
                       <Marker lat={ 22.2757788 } lng={ 114.1777487 } />
                     </GoogleMapReact>
                   </div>
