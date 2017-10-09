@@ -17,6 +17,14 @@
   margin-bottom: 50px;
 }
 
+.ywspacetop {
+  background-image: url(../assets/img/fuchi-top.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+}
+
 .space {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -121,5 +129,54 @@
   font-size: 5em;
   font-weight: 600;
   color: #000;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 500px;
   text-shadow: 0 0 0 #000;
+}
+.s4 {
+  margin-bottom: 10px;
+  height: 150px;
+}
+
+.front {
+  width: 100% !important;
+  height: 150px;
+  padding-top: 50px !important;
+  text-align: center;
+  background-color: #29354b;
+  opacity: 0.7;
+  filter: alpha(opacity=50);
+  margin-right: 5px;
+}
+
+.back {
+  width: 100% !important;
+  height: 150px;
+
+  overflow: hidden;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.48);
+}
+
+.quickFlipCta {
+  width: auto;
+}
+.f {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  vertical-align: middle;
+}
+.f1 {
+  color: #fff;
+  margin: 30px 10px;
+}
+.f2 {
+  color: #fff;
+  margin: 15px 10px;
+}
+#ziyuan > div > div.row > div.col-sm-3 > div > div.front {
+  padding-top: 150px !important;
 }

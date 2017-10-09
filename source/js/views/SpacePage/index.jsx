@@ -6,23 +6,11 @@ export default class SpacePage extends Component {
   render() {
     return (
       <div>
-        <section className='home-slider main-slider'>
-          <div id='carousel-home' className='no-margin carousel slide' data-ride='carousel'>
-            <div className='carousel-inner news-home' role='listbox'>
-              <div className='item active'>
-                <div className='container'>
-                  <div className='row slide-margin'>
-                    <div className='col-md-12'>
-                      <div className='carousel-content center space-txt'>
-                        <h1 className='animation animated-item-1'>場地扶持計劃</h1>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div className='ywspacetop'>
+          <div className='center space-txt'>
+            <h1>場地扶持計劃</h1>
           </div>
-        </section>
+        </div>
         <section id='feature'>
           <div className='container'>
             <div className='center wow fadeInDown'>
@@ -317,7 +305,7 @@ export default class SpacePage extends Component {
             </div>
 
             <div className='center wow fadeInDown'>
-              <div className='request'>
+              <div>
                 <h4>
                   <a href='http://caci.hk/team/'>查看更多</a>
                 </h4>
@@ -326,7 +314,7 @@ export default class SpacePage extends Component {
           </div>
         </section>
 
-        <ResourceSection />
+        {/* <ResourceSection /> */}
 
         <section className='space' id='conatcat-info'>
           <div className='container'>
