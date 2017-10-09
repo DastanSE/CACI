@@ -1,28 +1,28 @@
-import React, { Component } from 'react';
-import Section1 from './Section1';
-import Section2 from './Section2';
-import Section3 from './Section3';
-import Section4 from './Section4';
-import Section5 from './Section5';
-import Section6 from './Section6';
-import Section7 from './Section7';
-import Section8 from './Section8';
-import { Section9 } from './Section9';
-import { Section10 } from './Section10';
-import { fadeIn } from 'react-animations';
-import Radium from 'radium';
+import React, { Component } from "react";
+import Section1 from "./Section1";
+import Section2 from "./Section2";
+import Section3 from "./Section3";
+import Section4 from "./Section4";
+import Section5 from "./Section5";
+import Section6 from "./Section6";
+import Section7 from "./Section7";
+import Section8 from "./Section8";
+import { Section9 } from "./Section9";
+import { Section10 } from "./Section10";
+import { fadeIn } from "react-animations";
+import Radium from "radium";
 
 const styles = {
   fadeIn: {
-    animation: 'x 3s',
-    animationName: Radium.keyframes(fadeIn, 'fadeIn')
+    animation: "x 3s",
+    animationName: Radium.keyframes(fadeIn, "fadeIn")
   }
-}
+};
 
 export default class MainPage extends Component {
   render() {
     return (
-      <div className='MainPage'>
+      <div className="MainPage">
         <Section1 />
         <Section2 />
         <Section3 />

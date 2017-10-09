@@ -1,19 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware, compose } from 'redux';
-import thunk from 'redux-thunk';
-import 'babel-polyfill';
-import logger from 'dev/logger';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware, compose } from "redux";
+import thunk from "redux-thunk";
+import "babel-polyfill";
+import logger from "dev/logger";
 
-import rootReducer from 'reducers';
+import rootReducer from "reducers";
 
-import App from 'views/App';
+import App from "views/App";
 
 // Load SCSS
-import '../scss/index.scss';
+import "../scss/index.scss";
 
-const isProduction = process.env.NODE_ENV === 'production';
+const isProduction = process.env.NODE_ENV === "production";
 
 // Creating store
 let store = null;
@@ -22,10 +22,7 @@ if (isProduction) {
   // In production adding only thunk middleware
   const middleware = applyMiddleware(thunk);
 
-  store = createStore(
-    rootReducer,
-    middleware
-  );
+  store = createStore(rootReducer, middleware);
 } else {
   // In development mode beside thunk
   // logger and DevTools are added
@@ -33,7 +30,8 @@ if (isProduction) {
   let enhancer;
 
   // Enable DevTools if browser extension is installed
-  if (window.__REDUX_DEVTOOLS_EXTENSION__) { // eslint-disable-line
+  if (window.__REDUX_DEVTOOLS_EXTENSION__) {
+    // eslint-disable-line
     enhancer = compose(
       middleware,
       window.__REDUX_DEVTOOLS_EXTENSION__() // eslint-disable-line
@@ -42,17 +40,13 @@ if (isProduction) {
     enhancer = compose(middleware);
   }
 
-  store = createStore(
-    rootReducer,
-    enhancer
-  );
+  store = createStore(rootReducer, enhancer);
 }
-
 
 // Render it to DOM
 ReactDOM.render(
-  <Provider store={ store }>
-      <App />
+  <Provider store={store}>
+    <App />
   </Provider>,
-  document.getElementById('root')
+  document.getElementById("root")
 );

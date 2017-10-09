@@ -1,5 +1,11 @@
-import React, { Component } from 'react';
-import { Button,  FormControl, ControlLabel, HelpBlock, FormGroup } from 'react-bootstrap';
+import React, { Component } from "react";
+import {
+  Button,
+  FormControl,
+  ControlLabel,
+  HelpBlock,
+  FormGroup
+} from "react-bootstrap";
 
 export const FieldGroup = ({ id, label, help, ...props }) => {
   return (
@@ -9,7 +15,7 @@ export const FieldGroup = ({ id, label, help, ...props }) => {
       {help && <HelpBlock>{help}</HelpBlock>}
     </FormGroup>
   );
-}
+};
 
 export default class Form extends Component {
   render() {
@@ -28,16 +34,18 @@ export default class Form extends Component {
             label="Email*"
             placeholder="Enter email"
           />
-          <FieldGroup
-            id="formControlsMain"
-            label="主题"
-            type="text"
-          />
+          <FieldGroup id="formControlsMain" label="主题" type="text" />
           <FormGroup controlId="formControlsTextarea">
             <ControlLabel>内容*</ControlLabel>
-            <FormControl componentClass="textarea" placeholder="" style={{height: 100}} />
+            <FormControl
+              componentClass="textarea"
+              placeholder=""
+              style={{ height: 100 }}
+            />
           </FormGroup>
-          <Button bsSize="large" bsStyle="danger">发送</Button>
+          <Button bsSize="large" bsStyle="danger">
+            发送
+          </Button>
         </form>
       </div>
     );
