@@ -314,7 +314,7 @@ export default class SpacePage extends Component {
           </div>
         </section>
 
-        {/* <ResourceSection /> */}
+        <ResourceSection />
 
         <section className='space' id='conatcat-info'>
           <div className='container'>
