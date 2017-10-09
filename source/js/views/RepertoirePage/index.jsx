@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Row, Col, Carousel } from "react-bootstrap";
-import Section1 from "./Section1";
+import Cards from "./Cards";
 import JumuType from "./JumuType";
 
 const REPERTOIRE = [
@@ -115,444 +115,48 @@ export default class RepertoirePage extends Component {
             </div>
 
             <div className="cards article-items" style={{ minHeight: 300 }}>
-              <article className="xiju article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">戲劇</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="wudao article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">舞蹈</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="yinyue article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">音樂</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="zhuchang article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">駐場演出</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="ertong article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">兒童劇</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="huaju article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">話劇</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="lvyou article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">旅遊演出</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="xiqu article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">戲曲</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="zaji article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">雜技</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="moshu article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">魔術</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="qita article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">其他</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
+              <Cards classname="xiju article-item jumu-cards" type="戲劇" />
+              <Cards classname="wudao article-item jumu-cards" type="舞蹈" />
+              <Cards classname="yinyue article-item jumu-cards" type="音樂" />
+              <Cards classname="zhuchang article-item jumu-cards" type="駐場演出" />
+              <Cards classname="ertong article-item jumu-cards" type="兒童劇" />
+              <Cards classname="huaju article-item jumu-cards" type="話劇" />
+              <Cards classname="lvyou article-item jumu-cards" type="旅遊演出" />
+              <Cards classname="xiqu article-item jumu-cards" type="戲曲" />
+              <Cards classname="zaji article-item jumu-cards" type="雜技" />
+              <Cards classname="moshu article-item jumu-cards" type="魔術" />
+              <Cards classname="qita article-item jumu-cards" type="其他" />
             </div>
 
-            <div className="cards article-items" style={{ minHeight: 100 }}>
-              <article className="beijing article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">北京</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="shanghai article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">上海</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="guangzhou article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">廣州</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="tianjin article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">天津</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="shenzhen article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">深圳</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="nanjing article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">南京</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="chengdu article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">成都</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="chongqing article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">重慶</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="zhengzhou article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">鄭州</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="xian article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">西安</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="wuhan article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">武漢</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="changsha article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">長沙</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="hefei article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">合肥</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="qitac article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">其他城市</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
+            <div className="cards article-items" style={{ minHeight: 300 }}>
+              <Cards classname="beijing article-item jumu-cards" type="北京" />
+              <Cards classname="shanghai article-item jumu-cards" type="上海" />
+              <Cards classname="guangzhou article-item jumu-cards" type="廣州" />
+              <Cards classname="tianjin article-item jumu-cards" type="天津" />
+              <Cards classname="shenzhen article-item jumu-cards" type="深圳" />
+              <Cards classname="nanjing article-item jumu-cards" type="南京" />
+              <Cards classname="chengdu article-item jumu-cards" type="成都" />
+              <Cards classname="chongqing article-item jumu-cards" type="重慶" />
+              <Cards classname="zhengzhou article-item jumu-cards" type="鄭州" />
+              <Cards classname="xian article-item jumu-cards" type="西安" />
+              <Cards classname="wuhan article-item jumu-cards" type="武漢" />
+              <Cards classname="changsha article-item jumu-cards" type="長沙" />
+              <Cards classname="hefei article-item jumu-cards" type="合肥" />
+              <Cards classname="qitac article-item jumu-cards" type="其他城市" />
             </div>
 
-            <div className="cards article-items" style={{ minHeight: 100 }}>
-              <article className="huajut article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">話劇團</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="ertongt article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">兒童劇團</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="gejut article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">歌劇團</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="wujut article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">舞劇團</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="xijut article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">戲劇團</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="quyit article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">曲藝團</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="zajit article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">雜技團</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="maxit article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">馬戲團</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="muout article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">木偶團</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="piyingt article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">皮影團</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
-              <article className="qitat article-item jumu-cards">
-                <a className="link-wrap2" href="" target="_blank">
-                  <div className="img-box2">
-                    <p className="type">其他</p>
-                    <p className="time" />
-                    <img src="" alt="images" width="370" height="200" />
-                  </div>
-                  <div className="height-limiter">
-                    <h4 />
-                  </div>
-                </a>
-              </article>
+            <div className="cards article-items" style={{ minHeight: 300 }}>
+              <Cards classname="huajut article-item jumu-cards" type="話劇團" />
+              <Cards classname="ertongt article-item jumu-cards" type="兒童劇團" />
+              <Cards classname="gejut article-item jumu-cards" type="歌劇團" />
+              <Cards classname="wujut article-item jumu-cards" type="舞劇團" />
+              <Cards classname="xijut article-item jumu-cards" type="戲劇團" />
+              <Cards classname="quyit article-item jumu-cards" type="曲藝團" />
+              <Cards classname="zajit article-item jumu-cards" type="雜技團" />
+              <Cards classname="maxit article-item jumu-cards" type="馬戲團" />
+              <Cards classname="muout article-item jumu-cards" type="木偶團" />
+              <Cards classname="piyingt article-item jumu-cards" type="皮影團" />
+              <Cards classname="qitat article-item jumu-cards" type="其他" />
             </div>
           </div>
         </div>

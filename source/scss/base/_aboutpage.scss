@@ -18,7 +18,6 @@
   color: #4e4e4e;
 }
 
-
 #carousel-slider {
   position: relative;
 }
@@ -51,7 +50,7 @@
   width: inherit;
 }
 #carousel-slider .carousel-control.left i {
-  left: -25px
+  left: -25px;
 }
 #carousel-slider .carousel-control.right i {
   right: -25px;
@@ -69,7 +68,7 @@
 .sinlge-skill {
   background: #f2f2f2;
   border-radius: 100%;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 22px;
   font-weight: bold;
   height: 160px;
@@ -80,7 +79,7 @@
   margin: 30px 0;
 }
 .sinlge-skill p em {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 38px;
 }
 .sinlge-skill p {
@@ -168,19 +167,19 @@ ul.tag li {
 }
 ul.social_icons li a i {
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #ffffff;
   height: 25px;
   line-height: 25px;
   font-size: 12px;
   padding: 0;
   text-align: center;
   width: 25px;
-  opacity: .8;
+  opacity: 0.8;
 }
 .team .social_icons .fa-facebook:hover,
 .team .social_icons .fa-twitter:hover,
 .team .social_icons .fa-google-plus:hover {
-  transform: rotate(360deg);;
+  transform: rotate(360deg);
   transition-duration: 2s;
   transition-property: all;
   transition-timing-function: ease;
@@ -191,10 +190,10 @@ ul.social_icons li a i {
   background: #0182c4;
 }
 .team .social_icons .fa-twitter {
-  background: #20B8FF
+  background: #20b8ff;
 }
 .team .social_icons .fa-google-plus {
-  background: #D34836
+  background: #d34836;
 }
 .team-bar .first-one-arrow {
   float: left;
@@ -224,20 +223,20 @@ ul.social_icons li a i {
   width: 20%;
 }
 .team-bar .first-one-arrow hr {
-  border-bottom: 1px solid #2D7DA4;
-  border-top: 1px solid #2D7DA4;
+  border-bottom: 1px solid #2d7da4;
+  border-top: 1px solid #2d7da4;
 }
 .team-bar .first-arrow hr {
-  border-bottom: 1px solid #2D7DA4;
-  border-top: 1px solid #2D7DA4;
+  border-bottom: 1px solid #2d7da4;
+  border-top: 1px solid #2d7da4;
 }
 .team-bar .second-arrow hr {
   border-bottom: 1px solid #6aa42f;
   border-top: 1px solid #6aa42f;
 }
 .team-bar .third-arrow hr {
-  border-bottom: 1px solid #FFBD20;
-  border-top: 1px solid #FFBD20;
+  border-bottom: 1px solid #ffbd20;
+  border-top: 1px solid #ffbd20;
 }
 .team-bar .fourth-arrow hr {
   border-bottom: 1px solid #db3615;
@@ -250,7 +249,7 @@ ul.social_icons li a i {
 }
 .team-bar i {
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #ffffff;
   display: block;
   height: 24px;
   line-height: 24px;
@@ -262,15 +261,15 @@ ul.social_icons li a i {
   position: absolute;
 }
 .team-bar .first-arrow .fa-angle-up {
-  background: #2D7DA4;
-  margin-left: -33px
+  background: #2d7da4;
+  margin-left: -33px;
 }
 .team-bar .second-arrow .fa-angle-down {
-  background: #6AA42F;
+  background: #6aa42f;
   margin-left: -33px;
 }
 .team-bar .third-arrow .fa-angle-up {
-  background: #FFBD20;
+  background: #ffbd20;
   margin-left: -32px;
 }
 .team-bar .fourth-arrow .fa-angle-down {
@@ -320,6 +319,6 @@ ul.social_icons li a i {
   top: -22px;
   border-style: solid;
   border-width: 11px;
-  border-color: transparent transparent #DDD transparent;
+  border-color: transparent transparent #ddd transparent;
   z-index: 0;
 }

@@ -4,8 +4,7 @@ export default class JumuType extends Component {
   constructor(props) {
     super(props);
   }
-  render() {
-    console.log(this.props);
+  render() {    
     return (
       <div>
         <h4>{this.props.typeName}</h4>
