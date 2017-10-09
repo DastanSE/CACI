@@ -14,13 +14,13 @@ export const routeCodes = {
   MAINPAGE: publicPath,
   CONTACT: `${ publicPath }contact`,
   ABOUT: `${ publicPath }about`,
-  REPERTOIRE: `${ publicPath }repertoire`
+  REPERTOIRE: `${ publicPath }repertoire`,
 };
 
 export default class App extends Component {
   static propTypes = {
     children: PropTypes.object,
-  }
+  };
 
   render() {
     return (

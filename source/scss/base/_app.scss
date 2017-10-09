@@ -1,6 +1,7 @@
 body {
   background: #fff;
-  font-family: 'Helvetica Neue', 'PingFang SC', 'Microsoft Yahei', 微软雅黑, STXihei, 华文细黑, sans-serif;
+  font-family: "Helvetica Neue", "PingFang SC", "Microsoft Yahei", 微软雅黑, STXihei,
+    华文细黑, sans-serif;
   line-height: 22px;
 }
 h1,
@@ -13,7 +14,6 @@ h6 {
   /*color:#4e4e4e;*/
 }
 
-
 /*************************
 *******Header******
 **************************/
@@ -24,7 +24,7 @@ h6 {
 #header .search {
   display: inline-block;
 }
-.navbar>.container .navbar-brand {
+.navbar > .container .navbar-brand {
   margin-left: 0;
 }
 .top-bar {
@@ -37,7 +37,7 @@ h6 {
   color: #fff;
 }
 .top-number p {
-  margin: 0
+  margin: 0;
 }
 .social {
   text-align: right;
@@ -73,7 +73,7 @@ input.search-form {
   border: 0 none;
   width: 60px;
   padding: 0 10px;
-  color: #FFF;
+  color: #fff;
   transition: all 400ms;
 }
 input.search-form::-webkit-input-placeholder {
@@ -99,7 +99,7 @@ input.search-form:hover {
 .navbar-nav {
   margin-top: 12px;
 }
-.navbar-nav>li {
+.navbar-nav > li {
   margin-left: 15px;
   padding-bottom: 28px;
 }
@@ -133,7 +133,7 @@ input.search-form:hover {
   color: #fff;
 }
 .navbar-inverse .navbar-nav .dropdown-menu {
-  background-color: rgba(0, 0, 0, .85);
+  background-color: rgba(0, 0, 0, 0.85);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
   border: 0;
   padding: 0;
@@ -167,7 +167,6 @@ input.search-form:hover {
   border-top: 0;
   padding-bottom: 0;
 }
-
 
 /***********************
 ********* Footer ******
@@ -226,11 +225,10 @@ input.search-form:hover {
 }
 
 /*剧目采购*/
-.tab_top{
+.tab_top {
   margin-top: 20px;
-
 }
-#jumu_con .tab_title{
+#jumu_con .tab_title {
   width: 100%;
   padding-left: 30px;
   height: 45px;
@@ -241,43 +239,43 @@ input.search-form:hover {
   font-weight: bold;
   color: #fff;
 }
-.color1{
+.color1 {
   color: #000;
 }
 
 #lianmeng {
-	background: url(../assets/img/lianmeng.jpg);
-	background-size: 100% 100%
+  background: url(../assets/img/lianmeng.jpg);
+  background-size: 100% 100%;
 }
 
 .lianmeng {
-	margin-bottom: 4em
+  margin-bottom: 4em;
 }
 
 .lianmeng .lm {
-	margin-top: 10px
+  margin-top: 10px;
 }
 
 .lianmeng .lm a {
-	border-radius: 3px;
-	letter-spacing: 3px;
-	border: 2px solid #000;
-	color: #fff;
-	font-size: 24px;
-	display: block;
-	padding: 60px;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	background-color: #000;
-	opacity: .8
+  border-radius: 3px;
+  letter-spacing: 3px;
+  border: 2px solid #000;
+  color: #fff;
+  font-size: 24px;
+  display: block;
+  padding: 60px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #000;
+  opacity: 0.8;
 }
 
 .lianmeng .lm a:hover {
-	letter-spacing: 5px;
-	color: #fff;
-	font-size: 26px;
-	border: 2px solid #888
+  letter-spacing: 5px;
+  color: #fff;
+  font-size: 26px;
+  border: 2px solid #888;
 }
 
 .animated {

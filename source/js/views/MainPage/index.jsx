@@ -15,11 +15,9 @@ import Radium from 'radium';
 const styles = {
   fadeIn: {
     animation: 'x 3s',
-    animationName: Radium.keyframes(fadeIn, 'fadeIn')
-  }
-}
-
-
+    animationName: Radium.keyframes(fadeIn, 'fadeIn'),
+  },
+};
 
 export default class MainPage extends Component {
   render() {
@@ -34,7 +32,7 @@ export default class MainPage extends Component {
         <Section7 />
         <Section8 />
         <Section9 />
-        <Section10 animatedStyle={styles} />
+        <Section10 animatedStyle={ styles } />
       </div>
     );
   }

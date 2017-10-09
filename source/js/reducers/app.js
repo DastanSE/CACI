@@ -9,7 +9,7 @@ const initialState = Map({
 });
 
 const actionsMap = {
-  [AppConstants.GET_BALANCE]: (state) => {
+  [AppConstants.GET_BALANCE]: state => {
     const counter = state.get('counter') + 1;
 
     return state.merge({
