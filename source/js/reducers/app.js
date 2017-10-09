@@ -1,21 +1,21 @@
-import { Map } from "immutable";
-import AppConstants from "../constants/AppConstants";
+import { Map } from 'immutable';
+import AppConstants from '../constants/AppConstants';
 
 const initialState = Map({
   counter: 0,
   asyncLoading: false,
   asyncError: null,
-  asyncData: null
+  asyncData: null,
 });
 
 const actionsMap = {
   [AppConstants.GET_BALANCE]: state => {
-    const counter = state.get("counter") + 1;
+    const counter = state.get('counter') + 1;
 
     return state.merge({
-      counter
+      counter,
     });
-  }
+  },
 };
 
 export default function reducer(state = initialState, action = {}) {

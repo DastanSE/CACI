@@ -1,19 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
-import { createStore, applyMiddleware, compose } from "redux";
-import thunk from "redux-thunk";
-import "babel-polyfill";
-import logger from "dev/logger";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware, compose } from 'redux';
+import thunk from 'redux-thunk';
+import 'babel-polyfill';
+import logger from 'dev/logger';
 
-import rootReducer from "reducers";
+import rootReducer from 'reducers';
 
-import App from "views/App";
+import App from 'views/App';
 
 // Load SCSS
-import "../scss/index.scss";
+import '../scss/index.scss';
 
-const isProduction = process.env.NODE_ENV === "production";
+const isProduction = process.env.NODE_ENV === 'production';
 
 // Creating store
 let store = null;
@@ -45,8 +45,8 @@ if (isProduction) {
 
 // Render it to DOM
 ReactDOM.render(
-  <Provider store={store}>
+  <Provider store={ store }>
     <App />
   </Provider>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
