@@ -60,6 +60,19 @@ export default class Menu extends Component {
                 <NavLink
                   activeClassName=''
                   className='menu-item menu-item-type-post_type menu-item-object-page menu-item-807'
+                  to={ routeCodes.EVENTS }
+                >
+                  活動信息
+                </NavLink>
+              </li>
+
+              <li
+                id='menu-item-807'
+                className='menu-item menu-item-type-post_type menu-item-object-page menu-item-807'
+              >
+                <NavLink
+                  activeClassName=''
+                  className='menu-item menu-item-type-post_type menu-item-object-page menu-item-807'
                   to={ routeCodes.CONTACT }
                 >
                   聯繫我們

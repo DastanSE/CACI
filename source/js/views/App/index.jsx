@@ -6,6 +6,7 @@ import RepertoirePage from 'views/RepertoirePage';
 import AboutPage from 'views/AboutPage';
 import ContactPage from 'views/ContactPage';
 import SpacePage from 'views/SpacePage';
+import EventsPage from 'views/EventsPage';
 import Menu from 'components/Global/Menu';
 import { Footer } from 'components/Global/Footer';
 
@@ -17,6 +18,7 @@ export const routeCodes = {
   ABOUT: `${ publicPath }about`,
   REPERTOIRE: `${ publicPath }repertoire`,
   YIWENSPACE: `${ publicPath }yiwenspace`,
+  EVENTS: `${ publicPath }events`,
 };
 
 export default class App extends Component {
@@ -35,6 +37,7 @@ export default class App extends Component {
               <Route path={ routeCodes.ABOUT } component={ AboutPage } />
               <Route path={ routeCodes.REPERTOIRE } component={ RepertoirePage } />
               <Route path={ routeCodes.CONTACT } component={ ContactPage } />
+              <Route path={ routeCodes.EVENTS } component={ EventsPage } />
               <Route path={ routeCodes.YIWENSPACE } component={ SpacePage } />
             </Switch>
           </div>
