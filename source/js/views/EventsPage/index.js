@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Row, Col, Carousel, Image } from 'react-bootstrap';
+import EventCalendar from './EventCalendar';
 
 export default class EventsPage extends Component {
   constructor(props) {
@@ -8,44 +10,42 @@ export default class EventsPage extends Component {
   render() {
     return (
       <div>
-        <div id='carousel-example-generic' className='carousel slide' data-ride='carousel'>
-          <ol className='carousel-indicators'>
-            <li data-target='#carousel-example-generic' data-slide-to='0' className='active' />
-            <li data-target='#carousel-example-generic' data-slide-to='1' />
-            <li data-target='#carousel-example-generic' data-slide-to='2' />
-          </ol>
-          <div className='carousel-inner' role='listbox'>
-            <div className='item active'>
-              <a href='http://caci.hk/cacidc'>
-                <img style={{width: '100%'}} src='../assets/img/舞蹈大赛.jpg' />
-              </a>
-            </div>
-            <div className='item'>
-              <a href='http://caci.hk/sumcamp'>
-                <img style={{width: '100%'}} src='../assets/img/2017夏令营.png' />
-              </a>
-            </div>
-          </div>
-
-          <a
-            className='left carousel-control'
-            href='#carousel-example-generic'
-            role='button'
-            data-slide='prev'
-          >
-            <span className='glyphicon glyphicon-chevron-left' aria-hidden='true' />
-            <span className='sr-only'>Previous</span>
-          </a>
-          <a
-            className='right carousel-control'
-            href='#carousel-example-generic'
-            role='button'
-            data-slide='next'
-          >
-            <span className='glyphicon glyphicon-chevron-right' aria-hidden='true' />
-            <span className='sr-only'>Next</span>
-          </a>
-        </div>
+        <Carousel
+          id='carousel-example-generic'
+          prevIcon={
+            <a
+              className='left carousel-control'
+              href='#carousel-example-generic'
+              role='button'
+              data-slide='prev'
+            >
+              <span className='glyphicon glyphicon-chevron-left' aria-hidden='true' />
+              <span className='sr-only'>Previous</span>
+            </a>
+          }
+          nextIcon={
+            <a
+              className='right carousel-control'
+              href='#carousel-example-generic'
+              role='button'
+              data-slide='next'
+            >
+              <span className='glyphicon glyphicon-chevron-right' aria-hidden='true' />
+              <span className='sr-only'>Next</span>
+            </a>
+          }
+        >
+          {[
+            { imgsrc: '../assets/img/舞蹈大赛.jpg' },
+            { imgsrc: '../assets/img/2017夏令营.png' },
+          ].map((data, index) => {
+            return (
+              <Carousel.Item key={ index } animateIn={ true }>
+                <img src={ data.imgsrc } alt='Carousel' />
+              </Carousel.Item>
+            );
+          })}
+        </Carousel>
 
         <section id='yiwennews'>
           <div className='center'>
@@ -174,13 +174,8 @@ export default class EventsPage extends Component {
         </section>
 
         <div className='container' style={ { paddingRight: 0, paddingLeft: 0, width: '89%' } }>
-          <section style={ { width: '85%', margin: '0 auto' } }>
-            <div className='center'>
-              <h2>活動時間</h2>
-              <p className='lead'>Activity time</p>
-            </div>
-          </section>
-
+          
+          <EventCalendar />
           <section className='portfolio' style={ { background: '#E2E2E7', color: '#676885' } }>
             <div className='center'>
               <h2>推薦活動</h2>

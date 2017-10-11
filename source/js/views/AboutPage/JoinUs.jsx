@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Carousel } from 'react-bootstrap';
+import { Row, Col, Carousel, Button } from 'react-bootstrap';
 
 export default class JoinUs extends Component {
   render() {
@@ -21,22 +21,18 @@ export default class JoinUs extends Component {
             </tr>
             <tr>
               <td className='mbold'>
-                <a href='<?php the_permalink(); ?>' />
+                <a href='' />
               </td>
               <td />
               <td />
               <td>
-                <a className='btn btn-danger btn-xs' href=''>
-                  了解更多>>
-                </a>
+                <Button bsStyle="danger">{'了解更多>>'}</Button>
               </td>
             </tr>
 
             <tr>
               <td colSpan='4' className='center'>
-                <a className='btn btn-danger' href='http://caci.hk/job/'>
-                  查看更多职位
-                </a>
+                <Button bsStyle="danger">查看更多职位</Button>
               </td>
             </tr>
           </tbody>
