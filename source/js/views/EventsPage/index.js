@@ -2,6 +2,19 @@ import React, { Component } from 'react';
 import { Row, Col, Carousel, Image } from 'react-bootstrap';
 import EventCalendar from './EventCalendar';
 
+const DATA = [
+  {
+    id: 1,
+    time: new Date(2017, 9, 18),
+    value: 'This event its super cool',
+  },
+  {
+    id: 2,
+    time: new Date(2017, 9, 19),
+    value: 'This event its super boring but you can come ',
+  },
+];
+
 export default class EventsPage extends Component {
   constructor(props) {
     super(props);
@@ -174,8 +187,7 @@ export default class EventsPage extends Component {
         </section>
 
         <div className='container' style={ { paddingRight: 0, paddingLeft: 0, width: '89%' } }>
-          
-          <EventCalendar />
+          <EventCalendar data={DATA} />
           <section className='portfolio' style={ { background: '#E2E2E7', color: '#676885' } }>
             <div className='center'>
               <h2>推薦活動</h2>

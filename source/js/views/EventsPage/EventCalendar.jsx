@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
-// import { es, ru } from 'date-fns/esm/locale'
-import InfiniteCalendar from 'react-infinite-calendar';
+import InfiniteCalendar, { Calendar, withMultipleDates } from 'react-infinite-calendar';
 
 const taiwaneseLocale = require('date-fns/locale/zh_tw');
 
@@ -19,23 +18,42 @@ const ChineseCal = {
 const today = new Date();
 const lastWeek = new Date(today.getFullYear(), today.getMonth(), today.getDate() - 7);
 
+function search(nameKey, myArray) {
+  for (let i = 0; i < myArray.length; i++) {
+    if (myArray[i].time === nameKey) {
+      return myArray[i];
+    }
+  }
+}
+
+const array = [
+  { name: 'string 1', value: 'thisasdasd', other: 'that' },
+  { name: 'string 2', value: 'this', other: 'that' },
+];
+
+const resultObject = search('string 1', array);
+
+const MultipleDatesCalendar = withMultipleDates(Calendar);
+
 export default class EventCalendar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: ' ',
+      value: ' test',
     };
   }
 
   onClick(newValue) {
-    if (newValue) {
-      this.setState({
-        value: newValue,
-      });
-    }
+    this.setState({
+      value: String(newValue),
+    });
+    console.log(newValue);
+    console.log(resultObject);
   }
 
   render() {
+    // const{ data }= this.props;
+    console.log('event data: ', this.props.data);
     return (
       <section>
         <div className='center'>
@@ -44,6 +62,7 @@ export default class EventCalendar extends Component {
           <Row>
             <Col md={ 5 }>
               <InfiniteCalendar
+                Component={ MultipleDatesCalendar }
                 width={ 600 }
                 height={ 400 }
                 min={ new Date(2016, 0, 1) }
@@ -63,9 +82,10 @@ export default class EventCalendar extends Component {
                   todayColor: '#FFA726',
                   weekdayColor: '#559FFF',
                 } }
-                selected={ today }
-                onSelect={ this.onClick() }
-                displayOptions={ { layout: 'landscape' } }
+                // selected={ today }
+                selected={ [new Date(2017, 9, 10), today, new Date(2017, 11, 18)] }
+                onSelect={ selected => this.onClick(selected) }
+                // displayOptions={ { layout: 'landscape' } }
                 minDate={ lastWeek }
                 locale={ ChineseCal }
               />
