@@ -16,10 +16,6 @@ const DATA = [
 ];
 
 export default class EventsPage extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div>
@@ -75,11 +71,8 @@ export default class EventsPage extends Component {
                 <div
                   className='con'
                   style={ { display: 'inline-block', position: 'relative', top: '0px' } }
-                >
-                  <h4>
-                    <a href='' />
-                  </h4>
-                </div>
+                />
+                <h4 />
               </div>
             </div>
           </div>
@@ -187,7 +180,7 @@ export default class EventsPage extends Component {
         </section>
 
         <div className='container' style={ { paddingRight: 0, paddingLeft: 0, width: '89%' } }>
-          <EventCalendar data={DATA} />
+          <EventCalendar data={ DATA } />
           <section className='portfolio' style={ { background: '#E2E2E7', color: '#676885' } }>
             <div className='center'>
               <h2>推薦活動</h2>

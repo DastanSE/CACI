@@ -6,6 +6,7 @@ import RepertoirePage from 'views/RepertoirePage';
 import AboutPage from 'views/AboutPage';
 import ContactPage from 'views/ContactPage';
 import SpacePage from 'views/SpacePage';
+import SupportPage from 'views/SupportPage';
 import EventsPage from 'views/EventsPage';
 import Menu from 'components/Global/Menu';
 import { Footer } from 'components/Global/Footer';
@@ -19,6 +20,7 @@ export const routeCodes = {
   REPERTOIRE: `${ publicPath }repertoire`,
   YIWENSPACE: `${ publicPath }yiwenspace`,
   EVENTS: `${ publicPath }events`,
+  SUPPORT: `${ publicPath }support`,
 };
 
 export default class App extends Component {
@@ -39,6 +41,7 @@ export default class App extends Component {
               <Route path={ routeCodes.CONTACT } component={ ContactPage } />
               <Route path={ routeCodes.EVENTS } component={ EventsPage } />
               <Route path={ routeCodes.YIWENSPACE } component={ SpacePage } />
+              <Route path={ routeCodes.SUPPORT } component={ SupportPage } />
             </Switch>
           </div>
           <Footer />
