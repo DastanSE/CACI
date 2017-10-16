@@ -3,12 +3,6 @@ import { Carousel } from 'react-bootstrap';
 
 const sectionData = [
   {
-    imgsrc: '../../assets/img/us.jpg',
-    text1: '我們是藝文創薈',
-    text2: '一群來自兩岸，熱愛藝術、科創的青年…',
-    link: '',
-  },
-  {
     imgsrc: '../../assets/img/2017夏令营.png',
     text1: '',
     text2: '',

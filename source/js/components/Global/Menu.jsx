@@ -47,6 +47,20 @@ export default class Menu extends Component {
                 <NavLink
                   activeClassName=''
                   className='menu-item menu-item-type-post_type menu-item-object-page menu-item-807'
+                  to={ routeCodes.ARTICLE }
+                >
+                  藝文資訊
+                </NavLink>
+              </li>
+
+
+              <li
+                id='menu-item-25'
+                className='menu-item menu-item-type-post_type menu-item-object-page menu-item-25'
+              >
+                <NavLink
+                  activeClassName=''
+                  className='menu-item menu-item-type-post_type menu-item-object-page menu-item-807'
                   to={ routeCodes.YIWENSPACE }
                 >
                   孵化进驻

@@ -4,9 +4,10 @@ import PropTypes from 'prop-types';
 import MainPage from 'views/MainPage';
 import RepertoirePage from 'views/RepertoirePage';
 import AboutPage from 'views/AboutPage';
+import ArticlePage from 'views/ArticlePage';
 import ContactPage from 'views/ContactPage';
 import SpacePage from 'views/SpacePage';
-import SupportPage from 'views/SupportPage';
+import { SupportPage } from 'views/SupportPage';
 import EventsPage from 'views/EventsPage';
 import Menu from 'components/Global/Menu';
 import { Footer } from 'components/Global/Footer';
@@ -17,6 +18,7 @@ export const routeCodes = {
   MAINPAGE: publicPath,
   CONTACT: `${ publicPath }contact`,
   ABOUT: `${ publicPath }about`,
+  ARTICLE: `${ publicPath }article`,
   REPERTOIRE: `${ publicPath }repertoire`,
   YIWENSPACE: `${ publicPath }yiwenspace`,
   EVENTS: `${ publicPath }events`,
@@ -37,6 +39,7 @@ export default class App extends Component {
             <Switch>
               <Route exact path={ routeCodes.MAINPAGE } component={ MainPage } />
               <Route path={ routeCodes.ABOUT } component={ AboutPage } />
+              <Route path={ routeCodes.ARTICLE } component={ ArticlePage } />
               <Route path={ routeCodes.REPERTOIRE } component={ RepertoirePage } />
               <Route path={ routeCodes.CONTACT } component={ ContactPage } />
               <Route path={ routeCodes.EVENTS } component={ EventsPage } />

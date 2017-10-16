@@ -4,14 +4,14 @@ import { ContactInfo } from 'components/Global/ContactInfo';
 import Section7 from '../MainPage/Section7';
 import JoinUs from './JoinUs';
 
-const carouselData = [
-  {
-    imgsrc: '../../assets/img/slider_two.jpg',
-  },
-  {
-    imgsrc: '../../assets/img/slider_two.jpg',
-  },
-];
+// const carouselData = [
+//   {
+//     imgsrc: '../../assets/img/slider_two.jpg',
+//   },
+//   {
+//     imgsrc: '../../assets/img/slider_two.jpg',
+//   },
+// ];
 
 export default class AboutPage extends Component {
   render() {
@@ -27,7 +27,7 @@ export default class AboutPage extends Component {
             </div>
 
             <div id='about-slider'>
-              <Carousel
+              {/* <Carousel
                 id='carousel-slider'
                 prevIcon={
                   <a className='prev hidden-xs' href='#carousel-home' data-slide='prev'>
@@ -45,10 +45,18 @@ export default class AboutPage extends Component {
                   return (
                     <Carousel.Item key={ index } animateIn={ true }>
                       <Image src={ data.imgsrc } responsive />
+                      <Carousel.Caption>
+                        <h1 className=''>{data.text1}</h1>
+                        <h4 className=''>{data.text2}</h4>
+                        <a className='btn-slide' href={ data.link }>
+                          Read More
+                        </a>
+                      </Carousel.Caption>
                     </Carousel.Item>
                   );
                 })}
-              </Carousel>
+              </Carousel> */}
+              <Image src='../../assets/img/slider_two.jpg' responsive />
             </div>
 
             <div className='skill-wrap clearfix'>
