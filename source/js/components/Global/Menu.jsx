@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { routeCodes } from '../../views/App';
+import { Nav, NavItem } from 'react-bootstrap';
 
 export default class Menu extends Component {
   render() {
@@ -37,6 +38,59 @@ export default class Menu extends Component {
                   to={ routeCodes.REPERTOIRE }
                 >
                   劇目採購
+                </NavLink>
+              </li>
+
+              <li
+                id='menu-item-25'
+                className='menu-item menu-item-type-post_type menu-item-object-page menu-item-25'
+              >
+                <NavLink
+                  activeClassName=''
+                  className='menu-item menu-item-type-post_type menu-item-object-page menu-item-807'
+                  to={ routeCodes.ARTICLE }
+                >
+                  藝文資訊
+                </NavLink>
+              </li>
+
+
+              <li
+                id='menu-item-25'
+                className='menu-item menu-item-type-post_type menu-item-object-page menu-item-25'
+              >
+                <NavLink
+                  activeClassName=''
+                  className='menu-item menu-item-type-post_type menu-item-object-page menu-item-807'
+                  to={ routeCodes.YIWENSPACE }
+                >
+                  孵化进驻
+                </NavLink>
+              </li>
+
+              <li
+                id='menu-item-807'
+                className='menu-item menu-item-type-post_type menu-item-object-page menu-item-807'
+              >
+                <NavLink
+                  activeClassName=''
+                  className='menu-item menu-item-type-post_type menu-item-object-page menu-item-807'
+                  to={ routeCodes.EVENTS }
+                >
+                  活動信息
+                </NavLink>
+              </li>
+
+              <li
+                id='menu-item-807'
+                className='menu-item menu-item-type-post_type menu-item-object-page menu-item-807'
+              >
+                <NavLink
+                  activeClassName=''
+                  className='menu-item menu-item-type-post_type menu-item-object-page menu-item-807'
+                  to={ routeCodes.SUPPORT }
+                >
+                  贊助合作
                 </NavLink>
               </li>
 

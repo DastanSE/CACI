@@ -1,241 +1,243 @@
+$color_1: #333;
+$color_2: #fff;
+$color_3: #5f5f5f;
+$color_4: #636363;
+$color_5: #000;
+$color_6: #383838;
+$color_7: rgba(66, 56, 56, 0.8);
+$color_8: gray;
+$color_9: #a6a6a6;
+$background_color_1: #eee;
+$background_color_2: #c52d2f;
+$background_color_3: #fff;
+
 #jumu {
-  width: 75%;
-  margin: 0 auto;
-  margin-bottom: 5em;
+	width: 75%;
+	margin: 0 auto;
+	margin-bottom: 5em;
+	.jm-zhaiyao {
+		color: $color_3;
+	}
 }
 .jumu-type {
-  background-color: #eee;
-  width: 250px;
-  min-height: 400px;
-  float: left;
-  margin-bottom: 5em;
-  margin-top: 15px;
-}
-.jumu-type h4 {
-  font-size: 16px;
-  margin-left: 20px;
-}
-.jumu-type h3 {
-  text-align: center;
-}
-.jumu-type li {
-  width: 90px;
-  float: left;
-  line-height: 30px;
-}
-.jumu-type a {
-  color: #333;
-}
-.jumu-type a:hover {
-  background-color: #c52d2f;
-  color: #fff;
-  padding: 2px 4px;
-}
-.jumu-type a:active {
-  background-color: #c52d2f;
-  color: #fff;
-  border-radius: 5px;
-  padding: 2px 4px;
+	background-color: $background_color_1;
+	width: 250px;
+	min-height: 400px;
+	float: left;
+	margin-bottom: 5em;
+	margin-top: 15px;
+	h4 {
+		font-size: 16px;
+		margin-left: 20px;
+	}
+	h3 {
+		text-align: center;
+	}
+	li {
+		width: 90px;
+		float: left;
+		line-height: 30px;
+	}
+	a {
+		color: $color_1;
+		&:hover {
+			background-color: $background_color_2;
+			color: $color_2;
+			padding: 2px 4px;
+		}
+		&:active {
+			background-color: $background_color_2;
+			color: $color_2;
+			border-radius: 5px;
+			padding: 2px 4px;
+		}
+	}
+	.clear {
+		clear: both;
+	}
 }
 #jumu_con {
-  margin-bottom: 5em;
-}
-.jumu-type .clear {
-  clear: both;
+	margin-bottom: 5em;
+	.jumu_title {
+		margin-bottom: 50px;
+	}
+	.jumu_title_p {
+		hr {
+			width: 100%;
+			height: 1px;
+			border: 0;
+			border-top: 1px dashed #dadada;
+			margin: 0;
+		}
+	}
+	.tab_title {
+		width: 100%;
+		padding-left: 30px;
+		height: 45px;
+		line-height: 45px;
+		background: url(../assets/img/bg/u99.png) no-repeat;
+		text-align: left;
+		font-size: 16px;
+		font-weight: bold;
+		color: $color_2;
+		border-bottom: 1px solid #c52d2f;
+		margin: 20px 0;
+	}
 }
 .tab_top {
-  margin-top: 50px;
-  margin-bottom: 70px;
+	margin-top: 50px;
+	margin-bottom: 70px;
+	img {
+		margin-top: 20px;
+	}
 }
-.tab_top img {
-  margin-top: 20px;
+.jingjiren {
+	.jjr {
+		padding: 30px;
+		h4 {
+			text-align: center;
+		}
+		img {
+			width: 100%;
+		}
+	}
 }
-#jumu_con .jumu_title {
-  margin-bottom: 50px;
-}
-#jumu_con .jumu_title_p hr {
-  width: 100%;
-  height: 1px;
-  border: 0;
-  border-top: 1px dashed #dadada;
-  margin: 0;
-}
-#jumu_con .tab_title {
-  width: 100%;
-  padding-left: 30px;
-  height: 45px;
-  line-height: 45px;
-  background: url(../assets/img/bg/u99.png) no-repeat;
-  text-align: left;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  border-bottom: 1px solid #c52d2f;
-  margin: 20px 0;
-}
-#jumu .jm-zhaiyao {
-  color: #5f5f5f;
-}
-.jingjiren .jjr {
-  padding: 30px;
-}
-.jingjiren .jjr h4 {
-  text-align: center;
-}
-.jingjiren .jjr img {
-  width: 100%;
-}
-.cards article .link-wrap2 {
-  display: block;
-  padding: 10px 24px 0;
-  width: 100% !important;
-  height: 100% !important;
-}
-.cards article .img-box2 {
-  overflow: hidden;
-  width: 252px;
-  height: 175px;
-  border: 1px solid transparent;
-}
-.cards article .img-box2 .time {
-  margin-bottom: 5px;
-  float: right;
-  font-size: 12px;
-  color: #636363;
-}
-.cards article .height-limiter h4 {
-  color: #000;
-  font-size: 18px;
-  margin: 10px auto;
-}
-.cards article .img-box2 .type {
-  background-color: #c52d2f;
-  padding: 1px 4px;
-  color: #fff;
-  float: left;
+.cards {
+	article {
+		.link-wrap2 {
+			display: block;
+			padding: 10px 24px 0;
+			width: 100% !important;
+			height: 100% !important;
+		}
+		.img-box2 {
+			overflow: hidden;
+			width: 252px;
+			height: 175px;
+			border: 1px solid transparent;
+			.time {
+				margin-bottom: 5px;
+				float: right;
+				font-size: 12px;
+				color: $color_4;
+			}
+			.type {
+				background-color: $background_color_2;
+				padding: 1px 4px;
+				color: $color_2;
+				float: left;
+			}
+		}
+		.height-limiter {
+			h4 {
+				color: $color_5;
+				font-size: 18px;
+				margin: 10px auto;
+			}
+			display: block;
+			height: 15pc;
+			overflow: hidden;
+		}
+		position: relative;
+		top: 0;
+		float: left;
+		width: 300px;
+		height: 25pc;
+		margin: 15px;
+		overflow: hidden;
+		margin-bottom: 30px;
+		background-color: $background_color_3;
+		box-shadow: 0 2px 5px 0 #cccbcb;
+		-webkit-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+		&:hover {
+			box-shadow: 10px 10px 20px #bbb;
+			position: relative;
+			top: -5px;
+			transition: all 0.5s;
+		}
+		.link-wrap {
+			display: block;
+			padding: 5px 24px 10px;
+			width: 100% !important;
+			overflow: hidden;
+			color: $color_8;
+		}
+		.img-box {
+			overflow: hidden;
+			width: 252px;
+			height: 159px;
+			border: 1px solid transparent;
+		}
+		img {
+			width: 100%;
+			height: auto;
+			position: relative;
+			left: 0;
+			-webkit-transition: all 1s ease;
+			transition: all 1s ease;
+			transform: scale(1);
+		}
+		.entry-header {
+			font-size: 18px;
+			color: $color_6;
+			line-height: 24px;
+		}
+		.entry-content {
+			font-size: 14px;
+			color: $color_8;
+			line-height: 20px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		.entry-category {
+			position: absolute;
+			bottom: 1pc;
+			left: 24px;
+		}
+		.entry-meta {
+			.entry-date {
+				font-size: 14px;
+				color: $color_9;
+				line-height: 20px;
+			}
+		}
+	}
+	overflow: hidden;
+	max-width: 990px;
+	margin: 0 auto;
+	height: 0;
 }
 .jumuhr {
-  width: 100% !important;
+	width: 100% !important;
 }
-
 .zanzhua {
-  color: #333 !important;
+	color: $color_1 !important;
 }
 .site-branding {
-  margin-top: 60px;
-  margin-bottom: 54px;
-  text-align: center;
+	margin-top: 60px;
+	margin-bottom: 54px;
+	text-align: center;
+	.site-title {
+		font-weight: 400;
+		font-size: 42px;
+		color: $color_6;
+		line-height: 60px;
+		margin-bottom: 30px;
+		a {
+			font-size: 36px;
+			color: $color_6;
+			text-decoration: none;
+		}
+	}
+	.site-description {
+		font-weight: 200;
+		font-size: 22px;
+		color: $color_7;
+		line-height: 35px;
+		padding-top: 1%;
+	}
 }
-
-.site-branding .site-title {
-  font-weight: 400;
-  font-size: 42px;
-  color: #383838;
-  line-height: 60px;
-  margin-bottom: 30px;
-}
-
-.site-branding .site-title a {
-  font-size: 36px;
-  color: #383838;
-  text-decoration: none;
-}
-
-.site-branding .site-description {
-  font-weight: 200;
-  font-size: 22px;
-  color: rgba(66, 56, 56, 0.8);
-  line-height: 35px;
-  padding-top: 1%;
-}
-
-.cards {
-  overflow: hidden;
-  max-width: 990px;
-  margin: 0 auto;
-  height: 0;
-}
-
-.cards article {
-  position: relative;
-  top: 0;
-  float: left;
-  width: 300px;
-  height: 25pc;
-  margin: 15px;
-  overflow: hidden;
-  margin-bottom: 30px;
-  background-color: #fff;
-  box-shadow: 0 2px 5px 0 #cccbcb;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.cards article:hover {
-  box-shadow: 10px 10px 20px #bbb;
-  position: relative;
-  top: -5px;
-  transition: all 0.5s;
-}
-
-.cards article .link-wrap {
-  display: block;
-  padding: 5px 24px 10px;
-  width: 100% !important;
-
-  overflow: hidden;
-  color: gray;
-}
-
-.cards article .img-box {
-  overflow: hidden;
-  width: 252px;
-  height: 159px;
-  border: 1px solid transparent;
-}
-
-.cards article img {
-  width: 100%;
-  height: auto;
-  position: relative;
-  left: 0;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  transform: scale(1);
-}
-
-.cards article .height-limiter {
-  display: block;
-  height: 15pc;
-  overflow: hidden;
-}
-
-.cards article .entry-header {
-  font-size: 18px;
-  color: #383838;
-  line-height: 24px;
-}
-
-.cards article .entry-content {
-  font-size: 14px;
-  color: gray;
-  line-height: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.cards article .entry-category {
-  position: absolute;
-  bottom: 1pc;
-  left: 24px;
-}
-
-.cards article .entry-meta .entry-date {
-  font-size: 14px;
-  color: #a6a6a6;
-  line-height: 20px;
-}
-
 .jumu-cards {
-  height: 250px !important;
+	height: 250px !important;
 }

@@ -1,0 +1,185 @@
+#qunti {
+  background: url(../assets/img/qunti.jpg);
+  background-size: cover;
+}
+
+#ziyuan {
+  background: url(../assets/img/ziyuan.jpg);
+  background-size: 100% 100%;
+}
+
+#lianmeng {
+  background: url(../assets/img/lianmeng.jpg);
+  background-size: 100% 100%;
+}
+
+#news .slider {
+  margin-bottom: 50px;
+}
+
+.ywspacetop {
+  background-image: url(../assets/img/fuchi-top.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+}
+
+.space {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.ym-top {
+  width: 100%;
+  height: auto;
+}
+
+.item h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.1;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.add-left {
+  border-left: 10px;
+  border-right: 10px;
+}
+
+.add-left img,
+.news-one img {
+  width: 100%;
+  height: auto;
+}
+
+.news-right {
+  margin-top: 20px;
+}
+
+.news-left {
+  padding: 15px;
+}
+
+.news-one {
+  margin: 5px 0;
+  background-color: #f2f2f2;
+}
+
+.space h1 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #4e4e4e;
+}
+
+.ml {
+  margin-left: 0;
+}
+
+#course {
+  background: url(../assets/img/team/bg-course.jpg);
+  background-size: 100% 100%;
+}
+
+.course-row img {
+  width: 130px;
+  height: auto;
+}
+
+.tea-top {
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+
+.single-profile-top {
+  border: 0;
+}
+
+.single-profile-top p {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.media-teac {
+  margin: 0 auto;
+}
+
+.mini {
+  width: 100%;
+  height: auto;
+}
+
+.ywtop-txt h1 {
+  font-size: 5em;
+  font-weight: 600;
+  color: #fff;
+}
+
+.ywtop-txt p {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.space-txt h1 {
+  font-size: 5em;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 500px;
+  text-shadow: 0 0 0 #000;
+}
+.s4 {
+  margin-bottom: 10px;
+  height: 150px;
+}
+
+.front {
+  width: 100% !important;
+  height: 150px;
+  padding-top: 50px !important;
+  text-align: center;
+  background-color: #29354b;
+  opacity: 0.7;
+  filter: alpha(opacity=50);
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.back {
+  width: 100% !important;
+  height: 150px;
+
+  overflow: scroll;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.48);
+}
+.lastFlipping {
+  height: 350px;
+}
+.quickFlipCta {
+  width: auto;
+}
+.f {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  vertical-align: middle;
+}
+.f1 {
+  color: #fff;
+  margin: 30px 10px;
+}
+.f2 {
+  color: #fff;
+  margin: 15px 10px;
+}
+#ziyuan > div > div.row > div.col-sm-3 > div > div.front {
+  padding-top: 150px !important;
+}

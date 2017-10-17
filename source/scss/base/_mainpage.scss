@@ -1,9 +1,6 @@
 #main-slider {
   color: #fff;
 }
-.home p {
-  color: #4e4e4e;
-}
 .feature-wrap h4 {
   font-size: 16px;
   color: #787878;
@@ -174,6 +171,9 @@ section {
   display: block !important;
   height: 730px;
   transition: opacity ease-in-out 500ms;
+  @include sm{
+    height: 100%;
+  };
 }
 #main-slider .carousel .item:first-child {
   top: auto;
@@ -216,6 +216,9 @@ section {
   background-color: #fff;
   margin: 0 15px 0 0;
   position: relative;
+  @include sm {
+    display: none;
+  };
 }
 #main-slider .carousel-indicators li:after {
   position: absolute;
@@ -560,6 +563,10 @@ section {
 .testimonial h2 {
   margin-top: 0;
 }
+.testimonial p {
+  line-height: 1.3em;
+  font-size: .9em;
+}
 .testimonial-inner {
   color: #858586;
   font-size: 14px;
@@ -582,6 +589,9 @@ section {
   right: -5px;
   border-left: 0 none;
   border-bottom: 0 none;
+}
+.Mainpage p {
+  color: #4e4e4e;
 }
 #partner {
   background: url(../assets/img/partners/partner_bg.png) 50% 50% no-repeat;
