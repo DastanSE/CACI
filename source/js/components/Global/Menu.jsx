@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { routeCodes } from '../../views/App';
-import { Nav, NavItem } from 'react-bootstrap';
+import { Nav, NavItem, Button } from 'react-bootstrap';
 
 export default class Menu extends Component {
   render() {
