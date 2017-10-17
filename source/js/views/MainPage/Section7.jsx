@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Well, Fade, Image } from 'react-bootstrap';
-// import ScrollAnimation from 'react-animate-on-scroll';
+import { Row, Col, Image, Tab, Nav, NavItem, Media } from 'react-bootstrap';
 
 export default class Section7 extends Component {
   constructor(props) {
@@ -13,45 +12,24 @@ export default class Section7 extends Component {
       <section id='content'>
         <div className='container'>
           <Row>
-            {/* <ScrollAnimation animateIn='fadeIn wow' offset={0}> */}
             <Col xs={ 12 } sm={ 8 }>
-              <div className='tab-wrap'>
-                <div className='media'>
-                  <div className='parrent pull-left'>
-                    <ul className='nav nav-tabs nav-stacked'>
-                      <li className='active'>
-                        <a href='#tab1' data-toggle='tab' className='analistic-01'>
-                          香港
-                        </a>
-                      </li>
-                      <li className=''>
-                        <a href='#tab2' data-toggle='tab' className='analistic-02'>
-                          台北
-                        </a>
-                      </li>
-                      <li className=''>
-                        <a href='#tab3' data-toggle='tab' className='tehnical'>
-                          澳門
-                        </a>
-                      </li>
-                      <li className=''>
-                        <a href='#tab4' data-toggle='tab' className='tehnical'>
-                          內地
-                        </a>
-                      </li>
-                      <li className=''>
-                        <a href='#tab5' data-toggle='tab' className='tehnical'>
-                          誠邀
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className='parrent media-body'>
-                    <div className='tab-content'>
-                      <div className='tab-pane fade active in' id='tab1'>
+              <Tab.Container className='tab-wrap' defaultActiveKey='tab1'>
+                <Media>
+                  <Media.Left className='pull-left' align='top'>
+                    <Nav bsStyle='tabs' stacked>
+                      <NavItem eventKey='tab1'>香港</NavItem>
+                      <NavItem eventKey='tab2'>台北</NavItem>
+                      <NavItem eventKey='tab3'>澳門</NavItem>
+                      <NavItem eventKey='tab4'>內地</NavItem>
+                      <NavItem eventKey='tab5'>誠邀</NavItem>
+                    </Nav>
+                  </Media.Left>
+                  <Media.Body>
+                    <Tab.Content bsStyle='parrent' animation>
+                      <Tab.Pane eventKey='tab1'>
                         <div className='media'>
                           <div className='pull-left'>
-                            <img className='img-responsive' src='../../assets/img/hk.jpg' />
+                            <Image src='../../assets/img/hk.jpg' responsive />
                           </div>
                           <div className='media-body'>
                             <h4>香港</h4>
@@ -60,11 +38,16 @@ export default class Section7 extends Component {
                             </p>
                           </div>
                         </div>
-                      </div>
-                      <div className='tab-pane fade' id='tab2'>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey='tab2'>
                         <div className='media'>
                           <div className='pull-left'>
-                            <img className='img-responsive' src='../../assets/img/tw.jpg' />
+                            <Image
+                              height={ 200 }
+                              width={ 200 }
+                              src='../../assets/img/tw.jpg'
+                              responsive
+                            />
                           </div>
                           <div className='media-body'>
                             <h4>台北</h4>
@@ -73,11 +56,16 @@ export default class Section7 extends Component {
                             </p>
                           </div>
                         </div>
-                      </div>
-                      <div className='tab-pane fade' id='tab3'>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey='tab3'>
                         <div className='media'>
                           <div className='pull-left'>
-                            <img className='img-responsive' src='../../assets/img/mac.png' />
+                            <Image
+                              height={ 200 }
+                              width={ 200 }
+                              src='../../assets/img/mac.png'
+                              responsive
+                            />
                           </div>
                           <div className='media-body'>
                             <h4>澳門</h4>
@@ -86,11 +74,16 @@ export default class Section7 extends Component {
                             </p>
                           </div>
                         </div>
-                      </div>
-                      <div className='tab-pane fade' id='tab4'>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey='tab4'>
                         <div className='media'>
                           <div className='pull-left'>
-                            <img className='img-responsive' src='../../assets/img/bj.jpg' />
+                            <Image
+                              height={ 200 }
+                              width={ 200 }
+                              src='../../assets/img/bj.jpg'
+                              responsive
+                            />
                           </div>
                           <div className='media-body'>
                             <h4>內地</h4>
@@ -99,11 +92,16 @@ export default class Section7 extends Component {
                             </p>
                           </div>
                         </div>
-                      </div>
-                      <div className='tab-pane fade' id='tab5'>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey='tab5'>
                         <div className='media'>
                           <div className='pull-left'>
-                            <img className='img-responsive' src='../../assets/img/invite.jpg' />
+                            <Image
+                              height={ 200 }
+                              width={ 200 }
+                              src='../../assets/img/invite.jpg'
+                              responsive
+                            />
                           </div>
                           <div className='media-body'>
                             <h4>誠邀</h4>
@@ -113,39 +111,37 @@ export default class Section7 extends Component {
                             </p>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                      </Tab.Pane>
+                    </Tab.Content>
+                  </Media.Body>
+                </Media>
+              </Tab.Container>
             </Col>
-            {/* </ScrollAnimation> */}
-
-            {/* <ScrollAnimation animateIn='fadeIn' offset={0}> */}
             <Col xs={ 12 } sm={ 4 }>
               <div className='testimonial'>
                 <h4>關於我們</h4>
-                <div className='media testimonial-inner'>
-                  <div className='pull-left'>
-                    <img className='img-responsive img-circle' src='../../assets/img/icon.png' />
-                  </div>
-                  <div className='media-body'>
+
+                <Media className='testimonial-inner'>
+                  <Media.Left className='pull-left' align='top'>
+                    <Image src='../../assets/img/icon.png' responsive />
+                  </Media.Left>
+                  <Media.Body>
                     <p>
                       「藝文創薈(北京)文化傳播有限公司」，總部設於香港，同時於台北、澳門、北京設有辦事處，主要從事港台及國外文化項目內地融資、演出項目打包、演藝人才培養及轉介、活動訂制、文化項目咨詢五大範疇，致力於促進由創作人、投資人、演藝人、文化消費者四大群體所組成的兩岸文化鏈條，打造當代的中國藝術文化的品牌。
                     </p>
-                  </div>
-                </div>
-                <div className='media testimonial-inner'>
-                  <div className='pull-left'>
-                    <img className='img-responsive img-circle' src='../../assets/img/yjc.jpg' />
-                  </div>
-                  <div className='media-body'>
+                  </Media.Body>
+                </Media>
+
+                <Media className='testimonial-inner'>
+                  <Media.Left className='pull-left' align='top'>
+                    <Image src='../../assets/img/yjc.jpg' responsive />
+                  </Media.Left>
+                  <Media.Body>
                     <p>公司同時擁有自己的文化投資基金池、藝文孵化器、製作團隊、文化產品經紀團隊、演藝公司咨詢團隊、傳媒發佈平台等戰略板塊，每年度推出具亮點的核心作品。</p>
-                  </div>
-                </div>
+                  </Media.Body>
+                </Media>
               </div>
             </Col>
-            {/* </ScrollAnimation> */}
           </Row>
         </div>
       </section>

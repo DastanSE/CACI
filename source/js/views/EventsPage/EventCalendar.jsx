@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col, Media, Image } from 'react-bootstrap';
+import CalendarCard from './CalendarCard';
 import InfiniteCalendar, { Calendar, withMultipleDates } from 'react-infinite-calendar';
 
 const taiwaneseLocale = require('date-fns/locale/zh_tw');
@@ -87,7 +88,7 @@ export default class EventCalendar extends Component {
               />
             </Col>
             <Col smOffset={ 1 } sm={ 12 } mdOffset={ 0 } md={ 6 }>
-              <div className='calendarInfoBox'>
+              {/* <div className='calendarInfoBox'>
                 <Media>
                   <Media.Left>
                     <Image
@@ -108,7 +109,8 @@ export default class EventCalendar extends Component {
                     </p>
                   </Media.Body>
                 </Media>
-              </div>
+              </div> */}
+              <CalendarCard />
             </Col>
           </Row>
         </div>

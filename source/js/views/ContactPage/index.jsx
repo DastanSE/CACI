@@ -4,7 +4,7 @@ import Form from './Form';
 
 const Marker = ({ text }) => (
   <div>
-    <i className='fa fa-map-marker' style={ { width: 15, height: 30, color: 'red' } }>
+    <i className='fa fa-map-marker fa-2x' style={ { color: 'red' } }>
       {text}
     </i>
   </div>
