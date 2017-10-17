@@ -37,8 +37,10 @@ React and Redux, Webpack 2.
 
 ## TODO
 
-- [x] Create Basics
-- [ ] Should write some logics
+- [x] Create wepages
+- [ ] Clean code
+- [ ] Make it all webpages responsive
+- [ ] Backend
 
 ## Setup
 
@@ -121,12 +123,15 @@ npm run hook-remove
 ```
 
 ## Components
-- [x] 1st About Page
-- [ ] yiwen-space
-- [ ] crowdfunding
-- [ ] others
+- [x] AboutPage
+- [x] SpacePage
+- [x] MainPage
+- [x] RepertoirePage
+- [x] SupportPage
+- [x] EventsPage
+- [x] ArticlePage
 
-#### 0.0.1
+#### 0.0.2
 
 Initial release
 
