@@ -23,12 +23,12 @@ export default class Section1 extends Component {
         <Carousel
           id='main-slider'
           prevIcon={
-            <a className='prev hidden-xs' href='#carousel-home' data-slide='prev'>
+            <a className='prev hidden-xs' href='#carousel-home'>
               <i className='fa fa-chevron-left' />
             </a>
           }
           nextIcon={
-            <a className='next hidden-xs' href='#carousel-home' data-slide='next'>
+            <a className='next hidden-xs' href='#carousel-home'>
               <i className='fa fa-chevron-right' />
             </a>
           }
