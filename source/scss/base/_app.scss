@@ -17,16 +17,7 @@ h6 {
 /*************************
 *******Header******
 **************************/
-#header {
-  height: 100px;
-}
 
-#header .search {
-  display: inline-block;
-}
-.navbar > .container .navbar-brand {
-  margin-left: 0;
-}
 .top-bar {
   padding: 10px 0;
   background: #191919;
@@ -85,35 +76,48 @@ input.search-form:hover::-webkit-input-placeholder {
 input.search-form:hover {
   width: 180px;
 }
-.navbar-brand {
-  padding: 0;
-  margin: 0;
-}
+
+
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
   background: #151515;
-  padding: 15px 0;
-  padding-bottom: 0;
+  padding: 0;
+}
+.navbar > .container .navbar-brand {
+  margin-left: 0;
+}
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+  img {
+    height: 35px;
+  }
 }
 .navbar-nav {
-  margin-top: 12px;
+  background-color: black;
+  z-index: 4;
 }
+
 .navbar-nav > li {
-  margin-left: 15px;
-  padding-bottom: 28px;
+  margin-left: 5px;
 }
 .navbar-inverse .navbar-nav > li > a {
+  padding: 0;
+}
+.navbar-inverse .navbar-nav > li > a > a {
   padding: 5px 12px;
-  margin: 0;
+  margin-top: 9px;
   border-radius: 3px;
   color: #fff;
   line-height: 24px;
+  background-color: black;
   display: inline-block;
 }
-.navbar-inverse .navbar-nav > li > a:hover {
+.navbar-inverse .navbar-nav > li > a > a:hover {
   background-color: #c52d2f;
   color: #fff;
+  width: 100%;
 }
 .navbar-inverse {
   border: none;
@@ -123,14 +127,18 @@ input.search-form:hover {
   line-height: 50px;
   color: #fff;
 }
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus,
-.navbar-inverse .navbar-nav > .open > a,
-.navbar-inverse .navbar-nav > .open > a:hover,
-.navbar-inverse .navbar-nav > .open > a:focus {
+.navbar-inverse .navbar-nav > .open {
+  margin-bottom: 20px;
+}
+.navbar-inverse .navbar-nav > .active > a > a,
+.navbar-inverse .navbar-nav > .active > a > a:hover,
+.navbar-inverse .navbar-nav > .active > a > a:focus,
+.navbar-inverse .navbar-nav > .open > a > a,
+.navbar-inverse .navbar-nav > .open > a > a:hover,
+.navbar-inverse .navbar-nav > .open > a > a:focus {
   background-color: #c52d2f;
   color: #fff;
+
 }
 .navbar-inverse .navbar-nav .dropdown-menu {
   background-color: rgba(0, 0, 0, 0.85);
@@ -161,6 +169,9 @@ input.search-form:hover {
 }
 .navbar-inverse .navbar-nav .dropdown-menu > li.divider {
   background-color: transparent;
+}
+.navbar-inverse .navbar-collapse .in {
+  margin-bottom: 20px;
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
