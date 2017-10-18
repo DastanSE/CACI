@@ -12,7 +12,7 @@ export default class Section7 extends Component {
       <section id='content'>
         <div className='container'>
           <Row>
-            <Col xs={ 12 } sm={ 8 }>
+            <Col xs={ 12 } md={ 6 }>
               <Tab.Container className='tab-wrap' defaultActiveKey='tab1'>
                 <Media>
                   <Media.Left className='pull-left' align='top'>
@@ -29,7 +29,12 @@ export default class Section7 extends Component {
                       <Tab.Pane eventKey='tab1'>
                         <Media>
                           <Media.Left className='pull-left'>
-                            <Image src='../../assets/img/hk.jpg' responsive />
+                            <Image
+                              height={ 200 }
+                              width={ 200 }
+                              src='../../assets/img/hk.jpg'
+                              responsive
+                            />
                           </Media.Left>
                           <Media.Body>
                             <h4>香港</h4>
@@ -117,7 +122,8 @@ export default class Section7 extends Component {
                 </Media>
               </Tab.Container>
             </Col>
-            <Col xs={ 12 } sm={ 4 }>
+
+            <Col xs={ 12 } sm={ 12 } md={ 6 }>
               <div className='testimonial'>
                 <h4>關於我們</h4>
 

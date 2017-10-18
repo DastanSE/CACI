@@ -19,36 +19,34 @@ const sectionData = [
 export default class Section1 extends Component {
   render() {
     return (
-      <section className='no-margin'>
-        <Carousel
-          id='main-slider'
-          prevIcon={
-            <a className='prev hidden-xs' href='#carousel-home'>
-              <i className='fa fa-chevron-left' />
-            </a>
-          }
-          nextIcon={
-            <a className='next hidden-xs' href='#carousel-home'>
-              <i className='fa fa-chevron-right' />
-            </a>
-          }
-        >
-          {sectionData.map((data, index) => {
-            return (
-              <Carousel.Item key={ index } animateIn={ true }>
-                <img src={ data.imgsrc } alt='Carousel' />
-                <Carousel.Caption>
-                  <h1 className='animation animated-item-1'>{data.text1}</h1>
-                  <h4 className='animation animated-item-2'>{data.text2}</h4>
-                  <a className='btn-slide animation animated-item-3' href={ data.link }>
-                    Read More
-                  </a>
-                </Carousel.Caption>
-              </Carousel.Item>
-            );
-          })}
-        </Carousel>
-      </section>
+      <Carousel
+        className='main-slider'
+        prevIcon={
+          <a className='prev hidden-xs'>
+            <i className='fa fa-chevron-left' />
+          </a>
+        }
+        nextIcon={
+          <a className='next hidden-xs'>
+            <i className='fa fa-chevron-right' />
+          </a>
+        }
+      >
+        {sectionData.map((data, index) => {
+          return (
+            <Carousel.Item key={ index } animateIn={ true }>
+              <img src={ data.imgsrc } alt='Carousel' />
+              <Carousel.Caption>
+                <h1>{data.text1}</h1>
+                <h4>{data.text2}</h4>
+                <a className='btn-slide' href={ data.link }>
+                  Read More
+                </a>
+              </Carousel.Caption>
+            </Carousel.Item>
+          );
+        })}
+      </Carousel>
     );
   }
 }

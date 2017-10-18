@@ -1,26 +1,13 @@
-$color_1: #333;
-$color_2: #fff;
-$color_3: #5f5f5f;
-$color_4: #636363;
-$color_5: #000;
-$color_6: #383838;
-$color_7: rgba(66, 56, 56, 0.8);
-$color_8: gray;
-$color_9: #a6a6a6;
-$background_color_1: #eee;
-$background_color_2: #c52d2f;
-$background_color_3: #fff;
-
 #jumu {
 	width: 75%;
 	margin: 0 auto;
 	margin-bottom: 5em;
 	.jm-zhaiyao {
-		color: $color_3;
+		color: #5f5f5f;
 	}
 }
 .jumu-type {
-	background-color: $background_color_1;
+	background-color: #eee;
 	width: 250px;
 	min-height: 400px;
 	float: left;
@@ -39,15 +26,15 @@ $background_color_3: #fff;
 		line-height: 30px;
 	}
 	a {
-		color: $color_1;
+		color: #333;
 		&:hover {
-			background-color: $background_color_2;
-			color: $color_2;
+			background-color: #c52d2f;
+			color: #fff;
 			padding: 2px 4px;
 		}
 		&:active {
-			background-color: $background_color_2;
-			color: $color_2;
+			background-color: #c52d2f;
+			color: #fff;
 			border-radius: 5px;
 			padding: 2px 4px;
 		}
@@ -79,7 +66,7 @@ $background_color_3: #fff;
 		text-align: left;
 		font-size: 16px;
 		font-weight: bold;
-		color: $color_2;
+		color: #fff;
 		border-bottom: 1px solid #c52d2f;
 		margin: 20px 0;
 	}
@@ -119,18 +106,18 @@ $background_color_3: #fff;
 				margin-bottom: 5px;
 				float: right;
 				font-size: 12px;
-				color: $color_4;
+				color: #636363;
 			}
 			.type {
-				background-color: $background_color_2;
+				background-color: #c52d2f;
 				padding: 1px 4px;
-				color: $color_2;
+				color: #fff;
 				float: left;
 			}
 		}
 		.height-limiter {
 			h4 {
-				color: $color_5;
+				color: #000;
 				font-size: 18px;
 				margin: 10px auto;
 			}
@@ -146,7 +133,7 @@ $background_color_3: #fff;
 		margin: 15px;
 		overflow: hidden;
 		margin-bottom: 30px;
-		background-color: $background_color_3;
+		background-color: #fff;
 		box-shadow: 0 2px 5px 0 #cccbcb;
 		-webkit-transition: all 0.3s ease;
 		transition: all 0.3s ease;
@@ -161,7 +148,7 @@ $background_color_3: #fff;
 			padding: 5px 24px 10px;
 			width: 100% !important;
 			overflow: hidden;
-			color: $color_8;
+			color: gray;
 		}
 		.img-box {
 			overflow: hidden;
@@ -180,12 +167,12 @@ $background_color_3: #fff;
 		}
 		.entry-header {
 			font-size: 18px;
-			color: $color_6;
+			color: #383838;
 			line-height: 24px;
 		}
 		.entry-content {
 			font-size: 14px;
-			color: $color_8;
+			color: gray;
 			line-height: 20px;
 			overflow: hidden;
 			text-overflow: ellipsis;
@@ -198,7 +185,7 @@ $background_color_3: #fff;
 		.entry-meta {
 			.entry-date {
 				font-size: 14px;
-				color: $color_9;
+				color: #a6a6a6;
 				line-height: 20px;
 			}
 		}
@@ -212,7 +199,7 @@ $background_color_3: #fff;
 	width: 100% !important;
 }
 .zanzhua {
-	color: $color_1 !important;
+	color: #333 !important;
 }
 .site-branding {
 	margin-top: 60px;
@@ -221,19 +208,19 @@ $background_color_3: #fff;
 	.site-title {
 		font-weight: 400;
 		font-size: 42px;
-		color: $color_6;
+		color: #383838;
 		line-height: 60px;
 		margin-bottom: 30px;
 		a {
 			font-size: 36px;
-			color: $color_6;
+			color: #383838;
 			text-decoration: none;
 		}
 	}
 	.site-description {
 		font-weight: 200;
 		font-size: 22px;
-		color: $color_7;
+		color: rgba(66, 56, 56, 0.8);
 		line-height: 35px;
 		padding-top: 1%;
 	}
