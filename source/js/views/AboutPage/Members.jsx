@@ -9,37 +9,45 @@ export const Members = props => {
         <h2>團隊成員</h2>
       </div>
       <Row>
-        <Col md={ 3 } sm={ 6 }>
-          <MemberCard
-            imgSrc='../../assets/img/member/li.jpg'
-            name='李國輝'
-            position='行政總監'
-            about='北京大學國際關係學院碩士、香港城市大學中國企業管理專業本科、中華商略聯合會北京秘書長，曾任職於香港中小企商會，提供進入內地市場的基金和落地服務，並自行開設遊學公司，擁有8年以上的活動運營經驗。'
-          />
+        <Col md={6} lg={6}>
+          <Row>
+            <Col md={ 6 } sm={ 6 } lg={6}>
+              <MemberCard
+                imgSrc='../../assets/img/member/li.jpg'
+                name='李國輝'
+                position='行政總監'
+                about='北京大學國際關係學院碩士、香港城市大學中國企業管理專業本科、中華商略聯合會北京秘書長，曾任職於香港中小企商會，提供進入內地市場的基金和落地服務，並自行開設遊學公司，擁有8年以上的活動運營經驗。'
+              />
+            </Col>
+            <Col md={ 6 } sm={ 6 } lg={6}>
+              <MemberCard
+                imgSrc='../../assets/img/member/test.jpeg'
+                name='張伊諾'
+                position='財務總監'
+                about='畢業於北京大學國際關係學院，曾任職於國家公共部門，以及中國鋼鐵協會等不同半官方協會，擁有良好的公共行政經驗，兼管企業政府關係。'
+              />
+            </Col>
+          </Row>
         </Col>
-        <Col md={ 3 } sm={ 6 }>
-          <MemberCard
-            imgSrc='../../assets/img/member/yi.jpg'
-            name='張伊諾'
-            position='財務總監'
-            about='畢業於北京大學國際關係學院，曾任職於國家公共部門，以及中國鋼鐵協會等不同半官方協會，擁有良好的公共行政經驗，兼管企業政府關係。'
-          />
-        </Col>
-        <Col md={ 3 } sm={ 6 }>
-          <MemberCard
-            imgSrc='../../assets/img/member/cheng.jpg'
-            name='程沛威'
-            position='版權事務部門主管'
-            about='前香港作曲家及作詞家協會(CASH) 總經理，三大唱片公司（環球、索尼及華納音樂）的合資企業公司OneStop AsiaCEO,國際唱片業協會(IFPI)亞洲區業務顧問並成功創辦版權集體管理組織香港音像聯盟(HKRIA)。'
-          />
-        </Col>
-        <Col md={ 3 } sm={ 6 }>
-          <MemberCard
-            imgSrc='../../assets/img/member/mamudi.jpg'
-            name='马沐笛'
-            position='版權事務部門主管'
-            about='前香港作曲家及作詞家協會(CASH) 總經理，三大唱片公司（環球、索尼及華納音樂）的合資企業公司OneStop AsiaCEO,國際唱片業協會(IFPI)亞洲區業務顧問並成功創辦版權集體管理組織香港音像聯盟(HKRIA)。'
-          />
+        <Col md={6}>
+          <Row>
+            <Col md={ 6 } sm={ 6 }>
+              <MemberCard
+                imgSrc='../../assets/img/member/cheng.jpg'
+                name='程沛威'
+                position='版權事務部門主管'
+                about='前香港作曲家及作詞家協會(CASH) 總經理，三大唱片公司（環球、索尼及華納音樂）的合資企業公司OneStop AsiaCEO,國際唱片業協會(IFPI)亞洲區業務顧問並成功創辦版權集體管理組織香港音像聯盟(HKRIA)。'
+              />
+            </Col>
+            <Col md={ 6 } sm={ 6 }>
+              <MemberCard
+                imgSrc='../../assets/img/member/mamudi.jpg'
+                name='马沐笛'
+                position='版權事務部門主管'
+                about='前香港作曲家及作詞家協會(CASH) 總經理，三大唱片公司（環球、索尼及華納音樂）的合資企業公司OneStop AsiaCEO,國際唱片業協會(IFPI)亞洲區業務顧問並成功創辦版權集體管理組織香港音像聯盟(HKRIA)。'
+              />
+            </Col>
+          </Row>
         </Col>
       </Row>
       <div className='row team-bar'>

@@ -82,19 +82,19 @@
     height: 120px;
     margin: 10px;
     font-size: 16px;
-  };
+  }
   @include sm {
     width: 95px;
     height: 95px;
     margin: 5px 0;
     font-size: 14px;
-  };
-  @include xs{
+  }
+  @include xs {
     width: 85px;
     height: 85px;
     margin: 5px 0;
     font-size: 10px;
-  };
+  }
 }
 .sinlge-skill p em {
   color: #ffffff;
@@ -104,13 +104,13 @@
   line-height: 1;
   @include md {
     line-height: 4;
-  };
+  }
   @include sm {
     line-height: 6;
-  };
-  @include xs{
+  }
+  @include xs {
     line-height: 9;
-  };
+  }
 }
 .joomla-skill,
 .html-skill,
@@ -152,15 +152,12 @@
 .team h5 {
   font-weight: 300;
 }
-.single-profile-top,
-.single-profile-bottom {
+.single-profile {
   font-weight: 400;
   line-height: 24px;
-}
-.single-profile-top,
-.single-profile-bottom {
   border: 1px solid #ddd;
   padding: 15px;
+  margin: 5px;
   position: relative;
 }
 .media_image {
@@ -218,6 +215,12 @@ ul.social_icons li a i {
 .team .social_icons .fa-google-plus {
   background: #d34836;
 }
+.team-bar {
+  @include md{
+    display: none;
+  };
+}
+
 .team-bar .first-one-arrow {
   float: left;
   margin-right: 30px;
@@ -298,50 +301,4 @@ ul.social_icons li a i {
 .team-bar .fourth-arrow .fa-angle-down {
   background: #db3615;
   margin-left: -32px;
-}
-.team .single-profile-top:before,
-.team .single-profile-top:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-.team .single-profile-top:before {
-  left: 26px;
-  bottom: -20px;
-  border-width: 10px;
-  border-color: #fff transparent transparent transparent;
-  z-index: 1;
-}
-.team .single-profile-top:after {
-  left: 25px;
-  bottom: -22px;
-  border-style: solid;
-  border-width: 11px;
-  border-color: #ddd transparent transparent transparent;
-  z-index: 0;
-}
-.team .single-profile-bottom:before,
-.team .single-profile-bottom:after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-.team .single-profile-bottom:before {
-  left: 30px;
-  top: -20px;
-  border-width: 10px;
-  border-color: transparent transparent #fff transparent;
-  z-index: 1;
-}
-.team .single-profile-bottom:after {
-  left: 29px;
-  top: -22px;
-  border-style: solid;
-  border-width: 11px;
-  border-color: transparent transparent #ddd transparent;
-  z-index: 0;
 }
