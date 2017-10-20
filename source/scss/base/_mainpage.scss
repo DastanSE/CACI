@@ -158,6 +158,9 @@ Slider
 .feature-wrap {
   margin-bottom: 35px;
   overflow: hidden;
+  @include md {
+    width: 95%;
+  };
 }
 .feature-wrap .pull-left {
   margin-right: 25px;

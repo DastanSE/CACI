@@ -1,7 +1,6 @@
 body {
   background: #fff;
-  font-family: "Helvetica Neue", "PingFang SC", "Microsoft Yahei", 微软雅黑, STXihei,
-    华文细黑, sans-serif;
+  font-family: 'Helvetica Neue', 'PingFang SC', 'Microsoft Yahei', 微软雅黑, STXihei, 华文细黑, sans-serif;
   line-height: 22px;
 }
 h1,
@@ -175,7 +174,6 @@ input.search-form:hover {
   width: 180px;
 }
 
-
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
@@ -190,6 +188,11 @@ input.search-form:hover {
   margin: 0;
   img {
     height: 35px;
+    @include md {
+      height: 100%;
+      width: 85px;
+      margin-left: 3px;
+    }
   }
 }
 .navbar-nav {
@@ -236,7 +239,6 @@ input.search-form:hover {
 .navbar-inverse .navbar-nav > .open > a > a:focus {
   background-color: #c52d2f;
   color: #fff;
-
 }
 .navbar-inverse .navbar-nav .dropdown-menu {
   background-color: rgba(0, 0, 0, 0.85);
@@ -378,10 +380,10 @@ input.search-form:hover {
   text-align: center;
   background-color: #000;
   opacity: 0.8;
-  @include sm {
+  @include md {
     font-size: 22px;
     padding: 48px;
-  };
+  }
 }
 
 .lianmeng .lm a:hover {
