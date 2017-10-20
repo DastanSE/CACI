@@ -7,7 +7,7 @@ export default class Menu extends Component {
 
   render() {
     return (
-      <Navbar id='header' fluid inverse collapseOnSelect>
+      <Navbar id='header' inverse collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
             <NavLink activeClassName='' exact to={ routeCodes.MAINPAGE }>
