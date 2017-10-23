@@ -25,11 +25,7 @@ export default class SpacePage extends Component {
           <div className='container'>
             <Row>
               <Col sm={ 8 }>
-                <div
-                  className='media contact-info wow fadeInDown'
-                  data-wow-duration='1000ms'
-                  data-wow-delay='600ms'
-                >
+                <div className='media contact-info'>
                   <div className='pull-left'>
                     <i className='fa fa-phone' />
                   </div>

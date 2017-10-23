@@ -57,10 +57,10 @@ export default class EventCalendar extends Component {
           <h2>活動時間</h2>
           <p className='lead'>Activity time</p>
           <Row>
-            <Col smOffset={ 1 } sm={ 11 } mdOffset={ 0 } md={ 6 }>
+            <Col xs={ 12 } smOffset={ 1 } sm={ 11 } mdOffset={ 0 } md={ 6 } lg={ 6 }>
               <InfiniteCalendar
                 Component={ MultipleDatesCalendar }
-                width={ 480 }
+                className='events-calendar'
                 height={ 350 }
                 min={ new Date(2016, 0, 1) }
                 theme={ {
@@ -87,29 +87,7 @@ export default class EventCalendar extends Component {
                 locale={ ChineseCal }
               />
             </Col>
-            <Col smOffset={ 1 } sm={ 12 } mdOffset={ 0 } md={ 6 }>
-              {/* <div className='calendarInfoBox'>
-                <Media>
-                  <Media.Left>
-                    <Image
-                      className='pull-left'
-                      width={ 200 }
-                      height={ 200 }
-                      src='../../assets/img/changdi.jpg'
-                      alt='Image'
-                    />
-                  </Media.Left>
-                  <Media.Body>
-                    <Media.Heading>Media Heading{this.state.value}</Media.Heading>
-                    <p>
-                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
-                      sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus
-                      viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-                      lacinia congue felis in faucibus.
-                    </p>
-                  </Media.Body>
-                </Media>
-              </div> */}
+            <Col xs={ 12 } smOffset={ 1 } sm={ 12 } mdOffset={ 0 } md={ 6 } lg={ 6 }>
               <CalendarCard />
             </Col>
           </Row>

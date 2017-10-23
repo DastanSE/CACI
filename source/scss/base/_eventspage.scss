@@ -9,10 +9,21 @@
   overflow-y: scroll;
 }
 
+.events-calendar{
+  width: 100% !important;
+  height: 450px !important;
+  margin-bottom: 10px;
+  border: 1px solid #F3F3F3;
+  border-radius: 2px;
+}
+
 #calendar-card {
   .container {
     margin: 0 auto;
-    width: 600px;
+    width: 100%;
+    @include sm{
+      padding: 0;
+    };
   }
   .u-float-right {
     float: right;

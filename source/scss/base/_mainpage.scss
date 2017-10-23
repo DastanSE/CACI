@@ -1,16 +1,7 @@
 #main-slider {
   color: #fff;
 }
-.feature-wrap h4 {
-  font-size: 16px;
-  color: #787878;
-  font-weight: 400;
-  margin-top: 20px;
-}
-.services-wrap h3 {
-  font-size: 20px;
-  margin: 10px 0;
-}
+
 .tab-content h3 {
   margin-top: 0;
 }
@@ -259,6 +250,17 @@ Slider
 }
 .services-wrap .pull-left {
   margin-right: 20px;
+}
+
+.feature-wrap h4 {
+  font-size: 16px;
+  color: #787878;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.services-wrap h3 {
+  font-size: 20px;
+  margin: 10px 0;
 }
 #middle {
   background: #f2f2f2;
@@ -581,36 +583,7 @@ Slider
   border-radius: 3px;
   padding: 5px 15px;
 }
-.clients-comments {
-  //background-image: url(../assets/img/image_bg.png);
-  background-position: center 118px;
-  background-repeat: no-repeat;
-  margin-bottom: 50px;
-}
-.clients-comments img {
-  background: #dddddd;
-  border: 1px solid #dddddd;
-  height: 182px;
-  padding: 3px;
-  width: 182px;
-  transition: all 0.9s ease 0s;
-  -moz-transition: all 0.9s ease 0s;
-  -webkit-transition: all 0.9s ease 0s;
-  -o-transition: all 0.9s ease 0s;
-}
-.clients-comments h3 {
-  margin-top: 55px;
-  font-weight: 300;
-  padding: 0 40px;
-}
-.clients-comments h4 {
-  font-weight: 300;
-  margin-top: 15px;
-}
-.clients-comments h4 span {
-  font-weight: 700;
-  font-style: oblique;
-}
+
 .footer {
   background: none repeat scroll 0 0 #2e2e2e;
   border-top: 2px solid #c52d2f;

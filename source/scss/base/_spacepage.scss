@@ -24,7 +24,19 @@
   height: 500px;
   width: 100%;
 }
-
+#qunti .services-wrap {
+  @include xs {
+    padding: 8px;
+  }
+}
+#qunti .services-wrap .feature-wrap .i-item {
+  @include xs {
+    height: 70px;
+    width: 70px;
+    font-size: 36px;
+    line-height: 1.8;
+  }
+}
 .space {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -44,7 +56,6 @@
   line-height: 1.1;
   text-shadow: 2px 2px 2px #000;
 }
-
 .add-left {
   border-left: 10px;
   border-right: 10px;
@@ -67,6 +78,44 @@
 .news-one {
   margin: 5px 0;
   background-color: #f2f2f2;
+}
+.clients-comments {
+  //background-image: url(../assets/img/image_bg.png);
+  background-position: center 118px;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.clients-comments img {
+  background: #dddddd;
+  border: 1px solid #dddddd;
+  height: 182px;
+  padding: 3px;
+  width: 182px;
+  transition: all 0.9s ease 0s;
+  @include sm {
+    width: 120px;
+    height: auto;
+  }
+}
+.clients-comments h3 {
+  margin-top: 55px;
+  font-weight: 300;
+  padding: 0 40px;
+}
+.clients-comments h4 {
+  font-weight: 300;
+  margin-top: 15px;
+  @include sm {
+    font-size: 14px;
+  }
+}
+.clients-comments h4 span {
+  font-weight: 700;
+  font-style: oblique;
+  @include sm {
+    font-weight: 400;
+    font-size: 14px;
+  }
 }
 
 .space h1 {
@@ -136,7 +185,7 @@
   text-shadow: 0 0 0 #000;
   @include sm {
     font-size: 4em;
-  };
+  }
 }
 .s4 {
   margin-bottom: 10px;
@@ -148,24 +197,25 @@
   height: 150px;
   padding-top: 50px !important;
   text-align: center;
+  line-height: 2;
   background-color: #29354b;
-  opacity: 0.7;
   filter: alpha(opacity=50);
   margin-right: 5px;
   cursor: pointer;
+  margin: 0;
+  @include sm {
+    opacity: 1;
+  }
 }
 
 .back {
   width: 100% !important;
   height: 150px;
-
-  overflow: scroll;
   vertical-align: middle;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.48);
 }
-.lastFlipping {
-  height: 350px;
-}
+
 .quickFlipCta {
   width: auto;
 }
@@ -182,7 +232,4 @@
 .f2 {
   color: #fff;
   margin: 15px 10px;
-}
-#ziyuan > div > div.row > div.col-sm-3 > div > div.front {
-  padding-top: 150px !important;
 }
