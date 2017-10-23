@@ -17,8 +17,8 @@
   border-radius: 2px;
 }
 
-#calendar-card {
-  .container {
+#calendar-event-card {
+  .calendar-event-card-container {
     margin: 0 auto;
     width: 100%;
     @include sm{
@@ -38,6 +38,9 @@
   .subtle {
     color: #888;
     font-size: 12px;
+    @include xs{
+      font-size: 11px;
+    };
   }
 
   .card-media {
@@ -199,6 +202,10 @@
   .card-media-body-heading {
     display: block;
     margin-top: 10px;
+    @include xs {
+      margin-top: 5px;
+      font-size: 0.8em;
+    };
   }
 
   .card-media-body-supporting-bottom {
@@ -232,7 +239,7 @@
   }
 
   .card-media-link {
-    color: #41c1f2;
+    color: rgb(85, 159, 255);
     text-decoration: none;
   }
 }

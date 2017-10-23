@@ -9,15 +9,15 @@ export default class CalendarCard extends Component {
 
   render() {
     return (
-      <div id='calendar-card'>
-        <div className='container'>
+      <div id='calendar-event-card'>
+        <div className='calendar-event-card-container'>
           <Media bsClass='card-media'>
             <Media.Left className='card-media-object-container'>
               <div
                 className='card-media-object'
                 style={ { backgroundImage: 'url(https://s9.postimg.org/y0sfm95gv/prince_f.jpg)' } }
               />
-              <span className='card-media-object-tag subtle'>Selling Fast</span>
+              <span className='card-media-object-tag subtle'>賣快</span>
             </Media.Left>
             <Media.Body className='card-media-body'>
               <Media.Heading>
@@ -46,7 +46,7 @@ export default class CalendarCard extends Component {
                   href='#/'
                   className='card-media-body-supporting-bottom-text card-media-link u-float-right'
                 >
-                  Read More
+                  閱讀更多
                 </a>
               </div>
             </Media.Body>
