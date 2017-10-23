@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col, Media, Image, Thumbnail, Button } from 'react-bootstrap';
-
+import EventCard from './EventCard'
 export default class YiwenActivities extends Component {
   constructor(props) {
     super(props);
@@ -14,100 +14,20 @@ export default class YiwenActivities extends Component {
           <h2>過往活動</h2>
           <p className='lead'>Yiwen activities</p>
         </div>
-        <div className='row' style={ { margin: '0 auto' } }>
+
+        <Row>
           <div className='portfolio-items' style={ { width: '70%', marginLeft: '15%' } }>
-            <div
-              className='col-xs-12 col-sm-6 col-md-4 portfolio-item apps activity-art'
-              style={ { padding: 10, overflow: 'hidden' } }
-            >
-              <div className='neirong' style={ { marginTop: '20px' } }>
-                <img
-                  style={ { width: '100%', maxWidth: '100%' } }
-                  className='img-responsive'
-                  src=''
-                  alt=''
-                />
-                <div className='donghua' style={ { background: '#fff' } }>
-                  <div
-                    className='wenzi'
-                    style={ {
-                      padding: '15px 15px 10px 15px',
-                      fontSize: 14,
-                      lineHeight: 20,
-                      fontWeight: 100,
-                    } }
-                  >
-                    <h5 style={ { color: '#333' } }>
-                      <a style={ { color: '#333' } } href='' />
-                    </h5>
-                    <p style={ { fontWeight: '200px' } } />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className='col-xs-12 col-sm-6 col-md-4 portfolio-item apps activity-music'
-              style={ { padding: 10, overflow: 'hidden' } }
-            >
-              <div className='neirong' style={ { marginTop: 20 } }>
-                <img
-                  style={ { width: '100%', maxWidth: '100%' } }
-                  className='img-responsive'
-                  src=''
-                  alt=''
-                />
-                <div className='donghua' style={ { background: '#fff' } }>
-                  <div
-                    className='wenzi'
-                    style={ {
-                      padding: '15px 15px 10px 15px',
-                      fontSize: 14,
-                      lineHeight: 20,
-                      fontWeight: 100,
-                    } }
-                  >
-                    <h5 style={ { color: '#333' } }>
-                      <a style={ { color: '#333' } } href='' />
-                    </h5>
-
-                    <p style={ { fontWeight: '200px' } } />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className='col-xs-12 col-sm-6 col-md-4 portfolio-item apps activity-drama'
-              style={ { padding: 10, overflow: 'hidden' } }
-            >
-              <div className='neirong' style={ { marginTop: 20 } }>
-                <img
-                  style={ { width: '100%', maxWidth: '100%' } }
-                  className='img-responsive'
-                  src=''
-                  alt=''
-                />
-                <div className='donghua' style={ { background: '#fff' } }>
-                  <div
-                    className='wenzi'
-                    style={ {
-                      padding: '15px 15px 10px 15px',
-                      fontSize: 14,
-                      lineHeight: 20,
-                      fontWeight: 100,
-                    } }
-                  >
-                    <h5 style={ { color: '#333' } }>
-                      <a style={ { color: '#333' } } href='' />
-                    </h5>
-
-                    <p style={ { fontWeight: '200px' } } />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Col sm={ 4 }>
+              <EventCard />
+            </Col>
+            <Col sm={ 4 }>
+              <EventCard />
+            </Col>
+            <Col sm={ 4 }>
+              <EventCard />
+            </Col>
           </div>
-        </div>
+        </Row>
       </section>
     );
   }

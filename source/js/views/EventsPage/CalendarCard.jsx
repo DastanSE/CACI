@@ -15,14 +15,14 @@ export default class CalendarCard extends Component {
             <Media.Left className='card-media-object-container'>
               <div
                 className='card-media-object'
-                style={ { backgroundImage: 'url(https://s9.postimg.org/y0sfm95gv/prince_f.jpg)' } }
+                style={ { backgroundImage: `url(${ this.props.eventMainImg })` } }
               />
               <span className='card-media-object-tag subtle'>賣快</span>
             </Media.Left>
             <Media.Body className='card-media-body'>
               <Media.Heading>
                 <div className='card-media-body-top'>
-                  <span className='subtle'>Mon, APR 09, 7:00 PM</span>
+                  <span className='subtle'>{this.props.time}</span>
                   <div className='card-media-body-top-icons u-float-right'>
                     <svg
                       fill='#888888'
@@ -37,9 +37,7 @@ export default class CalendarCard extends Component {
                   </div>
                 </div>
               </Media.Heading>
-              <span className='card-media-body-heading'>
-                This Thing Called Life: A Celebration of Prince and His Legacy at MEZZANINE SF
-              </span>
+              <span className='card-media-body-heading'>{this.props.eventTitle}</span>
               <div className='card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal'>
                 <span className='card-media-body-supporting-bottom-text subtle'>#Music #Party</span>
                 <a

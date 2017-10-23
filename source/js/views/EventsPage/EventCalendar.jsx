@@ -88,7 +88,11 @@ export default class EventCalendar extends Component {
               />
             </Col>
             <Col xs={ 12 }  sm={ 12 }  md={ 6 } lg={ 6 }>
-              <CalendarCard />
+              <CalendarCard
+                time={`${this.state.value}`}
+                eventTitle='This Thing Called Life: A Celebration of Prince and His Legacy at MEZZANINE SF'
+                eventMainImg='https://s9.postimg.org/y0sfm95gv/prince_f.jpg'
+              />
             </Col>
           </Row>
         </div>
