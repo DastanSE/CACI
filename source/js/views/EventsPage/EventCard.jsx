@@ -11,15 +11,13 @@ export default class EventCard extends Component {
     return (
       <div className='event-card'>
         <a className='event-card-img' href=''>
-          <img src='https://1.bp.blogspot.com/-Bii3S69BdjQ/VtdOpIi4aoI/AAAAAAAABlk/F0z23Yr59f0/s640/cover.jpg' />
+          <Image src={ this.props.img1 }/>
         </a>
         <div className='event-card-content'>
-          <i className='fa fa-clock-o' aria-hidden='true' /><span className='subtle'>2017-08-10</span>
+          <i className='fa fa-clock-o' aria-hidden='true' />
+          <span className='subtle'>{this.props.time}</span>
           <h4 className='event-card-title'>
-            <a href='http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html'>
-              {' '}
-              Hong Kong CACI
-            </a>
+            <a href=''> {this.props.title}</a>
           </h4>
         </div>
         <div className='event-card-read-more'>

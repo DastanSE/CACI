@@ -1,3 +1,31 @@
+.masonry-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  p {
+    text-align: center;
+    padding: 4px;
+    font-family: monospace;
+    background: #222;
+    color: #efefef;
+  }
+}
+.masonry {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: stretch;
+  width: 100%;
+  margin: auto;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: stretch;
+  flex-grow: 1;
+}
 .calendarInfoBox {
   position: relative;
   min-height: 1px;
@@ -10,37 +38,37 @@
 }
 /* EventCard Start */
 .event-card {
-  display: block;
-    margin-bottom: 20px;
-    line-height: 1.42857143;
-    background-color: #fff;
-    border-radius: 2px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    transition: box-shadow .25s;
+  margin: 10px;
+  width: 260px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.25s;
 }
 .event-card:hover {
-  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .event-card-img {
+  padding: 4px;
   width: 100%;
-  height:270px;
-  border-top-left-radius:2px;
-  border-top-right-radius:2px;
-  display:block;
-    overflow: hidden;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom: 1px solid #f0f0f0;
+  display: block;
+  overflow: hidden;
 }
-.event-card-img img{
+.event-card-img img {
   width: 100%;
-  height: 270px;
-  object-fit:cover;
-  transition: all .25s ease;
+  object-fit: cover;
+  transition: all 0.25s ease;
 }
 .event-card-content {
-  padding:15px;
-  text-align:left;
+  padding: 15px;
+  text-align: left;
 }
 .event-card-title {
-  margin-top:0px;
+  margin-top: 0px;
   font-weight: 500;
   font-size: 1.3em;
 }
@@ -49,36 +77,39 @@
   text-decoration: none !important;
 }
 .event-card-read-more {
-  border-top: 1px solid #D4D4D4;
+  border-top: 1px solid #d4d4d4;
   display: block;
   height: 80px;
 }
 .event-card-read-more .fa {
   padding: 10px;
   margin: 20px 5px;
-  border: 2px solid #F0F0F0;
+  border: 2px solid #f0f0f0;
   border-radius: 50%;
   &:hover {
     color: rgb(85, 159, 255);
+    cursor: pointer;
     transform: scale(1.1);
   }
 }
 .event-card-read-more a {
   display: inline-block;
   text-decoration: none !important;
-  font-weight:600;
+  font-weight: 600;
   color: #5f5f5f;
-  text-transform: uppercase
+  text-transform: uppercase;
+  &:hover {
+    color: rgb(85, 159, 255);
+    transform: scale(1.1);
+  }
 }
 /* EventCard End */
 
-
-
-.events-calendar{
+.events-calendar {
   width: 100% !important;
   height: 450px !important;
   margin-bottom: 10px;
-  border: 1px solid #F3F3F3;
+  border: 1px solid #f3f3f3;
   border-radius: 2px;
 }
 
@@ -86,9 +117,9 @@
   .calendar-event-card-container {
     margin: 0 auto;
     width: 100%;
-    @include sm{
+    @include sm {
       padding: 0;
-    };
+    }
   }
   .u-float-right {
     float: right;
@@ -103,9 +134,9 @@
   .subtle {
     color: #888;
     font-size: 12px;
-    @include xs{
+    @include xs {
       font-size: 11px;
-    };
+    }
   }
 
   .card-media {
@@ -270,7 +301,7 @@
     @include xs {
       margin-top: 5px;
       font-size: 0.8em;
-    };
+    }
   }
 
   .card-media-body-supporting-bottom {
