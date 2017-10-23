@@ -11,13 +11,11 @@
 		}
 	}
 }
-.suptxt {
-	.sup-border {
-		.col-sm-2 {
-			height: 212px;
-			margin-top: 10px;
-			border: 1px solid #c5c5c5;
-			border-radius: 20px;
-		}
-	}
+
+.partner-card {
+	height: 212px;
+	border: 1px solid #c5c5c5;
+	border-radius: 20px;
+	text-align: center;
+	margin: 7px 0;
 }

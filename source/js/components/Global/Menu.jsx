@@ -24,11 +24,6 @@ export default class Menu extends Component {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink activeClassName='' to={ routeCodes.ABOUT }>
-                關於我們
-              </NavLink>
-            </NavItem>
-            <NavItem>
               <NavLink activeClassName='' to={ routeCodes.REPERTOIRE }>
                 劇目採購
               </NavLink>

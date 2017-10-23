@@ -24,29 +24,28 @@ export const SupportPage = props => {
             </Col>
           </Col>
 
-          <section className='col-sm-12 suptxt'>
+          <section className='suptxt'>
             <div className='center'>
               <h1 className='center'>場地租賃</h1>
-              <br />
             </div>
-            <div className='row center'>
-              <div className='col-sm-3'>
+            <Row className='center'>
+              <Col xs={ 6 } sm={ 3 } md={ 3 }>
                 <Image responsive src='/imglili/1.jpg' alt='partners' />
                 <h5>藝聚場</h5>
-              </div>
-              <div className='col-sm-3'>
+              </Col>
+              <Col xs={ 6 } sm={ 3 } md={ 3 }>
                 <Image responsive src='/imglili/3.jpg' alt='partners' />
                 <h5>香巴拉</h5>
-              </div>
-              <div className='col-sm-3'>
+              </Col>
+              <Col xs={ 6 } sm={ 3 } md={ 3 }>
                 <Image responsive src='/imglili/2.jpg' alt='partners' />
                 <h5>藝聚場</h5>
-              </div>
-              <div className='col-sm-3'>
+              </Col>
+              <Col xs={ 6 } sm={ 3 } md={ 3 }>
                 <Image responsive src='/imglili/4.jpg' alt='partners' />
                 <h5>香巴拉</h5>
-              </div>
-            </div>
+              </Col>
+            </Row>
           </section>
           <Partners />
         </div>
