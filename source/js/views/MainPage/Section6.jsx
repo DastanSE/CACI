@@ -23,7 +23,7 @@ export default class Section6 extends Component {
             <Col xs={ 6 } sm={ 2 }>
               <Image src='../assets/img/partners/mahu.png' responsive />
             </Col>
-            <Col xsOffset={ 3 } xs={ 6 } sm={ 2 }>
+            <Col xsOffset={ 3 } xs={ 6 } smOffset={ 0 } sm={ 2 }>
               <Image src='../assets/img/partners/fu.png' responsive />
             </Col>
           </Row>
@@ -40,7 +40,7 @@ export default class Section6 extends Component {
             <Col xs={ 6 } sm={ 2 }>
               <Image src='../assets/img/partners/shangyi.png' responsive />
             </Col>
-            <Col xsOffset={ 3 } xs={ 6 } sm={ 2 }>
+            <Col xsOffset={ 3 } xs={ 6 } smOffset={ 0 } sm={ 2 }>
               <Image src='../assets/img/partners/zhitu.png' responsive />
             </Col>
           </Row>
@@ -51,7 +51,7 @@ export default class Section6 extends Component {
             <Col xs={ 6 } sm={ 2 }>
               <Image src='../assets/img/partners/cycber.png' responsive />
             </Col>
-            <Col xs={ 6 } sm={ 2 } xsOffset={3}>
+            <Col xs={ 6 } sm={ 2 } smOffset={ 0 } xsOffset={3}>
               <Image src='../assets/img/partners/shiwei.png' responsive />
             </Col>
             <Col xs={ 6 } sm={ 2 }>

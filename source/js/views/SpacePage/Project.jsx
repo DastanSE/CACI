@@ -18,9 +18,7 @@ export const Project = props => {
           <Row>
             <Col md={ 4 } sm={ 4 }>
               <div
-                className='single-profile-top wow fadeInDown'
-                data-wow-duration='1000ms'
-                data-wow-delay='300ms'
+                className='single-profile-top'
               >
                 <div className='media'>
                   <div className='fuchi-top'>
@@ -36,9 +34,7 @@ export const Project = props => {
 
             <Col md={ 4 } sm={ 4 }>
               <div
-                className='single-profile-top wow fadeInDown'
-                data-wow-duration='1000ms'
-                data-wow-delay='300ms'
+                className='single-profile-top'
               >
                 <div className='media'>
                   <div className='fuchi-top'>
@@ -54,9 +50,7 @@ export const Project = props => {
 
             <Col md={ 4 } sm={ 4 }>
               <div
-                className='single-profile-top wow fadeInDown'
-                data-wow-duration='1000ms'
-                data-wow-delay='300ms'
+                className='single-profile-top'
               >
                 <div className='media'>
                   <div className='fuchi-top'>
