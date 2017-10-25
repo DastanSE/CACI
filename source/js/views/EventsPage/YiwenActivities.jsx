@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col, Media, Image, Thumbnail, Button } from 'react-bootstrap';
 import EventCard from './EventCard';
+import Modals from '../../components/Global/Modals';
 
 import OwnMasonry from '../../components/Global/OwnMasonry';
 
@@ -29,7 +30,8 @@ export default class YiwenActivities extends Component {
               />
               <EventCard img1='../../assets/img/dance/d2.jpg' title='活动三' time='2017-12-01' />
 
-              <EventCard img1='../../assets/img/dance/d4.jpg' title='活动三' time='2017-12-01' />
+              <EventCard img1='../../assets/img/dance/d4.jpg' title='活动四' time='2017-12-01' />
+              <EventCard img1='../../assets/img/dance/d5.jpg' title='活动五李侃；阿斯顿反馈栏喀纳斯；看到烦恼；卡森啊；上看到烦恼' time='2017-12-01' />
             </OwnMasonry>
         </div>
       </section>

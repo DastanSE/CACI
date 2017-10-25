@@ -9,15 +9,8 @@ import Section7 from './Section7';
 import Section8 from './Section8';
 import { Section9 } from './Section9';
 import { Section10 } from './Section10';
-import { fadeIn } from 'react-animations';
 import Radium from 'radium';
 
-const styles = {
-  fadeIn: {
-    animation: 'x 3s',
-    animationName: Radium.keyframes(fadeIn, 'fadeIn'),
-  },
-};
 
 export default class MainPage extends Component {
   render() {
@@ -32,7 +25,7 @@ export default class MainPage extends Component {
         <Section7 />
         <Section8 />
         <Section9 />
-        <Section10 animatedStyle={ styles } />
+        <Section10 />
       </div>
     );
   }
