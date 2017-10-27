@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import OwnMasonry from '../../components/Global/OwnMasonry';
 import Card from '../../components/Global/Card';
+import { Loading } from '../../components/Global/Loading';
 
 const brakePoints = [350, 576, 769, 992, 1200];
 
