@@ -13,7 +13,7 @@ let testModalBody = `
   </div>
 `;
 
-export default class EventCard extends Component {
+export default class Card extends Component {
   constructor(props) {
     super(props);
     this.state = {

@@ -106,6 +106,7 @@ export default class RepertoirePage extends Component {
                     <JumuType typeName='演出场馆' typesArray={ CITIES } />
                     <hr />
                     <JumuType typeName='表演团队' typesArray={ ACTGROUPS } />
+                    <hr />
                   </div>
                 </div>
               </Col>
