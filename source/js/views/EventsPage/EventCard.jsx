@@ -5,6 +5,7 @@ import Modals from '../../components/Global/Modals';
 
 let testModalBody = `
   <p>its tag P </p>
+  <p>Lili nihao </p>
   <h1>its tag h1 </h1>
   <h2>its tag </h2>
   <div>
