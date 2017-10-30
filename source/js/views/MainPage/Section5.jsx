@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 // import { ProgressBar } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+import { routeCodes } from '../../views/App';
 
 export default class Section5 extends Component {
   render() {
@@ -92,7 +94,7 @@ export default class Section5 extends Component {
                           </a>
                         </p>
                       </div>
-                      <div id='post-<?php echo $post->ID ?>' className='panel-collapse collapse'>
+                      <div id='post-' className='panel-collapse collapse'>
                         <div className='panel-body'>
                           <div className='media accordion-inner'>
                             <div className='pull-left'>
@@ -107,10 +109,10 @@ export default class Section5 extends Component {
                     <div className='panel panel-default'>
                       <div className='panel-heading'>
                         <h3 className='panel-title'>
-                          <a className='accordion-toggle' href='http://caci.hk/news'>
+                          <NavLink className='accordion-toggle' activeClassName='' to={ routeCodes.NEWSPAGE }>
                             更多關於我們的新聞 <i className='fa fa-smile-o' />
                             <i className='fa fa-angle-right pull-right' />
-                          </a>
+                          </NavLink>
                         </h3>
                       </div>
                     </div>

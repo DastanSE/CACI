@@ -11,7 +11,7 @@ export default class Cards extends Component {
           <div className='img-box2'>
             <p className='type'>{this.props.type}</p>
             <p className='time' />
-            <img src='' alt='images' width='370' height='200' />
+            <img src={this.props.imgSrc} alt='images' width='370' height='200' />
           </div>
           <div className='height-limiter'>
             <h4 />

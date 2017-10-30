@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactCardFlip from 'react-card-flip';
-
+import FlipCard from 'react-flipcard';
 export default class FlippingCard extends Component {
   constructor(props) {
     super(props);

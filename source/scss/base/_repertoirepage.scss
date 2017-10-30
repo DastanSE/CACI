@@ -9,10 +9,16 @@
 .jumu-type {
 	background-color: #eee;
 	width: 250px;
-	min-height: 400px;
 	float: left;
 	margin-bottom: 5em;
 	margin-top: 15px;
+	border-radius: 3px;
+	@include sm {
+		width: 100%;
+		display: block;
+		float: none;
+		padding-top: 5px; 
+	};
 	h4 {
 		font-size: 16px;
 		margin-left: 20px;
@@ -43,6 +49,13 @@
 		clear: both;
 	}
 }
+
+.jumu-type-name{
+	display: block;
+	padding-right: 5px;
+}
+
+
 #jumu_con {
 	margin-bottom: 5em;
 	.jumu_title {
@@ -135,8 +148,11 @@
 		margin-bottom: 30px;
 		background-color: #fff;
 		box-shadow: 0 2px 5px 0 #cccbcb;
-		-webkit-transition: all 0.3s ease;
+
 		transition: all 0.3s ease;
+		@include sm{
+			width: 92%;
+		};
 		&:hover {
 			box-shadow: 10px 10px 20px #bbb;
 			position: relative;

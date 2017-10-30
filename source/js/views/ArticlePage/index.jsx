@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import OwnMasonry from '../../components/Global/OwnMasonry';
+import Card from '../../components/Global/Card';
+import { Loading } from '../../components/Global/Loading';
+
+const brakePoints = [350, 576, 769, 992, 1200];
 
 export default class ArticlePage extends Component {
   render() {
@@ -36,71 +41,19 @@ export default class ArticlePage extends Component {
                 </li>
               </ul>
             </div>
-
-            <div className='cards article-items'>
-              <article className='zixun2 article-item '>
-                <a className='link-wrap' href='' target='_blank'>
-                  <div className='img-box'>
-                    <img src='' alt='images' width={ 370 } height={ 200 } border='0' />
-                  </div>
-                  <div className='height-limiter'>
-                    <div className='entry-header'>
-                      <h4 className='entry-title'>title atribute</h4>
-                    </div>
-                    Content
-                    <div className='entry-content' style={ { height: '103px!important' } }>
-                      Content
-                    </div>
-                  </div>
-                  post footer
-                </a>
-              </article>
-              <article className='zixun2 article-item '>
-                <a className='link-wrap' href='' target='_blank'>
-                  <div className='img-box'>
-                    <img src='' alt='images' width={ 370 } height={ 200 } border='0' />{' '}
-                  </div>
-                  <div className='height-limiter'>
-                    <div className='entry-header'>
-                      <h4 className='entry-title' />{' '}
-                    </div>
-
-                    <div className='entry-content' style={ { height: '103px!important' } } />
-                  </div>
-                </a>
-              </article>
-            </div>
-            <div className='cards article-items'>
-              <article className='zixun3 article-item'>
-                <a className='link-wrap' href='' target='_blank'>
-                  <div className='img-box'>
-                    <img src='' alt='images' width={ 370 } height={ 200 } border='0' />{' '}
-                  </div>
-                  <div className='height-limiter'>
-                    <div className='entry-header'>
-                      <h4 className='entry-title' />{' '}
-                    </div>
-
-                    <div className='entry-content' style={ { height: '103px!important' } } />
-                  </div>
-                </a>
-              </article>
-
-              <article className='zixun4 article-item '>
-                <a className='link-wrap' href='' target='_blank'>
-                  <div className='img-box'>
-                    <img src='' alt='images' width={ 370 } height={ 200 } border='0' />{' '}
-                  </div>
-                  <div className='height-limiter'>
-                    <div className='entry-header'>
-                      <h4 className='entry-title' />{' '}
-                    </div>
-                    {/*
-                    <div className='entry-content' style={{ { height: '103px!important' } }}>
-                    </div> */}
-                  </div>
-                </a>
-              </article>
+            <div style={ { width: '70%', marginLeft: '15%' } }>
+              <OwnMasonry brakePoints={ brakePoints }>
+                <Card
+                  img1='../../assets/img/dance/d5.jpg'
+                  title='活动五李侃；阿斯顿反馈栏喀纳斯；看到烦恼；卡森啊；上看到烦恼'
+                  time='2017-12-01'
+                />
+                <Card
+                  img1='../../assets/img/dance/d5.jpg'
+                  title='活动五李侃；阿斯顿反馈栏喀纳斯；看到烦恼；卡森啊；上看到烦恼'
+                  time='2017-12-01'
+                />
+              </OwnMasonry>
             </div>
           </div>
         </div>

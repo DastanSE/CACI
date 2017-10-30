@@ -88,6 +88,10 @@ section {
   background-color: transparent !important;
   margin-bottom: 0;
 }
+.disabled {
+	display: none;
+}
+
 @-webkit-keyframes scaleIn {
   0% {
     opacity: 0;

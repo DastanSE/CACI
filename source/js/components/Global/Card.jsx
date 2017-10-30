@@ -5,6 +5,7 @@ import Modals from '../../components/Global/Modals';
 
 let testModalBody = `
   <p>its tag P </p>
+  <p>Lili nihao </p>
   <h1>its tag h1 </h1>
   <h2>its tag </h2>
   <div>
@@ -12,7 +13,7 @@ let testModalBody = `
   </div>
 `;
 
-export default class EventCard extends Component {
+export default class Card extends Component {
   constructor(props) {
     super(props);
     this.state = {
