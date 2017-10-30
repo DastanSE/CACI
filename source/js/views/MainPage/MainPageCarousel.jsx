@@ -16,7 +16,7 @@ const sectionData = [
   },
 ];
 
-export default class Section1 extends Component {
+export default class MainPageCarousel extends Component {
   render() {
     return (
       <Carousel

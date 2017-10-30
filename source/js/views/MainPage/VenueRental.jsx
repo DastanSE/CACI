@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
 // import ScrollAnimation from 'react-animate-on-scroll';
 
-export const Section9 = props => {
+export const VenueRental = props => {
   return (
     <div className='Section9'>
       <section id='m-changdi' className=''>

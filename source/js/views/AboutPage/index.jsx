@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Carousel, Image, Media } from 'react-bootstrap';
+import { Row, Col, Carousel, Image, Media, Panel, PanelGroup } from 'react-bootstrap';
 import { ContactInfo } from 'components/Global/ContactInfo';
 import Section7 from '../MainPage/Section7';
 import { OurService } from './OurService';
@@ -113,7 +113,16 @@ export default class AboutPage extends Component {
           </div>
         </section>
         <Section7 />
-        <ContactInfo />
+        <ContactInfo
+          contacts={ `
+              <h2>想要聯繫我們？</h2>
+              <p>
+                (香港) 銅鑼灣摩理臣山道84-86號 1樓 | (852) 3610 9194 | info@caci.hk
+                <br /> (澳門) 提督馬路華隆工業大廈8樓 | (853) 2895-1000 | info.mac@caci.hk
+                <br /> (北京) 海淀區四道口路2號京果商業大廈A座5層 A5015 | (86) 010-53567027 | info.bj@caci.hk
+              </p>
+          ` }
+        />
       </div>
     );
   }

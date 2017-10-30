@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { routeCodes } from '../../views/App';
 
-export default class Section5 extends Component {
+export default class OurResults extends Component {
   render() {
     return (
       <div className='Section5'>

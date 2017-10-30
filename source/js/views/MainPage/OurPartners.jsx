@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
 
-export default class Section6 extends Component {
+export default class OurPartners extends Component {
   render() {
     return (
       <section id='partner'>

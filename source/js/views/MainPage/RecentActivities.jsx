@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
-export default class Section3 extends Component {
+export default class RecentActivities extends Component {
   render() {
     return (
       <section id='recent-works'>
