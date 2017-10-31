@@ -8,6 +8,7 @@ import ArticlePage from 'views/ArticlePage';
 import ContactPage from 'views/ContactPage';
 import NewsPage from 'views/NewsPage';
 import SpacePage from 'views/SpacePage';
+import JobsPage from 'views/JobsPage';
 import { SupportPage } from 'views/SupportPage';
 import EventsPage from 'views/EventsPage';
 import Menu from 'components/Global/Menu';
@@ -25,6 +26,7 @@ export const routeCodes = {
   EVENTS: `${ publicPath }events`,
   SUPPORT: `${ publicPath }support`,
   NEWSPAGE: `${ publicPath }news`,
+  JOBSPAGE: `${ publicPath }jobs`,
 };
 
 export default class App extends Component {
@@ -48,6 +50,7 @@ export default class App extends Component {
               <Route path={ routeCodes.YIWENSPACE } component={ SpacePage } />
               <Route path={ routeCodes.SUPPORT } component={ SupportPage } />
               <Route path={ routeCodes.NEWSPAGE } component={ NewsPage } />
+              <Route path={ routeCodes.JOBSPAGE } component={ JobsPage } />
             </Switch>
           </div>
           <Footer />
