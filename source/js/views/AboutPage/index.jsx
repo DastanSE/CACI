@@ -6,7 +6,6 @@ import Section7 from '../MainPage/Section7';
 import { OurService } from './OurService';
 import { Members } from './Members';
 import JoinUs from './JoinUs';
-
 // const carouselData = [
 //   {
 //     imgsrc: '../../assets/img/slider_two.jpg',
