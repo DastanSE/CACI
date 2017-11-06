@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Row, Col, Carousel, Button } from 'react-bootstrap';
+import { Row, Col, Carousel, Button, Table } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+import { routeCodes } from '../../views/App';
 
 export default class JoinUs extends Component {
   render() {
@@ -11,32 +13,37 @@ export default class JoinUs extends Component {
             CACI-藝文創薈是一座服務於公眾，獨立的公益性藝術機構，總部設於香港，同時於台北、澳門、北京設有辦事處，由一群來自兩岸，熱愛藝術、科創的青年發起，致力於透過各項不同類型的活動積極推廣現當代藝文創作、科技創新的最新發展，同時通過對傳統文化的研習、傳承、發展，為現當代藝術提供吸養，遂步促進兩岸之間的藝文、科創交流和跨領域的對話。
           </p>
         </div>
-        <table className='table table-hover bus-table'>
+        <Table hover responsive>
+          <thead>
+            <tr>
+              <th>職位名稱</th>
+              <th>工作經驗</th>
+              <th>類型</th>
+              <th />
+            </tr>
+          </thead>
           <tbody>
             <tr>
-              <td>職位名稱</td>
-              <td>工作經驗</td>
-              <td>類型</td>
-              <td />
-            </tr>
-            <tr>
-              <td className='mbold'>
-                <a href='' />
-              </td>
-              <td />
-              <td />
+              <td>活动策划</td>
+              <td>有经验</td>
+              <td>实习/全职</td>
               <td>
-                <Button bsStyle="danger">{'了解更多>>'}</Button>
+                <Button bsSize='xsmall' bsStyle='danger'>
+                  了解更多
+                </Button>
               </td>
             </tr>
-
             <tr>
               <td colSpan='4' className='center'>
-                <Button bsStyle="danger">查看更多职位</Button>
+                <Button bsSize='xsmall' bsStyle='danger'>
+                  <NavLink style={{color: '#fff'}} activeClassName='' to={ routeCodes.JOBSPAGE }>
+                    查看更多职位
+                  </NavLink>
+                </Button>
               </td>
             </tr>
           </tbody>
-        </table>
+        </Table>
       </div>
     );
   }

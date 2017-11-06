@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
-export default class Section2 extends Component {
+export default class OurFeatures extends Component {
   render() {
     return (
       <section id='feature'>

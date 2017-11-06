@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-// import { ProgressBar } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { routeCodes } from '../../views/App';
+import MediaReports from '../../components/Global/MediaReports';
 
-export default class Section5 extends Component {
+export default class OurResults extends Component {
   render() {
     return (
       <div className='Section5'>
         <section id='middle'>
           <div className='container'>
-            <div className='row'>
-              <div className='col-sm-6 wow fadeInDown animated'>
+            <Row>
+              <Col sm={ 6 } className='wow fadeInDown animated'>
                 <div className='skill'>
                   <h2>我們的成果</h2>
                   <p>成立以來，藝文創薈致力於成立文化團體，推動文化發展，取得了滿意的成果，未來必將繼續努力，誠邀您的加入。</p>
@@ -75,51 +76,12 @@ export default class Section5 extends Component {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Col>
 
-              <div className='col-sm-6 wow fadeInDown animated'>
-                <div className='accordion'>
-                  <h2>媒體報導</h2>
-                  <div className='panel-group' id='accordion1'>
-                    <div className='panel panel-default'>
-                      <div className='panel-heading'>
-                        <p className='panel-title'>
-                          <a
-                            className='accordion-toggle'
-                            data-toggle='collapse'
-                            data-parent='#accordion1'
-                            href='#post-<?php echo $post->ID ?>'
-                          >
-                            <i className='fa fa-angle-right pull-right' />
-                          </a>
-                        </p>
-                      </div>
-                      <div id='post-' className='panel-collapse collapse'>
-                        <div className='panel-body'>
-                          <div className='media accordion-inner'>
-                            <div className='pull-left'>
-                              <img className='img-responsive' src='' />
-                            </div>
-                            <div className='media-body' />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className='panel panel-default'>
-                      <div className='panel-heading'>
-                        <h3 className='panel-title'>
-                          <NavLink className='accordion-toggle' activeClassName='' to={ routeCodes.NEWSPAGE }>
-                            更多關於我們的新聞 <i className='fa fa-smile-o' />
-                            <i className='fa fa-angle-right pull-right' />
-                          </NavLink>
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <Col sm={ 6 } className='wow fadeInDown animated'>
+                <MediaReports />
+              </Col>
+            </Row>
           </div>
         </section>
       </div>
