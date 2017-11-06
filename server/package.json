@@ -1,0 +1,15 @@
+{
+  "name": "caciwebsiteserver",
+  "version": "0.1.0",
+  "description": "Caci Website server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "React"
+  ],
+  "author": "Dastan Zhanibek",
+  "license": "ISC"
+}
