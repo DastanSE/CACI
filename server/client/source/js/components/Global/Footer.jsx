@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { routeCodes } from '../../views/App';
 
 export const Footer = props => {
   return (
@@ -11,10 +13,12 @@ export const Footer = props => {
                 <h3>公司概況</h3>
                 <ul>
                   <li>
-                    <a href=''>關於我們</a>
+                    <Link to={ routeCodes.ABOUT }>關於我們</Link>
                   </li>
                   <li>
-                    <a href=''>媒體報導</a>
+                    <Link to={ routeCodes.NEWSPAGE }>
+                      <a href=''>媒體報導</a>
+                    </Link>
                   </li>
                   <li>
                     <a href=''>加入我們</a>
@@ -23,7 +27,7 @@ export const Footer = props => {
                     <a href=''>活動回顧</a>
                   </li>
                   <li>
-                    <a href=''>聯繫我們</a>
+                    <Link to={ routeCodes.CONTACT }>聯繫我們</Link>
                   </li>
                 </ul>
               </div>
