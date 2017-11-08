@@ -1,3 +1,8 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   background: #fff;
   font-family: 'Helvetica Neue', 'PingFang SC', 'Microsoft Yahei', 微软雅黑, STXihei, 华文细黑, sans-serif;
@@ -191,8 +196,10 @@ input.search-form:hover {
   img {
     height: 35px;
     @include md {
-      height: 100%;
-      width: 85px;
+      margin-left: 3px;
+    }
+    @include sm {
+      height: 1em;
       margin-left: 3px;
     }
   }
