@@ -35,6 +35,7 @@ const plugins = [
   }),
   new webpack.NamedModulesPlugin(),
   new HtmlWebpackPlugin({
+    favicon: path.join(sourcePath, 'assets/favicon.ico/favicon.ico'),
     template: path.join(sourcePath, 'index.html'),
     path: buildPath,
     filename: 'index.html',

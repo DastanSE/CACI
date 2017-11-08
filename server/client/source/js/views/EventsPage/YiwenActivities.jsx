@@ -20,16 +20,16 @@ export default class YiwenActivities extends Component {
         </div>
         <div className='portfolio-items' style={ { width: '70%', marginLeft: '15%' } }>
             <OwnMasonry brakePoints={ brakePoints }>
-              <Card img1='../../assets/img/dance/d1.jpg' title='活动一' time='2017-10-11' />
+              <Card img1='http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d1_ktzilj.jpg' title='活动一' time='2017-10-11' />
               <Card
-                img1='../../assets/img/cq/bg-2.jpg'
+                img1='http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d2_f801ko.jpg'
                 title='活动二asdkfna; kdjnsfak;sdj fnajksndfk;asjnfk; asjndfa;kjnfdas'
                 time='2017-11-21'
               />
-              <Card img1='../../assets/img/dance/d2.jpg' title='活动三' time='2017-12-01' />
+              <Card img1='http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d3_qsc1pt.jpg' title='活动三' time='2017-12-01' />
 
-              <Card img1='../../assets/img/dance/d4.jpg' title='活动四' time='2017-12-01' />
-              <Card img1='../../assets/img/dance/d5.jpg' title='活动五李侃；阿斯顿反馈栏喀纳斯；看到烦恼；卡森啊；上看到烦恼' time='2017-12-01' />
+              <Card img1='http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d1_ktzilj.jpg' title='活动一' time='2017-10-11' title='活动四' time='2017-12-01' />
+              <Card img1='http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d4_kmwxcp.jpg' title='活动五李侃；阿斯顿反馈栏喀纳斯；看到烦恼；卡森啊；上看到烦恼' time='2017-12-01' />
             </OwnMasonry>
         </div>
       </section>

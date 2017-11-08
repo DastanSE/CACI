@@ -32,7 +32,7 @@ export default class Section7 extends Component {
                             <Image
                               height={ 200 }
                               width={ 200 }
-                              src='../../assets/img/hk.jpg'
+                              src='http://res.cloudinary.com/cacicloud/image/upload/v1510123713/hk_q8i4t0.jpg'
                               responsive
                             />
                           </Media.Left>
@@ -50,7 +50,7 @@ export default class Section7 extends Component {
                             <Image
                               height={ 200 }
                               width={ 200 }
-                              src='../../assets/img/tw.jpg'
+                              src='http://res.cloudinary.com/cacicloud/image/upload/v1510123748/tw_auhuq6.jpg'
                               responsive
                             />
                           </Media.Left>
@@ -68,7 +68,7 @@ export default class Section7 extends Component {
                             <Image
                               height={ 200 }
                               width={ 200 }
-                              src='../../assets/img/mac.png'
+                              src='http://res.cloudinary.com/cacicloud/image/upload/v1510123794/mac_uffi20.png'
                               responsive
                             />
                           </Media.Left>
@@ -86,7 +86,7 @@ export default class Section7 extends Component {
                             <Image
                               height={ 200 }
                               width={ 200 }
-                              src='../../assets/img/bj.jpg'
+                              src='http://res.cloudinary.com/cacicloud/image/upload/v1510123828/bj_m5fptr.jpg'
                               responsive
                             />
                           </Media.Left>
@@ -104,7 +104,7 @@ export default class Section7 extends Component {
                             <Image
                               height={ 200 }
                               width={ 200 }
-                              src='../../assets/img/invite.jpg'
+                              src='http://res.cloudinary.com/cacicloud/image/upload/v1510123862/invite_zstvkc.jpg'
                               responsive
                             />
                           </Media.Left>
@@ -129,7 +129,7 @@ export default class Section7 extends Component {
 
                 <Media className='testimonial-inner'>
                   <Media.Left className='pull-left' align='top'>
-                    <Image src='../../assets/img/icon.png' responsive />
+                    <Image src='http://res.cloudinary.com/cacicloud/image/upload/v1510123897/icon_ahphsy.png' responsive />
                   </Media.Left>
                   <Media.Body>
                     <p>
@@ -140,7 +140,7 @@ export default class Section7 extends Component {
 
                 <Media className='testimonial-inner'>
                   <Media.Left className='pull-left' align='top'>
-                    <Image src='../../assets/img/yjc.jpg' responsive />
+                    <Image src='http://res.cloudinary.com/cacicloud/image/upload/v1510123932/yjc_ebs3pd.jpg' responsive />
                   </Media.Left>
                   <Media.Body>
                     <p>公司同時擁有自己的文化投資基金池、藝文孵化器、製作團隊、文化產品經紀團隊、演藝公司咨詢團隊、傳媒發佈平台等戰略板塊，每年度推出具亮點的核心作品。</p>

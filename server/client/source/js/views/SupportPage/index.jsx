@@ -30,19 +30,19 @@ export const SupportPage = props => {
             </div>
             <Row className='center'>
               <Col xs={ 6 } sm={ 3 } md={ 3 }>
-                <Image responsive src='/imglili/1.jpg' alt='partners' />
+                <Image responsive src='http://res.cloudinary.com/cacicloud/image/upload/v1510126717/changdi/1_kaap3e.jpg' alt='partners' />
                 <h5>藝聚場</h5>
               </Col>
               <Col xs={ 6 } sm={ 3 } md={ 3 }>
-                <Image responsive src='/imglili/3.jpg' alt='partners' />
+                <Image responsive src='http://res.cloudinary.com/cacicloud/image/upload/v1510126717/changdi/3_dnyumu.jpg' alt='partners' />
                 <h5>香巴拉</h5>
               </Col>
               <Col xs={ 6 } sm={ 3 } md={ 3 }>
-                <Image responsive src='/imglili/2.jpg' alt='partners' />
+                <Image responsive src='http://res.cloudinary.com/cacicloud/image/upload/v1510126716/changdi/2_jmrlyg.jpg' alt='partners' />
                 <h5>藝聚場</h5>
               </Col>
               <Col xs={ 6 } sm={ 3 } md={ 3 }>
-                <Image responsive src='/imglili/4.jpg' alt='partners' />
+                <Image responsive src='http://res.cloudinary.com/cacicloud/image/upload/v1510126717/changdi/4_tcqqoo.jpg' alt='partners' />
                 <h5>香巴拉</h5>
               </Col>
             </Row>

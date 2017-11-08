@@ -58,7 +58,7 @@ export default class AboutPage extends Component {
                   );
                 })}
               </Carousel> */}
-              <Image src='../../assets/img/slider_two.jpg' responsive />
+              <Image src='http://res.cloudinary.com/cacicloud/image/upload/v1510122915/mainpage/slider_two_fmohd9.jpg' responsive />
             </div>
 
             <OurService />

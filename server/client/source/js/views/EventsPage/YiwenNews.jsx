@@ -15,8 +15,8 @@ export default class YiwenNews extends Component {
           <p className='lead'>Yiwen News</p>
         </div>
         <div className='container' style={ { paddingLeft: '10%' } }>
-          <div className='row'>
-            <div className='col-md-6  '>
+          <Row className='row'>
+            <Col md={ 6 }>
               <div className='timebox'>
                 <b />
                 <br />
@@ -26,8 +26,8 @@ export default class YiwenNews extends Component {
                 style={ { display: 'inline-block', position: 'relative', top: '0px' } }
               />
               <h4 />
-            </div>
-          </div>
+            </Col>
+          </Row>
         </div>
       </section>
     );
