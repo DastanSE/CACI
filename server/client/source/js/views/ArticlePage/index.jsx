@@ -44,12 +44,12 @@ export default class ArticlePage extends Component {
             <div style={ { width: '70%', marginLeft: '15%' } }>
               <OwnMasonry brakePoints={ brakePoints }>
                 <Card
-                  img1='../../assets/img/dance/d5.jpg'
+                  img1='http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d4_kmwxcp.jpg'
                   title='活动五李侃；阿斯顿反馈栏喀纳斯；看到烦恼；卡森啊；上看到烦恼'
                   time='2017-12-01'
                 />
                 <Card
-                  img1='../../assets/img/dance/d5.jpg'
+                  img1='http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d1_ktzilj.jpg'
                   title='活动五李侃；阿斯顿反馈栏喀纳斯；看到烦恼；卡森啊；上看到烦恼'
                   time='2017-12-01'
                 />

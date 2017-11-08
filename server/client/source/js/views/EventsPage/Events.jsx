@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Media, Image } from 'react-bootstrap';
+// import { Row, Col, Media, Image } from 'react-bootstrap';
 
 export default class Events extends Component {
   constructor(props) {

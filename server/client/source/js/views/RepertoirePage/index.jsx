@@ -79,8 +79,8 @@ export default class RepertoirePage extends Component {
             }
           >
             {[
-              { imgsrc: '../../assets/img/index-top1.jpg' },
-              { imgsrc: '../../assets/img/index-top1.jpg' },
+              { imgsrc: 'http://res.cloudinary.com/cacicloud/image/upload/v1510128455/index-top1_rflzc7.jpg' },
+              { imgsrc: 'http://res.cloudinary.com/cacicloud/image/upload/v1510128455/index-top1_rflzc7.jpg' },
             ].map((data, index) => {
               return (
                 <Carousel.Item key={ index } animateIn={ true }>
