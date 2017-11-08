@@ -13,6 +13,7 @@ import App from 'views/App';
 // Load SCSS
 import '../scss/index.scss';
 
+
 const isProduction = process.env.NODE_ENV === 'production';
 
 // Creating store

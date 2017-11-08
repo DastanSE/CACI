@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 import { routeCodes } from '../../views/App';
 import { Nav, NavItem, Navbar, Image } from 'react-bootstrap';
 
+const logo = require('../../../assets/img/logo.png');
+
 export default class Menu extends Component {
 
   render() {
@@ -11,7 +13,7 @@ export default class Menu extends Component {
         <Navbar.Header>
           <Navbar.Brand>
             <NavLink activeClassName='' exact to={ routeCodes.MAINPAGE }>
-              <Image src='../../../assets/img/logo.png' />
+              <Image src={logo} />
             </NavLink>
           </Navbar.Brand>
           <Navbar.Toggle />
