@@ -3,7 +3,7 @@ import { Carousel } from 'react-bootstrap';
 
 const sectionData = [
   {
-    imgsrc: '../../assets/img/2017夏令营.png',
+    imgsrc: 'http://res.cloudinary.com/dastan1994/image/upload/v1509939006/%E8%88%9E%E8%B9%88%E5%A4%A7%E8%B5%9B_srjdr6.jpg',
     text1: '',
     text2: '',
     link: '',
