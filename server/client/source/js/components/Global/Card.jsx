@@ -47,7 +47,7 @@ export default class Card extends Component {
           <i className='fa fa-twitter' aria-hidden='true' />
 
           <p onClick={this.open.bind(this)} className='btn btn-link'>
-            閱讀更多
+            閱讀更多.
           </p>
         </div>
         <Modals
