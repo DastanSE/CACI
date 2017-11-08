@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Image } from 'react-bootstrap';
 
 export default class RecentActivities extends Component {
   render() {
@@ -13,7 +13,7 @@ export default class RecentActivities extends Component {
           <Row>
             <Col xs={ 12 } sm={ 4 } md={ 3 } className='huodongbox'>
               <div className='recent-work-wrap'>
-                <img className='img-responsive' src='' alt='' />
+                <Image src='' alt='' responsive/>
                 <div className='overlay'>
                   <div className='recent-work-inner' />
                 </div>
