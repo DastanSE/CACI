@@ -57,7 +57,7 @@ export default class EventCalendar extends Component {
           <h2>活動時間</h2>
           <p className='lead'>Activity time</p>
           <Row>
-            <Col xs={ 12 } sm={ 12 } md={ 6 } lg={ 6 }>
+            <Col xs={ 12 } sm={ 12 } md={ 6 } lgOffset={ 1 } lg={ 5 }>
               <InfiniteCalendar
                 Component={ MultipleDatesCalendar }
                 className='events-calendar'
@@ -87,7 +87,7 @@ export default class EventCalendar extends Component {
                 locale={ ChineseCal }
               />
             </Col>
-            <Col xs={ 12 }  sm={ 12 }  md={ 6 } lg={ 6 }>
+            <Col xs={ 12 }  sm={ 12 }  md={ 6 } lg={ 5 }>
               <CalendarCard
                 time={`${this.state.value}`}
                 eventTitle='This Thing Called Life: A Celebration of Prince and His Legacy at MEZZANINE SF'

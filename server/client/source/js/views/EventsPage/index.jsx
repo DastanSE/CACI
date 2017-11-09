@@ -22,28 +22,16 @@ export default class EventsPage extends Component {
     return (
       <div>
         <Carousel
-          id='carousel-example-generic'
+          id='eventpage-slider'
           prevIcon={
-            <a
-              className='left carousel-control'
-              href='#carousel-example-generic'
-              role='button'
-              data-slide='prev'
-            >
-              <span className='glyphicon glyphicon-chevron-left' aria-hidden='true' />
-              <span className='sr-only'>Previous</span>
-            </a>
+            <span className='prev'>
+              <i className='fa fa-chevron-left' />
+            </span>
           }
           nextIcon={
-            <a
-              className='right carousel-control'
-              href='#carousel-example-generic'
-              role='button'
-              data-slide='next'
-            >
-              <span className='glyphicon glyphicon-chevron-right' aria-hidden='true' />
-              <span className='sr-only'>Next</span>
-            </a>
+            <span className='next'>
+              <i className='fa fa-chevron-right' />
+            </span>
           }
         >
           {[

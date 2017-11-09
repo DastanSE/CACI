@@ -27,14 +27,21 @@
 #qunti .services-wrap {
   @include xs {
     padding: 8px;
+    h3 {
+      font-size: 17px;
+    }
+    p {
+      font-size: 12px;
+    }
   }
 }
 #qunti .services-wrap .feature-wrap .i-item {
   @include xs {
-    height: 70px;
-    width: 70px;
+    height: 2.5em;
+    width: 2.5em;
     font-size: 36px;
-    line-height: 1.8;
+    margin: 0;
+    line-height: 2.3em;
   }
 }
 .space {
@@ -184,7 +191,7 @@
   line-height: 500px;
   text-shadow: 0 0 0 #000;
   @include sm {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 }
 .s4 {
