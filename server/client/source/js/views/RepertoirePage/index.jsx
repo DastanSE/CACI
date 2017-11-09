@@ -54,29 +54,19 @@ export default class RepertoirePage extends Component {
       <div>
         <div id='jumu-banner'>
           <Carousel
-            id='carousel-example-generic'
+            id='jumu-slider'
             prevIcon={
-              <a
-                className='left carousel-control'
-                href='#carousel-example-generic'
-                role='button'
-                data-slide='prev'
-              >
-                <span className='glyphicon glyphicon-chevron-left' aria-hidden='true' />
-                <span className='sr-only'>Previous</span>
-              </a>
+              <span className='prev'>
+                <i className='fa fa-chevron-left' />
+              </span>
             }
             nextIcon={
-              <a
-                className='right carousel-control'
-                href='#carousel-example-generic'
-                role='button'
-                data-slide='next'
-              >
-                <span className='glyphicon glyphicon-chevron-right' aria-hidden='true' />
-                <span className='sr-only'>Next</span>
-              </a>
+              <span className='next'>
+                <i className='fa fa-chevron-right' />
+              </span>
             }
+            slide
+            interval={ 2000 }
           >
             {[
               { imgsrc: 'http://res.cloudinary.com/cacicloud/image/upload/v1510128455/index-top1_rflzc7.jpg' },

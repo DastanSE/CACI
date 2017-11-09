@@ -6,6 +6,119 @@
 		color: #5f5f5f;
 	}
 }
+
+#jumu-slider {
+  position: relative;
+  color: #000;
+  height: 90vh !important;
+  max-height: 800px;
+	@include lg{
+    max-height: 1000px;
+  };
+
+  @include md {
+    height: 40vh !important;
+    max-height: 800px;
+  }
+
+  span .fa {
+    background-color: #95a5a6;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    line-height: 2.5em;
+    font-size: 0.8em;
+    transform: translateY(-50%);
+    color: #fff;
+    @include sm{
+      height: 30px;
+      width: 30px;
+      line-height: 2em;
+      font-size: 0.8em;
+    };
+
+    &.fa-chevron-left {
+      left: 0;
+      margin-left: 10%;
+    }
+    &.fa-chevron-right {
+      right: 0;
+      margin-right: 10%;
+    }
+
+    &:hover {
+      background-color: #000;
+    }
+  }
+  .item img {
+    width: 100%;
+    height: 90vh;
+    max-height: 800px;
+    @include md {
+      height: 40vh;
+    }
+  }
+
+  .carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    margin: 0 15px 0 0;
+    position: relative;
+
+    @include sm{
+      width: 15px;
+      height: 15px;
+    };
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 24px;
+      height: 24px;
+      border-radius: 100%;
+      background: rgba(0, 0, 0, 0);
+      border: 1px solid #fff;
+      left: -3px;
+      top: -3px;
+      @include sm{
+        width: 19px;
+        height: 19px;
+      };
+    }
+
+    &.active {
+      width: 20px;
+      height: 20px;
+      background-color: #95a5a6;
+      margin: 0 15px 0 0;
+      border: 1px solid #95a5a6;
+      position: relative;
+      @include sm{
+        width: 15px;
+        height: 15px;
+      };
+    }
+    &.active:after {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      border-radius: 100%;
+      background: #95a5a6;
+      border: 1px solid #95a5a6;
+      left: -3px;
+      top: -3px;
+      @include sm{
+        width: 19px;
+        height: 19px;
+      };
+    }
+  }
+}
+
+
 .jumu-type {
 	background-color: #eee;
 	width: 250px;
@@ -17,7 +130,7 @@
 		width: 100%;
 		display: block;
 		float: none;
-		padding-top: 5px; 
+		padding-top: 5px;
 	};
 	h4 {
 		font-size: 16px;

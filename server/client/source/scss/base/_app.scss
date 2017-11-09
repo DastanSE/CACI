@@ -184,7 +184,7 @@ input.search-form:hover {
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
-  background: #151515;
+  background: #000;
   padding: 0;
 }
 .navbar > .container .navbar-brand {
@@ -194,7 +194,7 @@ input.search-form:hover {
   padding: 0;
   margin: 0;
   img {
-    height: 35px;
+    height: 1em;
     @include md {
       margin-left: 3px;
     }
@@ -205,12 +205,15 @@ input.search-form:hover {
   }
 }
 .navbar-nav {
-  background-color: black;
+  background-color: #000;
   z-index: 4;
 }
 
 .navbar-nav > li {
   margin-left: 5px;
+  @include md {
+    margin-left: 0;
+  };
 }
 .navbar-inverse .navbar-nav > li > a {
   padding: 0;
@@ -221,7 +224,7 @@ input.search-form:hover {
   border-radius: 3px;
   color: #fff;
   line-height: 24px;
-  background-color: black;
+  background-color: #000;
   display: inline-block;
 }
 .navbar-inverse .navbar-nav > li > a > a:hover {
