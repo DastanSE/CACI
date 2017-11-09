@@ -24,8 +24,16 @@ Slider
   height: 90vh !important;
   max-height: 800px;
   @include md {
-    height: 40vh !important;
+    max-height: 600px;
+  };
+  @include sm {
+    height: 90vh !important;
+    max-height: 470px;
   }
+
+  @include xs {
+    height: 40vh !important;
+  };
 
   span .fa {
     background-color: #c52d2f;
@@ -63,8 +71,15 @@ Slider
     height: 90vh;
     max-height: 800px;
     @include md {
-      height: 40vh;
+      max-height: 600px;
+    };
+    @include sm {
+      height: 90vh;
+      max-height: 470px;
     }
+    @include xs {
+      height: 40vh;
+    };
   }
 
   .carousel-indicators li {
@@ -409,7 +424,7 @@ Slider
   @include sm {
     float: none !important;
   }
-  
+
 }
 
 .tab-content img {
