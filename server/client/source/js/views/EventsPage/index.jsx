@@ -18,6 +18,10 @@ const DATA = [
 ];
 
 export default class EventsPage extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div>
@@ -35,8 +39,14 @@ export default class EventsPage extends Component {
           }
         >
           {[
-            { imgsrc: 'http://res.cloudinary.com/cacicloud/image/upload/v1510122171/mainpage/%E8%88%9E%E8%B9%88%E5%A4%A7%E8%B5%9B_bir4rj.jpg' },
-            { imgsrc: 'http://res.cloudinary.com/cacicloud/image/upload/v1510128263/2017%E5%A4%8F%E4%BB%A4%E8%90%A5_itnwyq.png' },
+            {
+              imgsrc:
+                'http://res.cloudinary.com/cacicloud/image/upload/v1510122171/mainpage/%E8%88%9E%E8%B9%88%E5%A4%A7%E8%B5%9B_bir4rj.jpg',
+            },
+            {
+              imgsrc:
+                'http://res.cloudinary.com/cacicloud/image/upload/v1510128263/2017%E5%A4%8F%E4%BB%A4%E8%90%A5_itnwyq.png',
+            },
           ].map((data, index) => {
             return (
               <Carousel.Item key={ index } animateIn={ true }>
