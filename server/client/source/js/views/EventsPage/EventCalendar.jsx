@@ -45,12 +45,26 @@ export default class EventCalendar extends Component {
   }
 
   onClick(newValue) {
+    console.log('clicked value: ', newValue);
+    const test = new Date(newValue);
+    const daylyEvent = this.props.events.filter(data => {
+      console.log(`${ test }` == `${ new Date(data.event_date) }`);
+      return `${ test }` == `${ new Date(data.event_date) }`;
+    });
+    console.log('Dayly event', daylyEvent);
+
     this.setState({
       value: String(newValue),
     });
   }
 
   render() {
+    console.log('event calendar: ', this.props);
+    const eventDates = [];
+    this.props.events.forEach((item, i) => eventDates.push(item.event_date));
+
+    console.log(eventDates);
+
     return (
       <section>
         <div className='center'>
@@ -80,16 +94,16 @@ export default class EventCalendar extends Component {
                   weekdayColor: '#559FFF',
                 } }
                 // selected={ today }
-                selected={ [new Date(2017, 9, 10), today, new Date(2017, 11, 18)] }
+                selected={ eventDates }
                 onSelect={ selected => this.onClick(selected) }
                 // displayOptions={ { layout: 'landscape' } }
                 minDate={ lastWeek }
                 locale={ ChineseCal }
               />
             </Col>
-            <Col xs={ 12 }  sm={ 12 }  md={ 6 } lg={ 5 }>
+            <Col xs={ 12 } sm={ 12 } md={ 6 } lg={ 5 }>
               <CalendarCard
-                time={`${this.state.value}`}
+                time={ `${ this.state.value }` }
                 eventTitle='This Thing Called Life: A Celebration of Prince and His Legacy at MEZZANINE SF'
                 eventMainImg='http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d1_ktzilj.jpg'
               />

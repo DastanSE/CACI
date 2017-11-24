@@ -3,30 +3,30 @@ import { Modal, Button, Carousel, Image } from 'react-bootstrap';
 import MarkdownElement from './MarkdownElement';
 
 export default class Modals extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     const { title, images, date, body } = this.props;
-    const carousel = (
-      <Carousel id='modal-slider' slide interval={ 2000 }>
-        {images.map((data, index) => {
-          return (
-            <Carousel.Item key={ index }>
-              <Image src={ data } alt='Carousel' />
-            </Carousel.Item>
-          );
-        })}
-      </Carousel>
-    );
 
     return (
       <Modal className='event-modal' show={ this.props.showModal } onHide={ this.props.close }>
         <Modal.Body>
-          {images.length > 1 ? carousel : <Image src={ images[0] } />}
+          {images.length > 1 ? (
+            <Carousel id='modal-slider' slide interval={ 2000 }>
+              {images.map((data, index) => {
+                return (
+                  <Carousel.Item key={ index }>
+                    <Image src={ data } alt='Carousel' />
+                  </Carousel.Item>
+                );
+              })}
+            </Carousel>
+          ) : (
+            <Image src={ images[0] } />
+          )}
           <Modal.Header>
-            <button
-              type='button'
-              id='lightbox-close'
-              onClick={ this.props.close }
-            >
+            <button type='button' id='lightbox-close' onClick={ this.props.close }>
               <span aria-hidden='true'>×</span>
             </button>
             <Modal.Title>{title}</Modal.Title>
