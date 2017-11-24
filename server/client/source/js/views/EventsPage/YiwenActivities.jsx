@@ -29,7 +29,8 @@ export default class YiwenActivities extends Component {
               <Card img1='http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d3_qsc1pt.jpg' title='活动三' time='2017-12-01' />
 
               <Card img1='http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d1_ktzilj.jpg' title='活动一' time='2017-10-11' title='活动四' time='2017-12-01' />
-              <Card img1='http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d4_kmwxcp.jpg' title='活动五李侃；阿斯顿反馈栏喀纳斯；看到烦恼；卡森啊；上看到烦恼' time='2017-12-01' />
+
+              <Card img1='https://res.cloudinary.com/cacicloud/image/upload/v1511334444/Screen_Shot_2017-11-03_at_18.27.12_ozl0zm.png' title='活动五李侃；阿斯顿反馈栏喀纳斯；看到烦恼；卡森啊；上看到烦恼' time='2017-12-01' />
             </OwnMasonry>
         </div>
       </section>
