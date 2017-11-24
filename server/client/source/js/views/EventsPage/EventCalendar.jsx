@@ -41,20 +41,22 @@ export default class EventCalendar extends Component {
     super(props);
     this.state = {
       value: `${ today }`,
+      selectedDayEvent: [],
     };
   }
 
+
   onClick(newValue) {
-    console.log('clicked value: ', newValue);
+    // console.log('clicked value: ', newValue);
     const test = new Date(newValue);
     const daylyEvent = this.props.events.filter(data => {
-      console.log(`${ test }` == `${ new Date(data.event_date) }`);
       return `${ test }` == `${ new Date(data.event_date) }`;
     });
-    console.log('Dayly event', daylyEvent);
+    // console.log('Dayly event', daylyEvent);
 
     this.setState({
       value: String(newValue),
+      selectedDayEvent: daylyEvent,
     });
   }
 
@@ -64,6 +66,8 @@ export default class EventCalendar extends Component {
     this.props.events.forEach((item, i) => eventDates.push(item.event_date));
 
     console.log(eventDates);
+
+    console.log('selected date event: ', this.state.selectedDayEvent);
 
     return (
       <section>
@@ -102,11 +106,16 @@ export default class EventCalendar extends Component {
               />
             </Col>
             <Col xs={ 12 } sm={ 12 } md={ 6 } lg={ 5 }>
-              <CalendarCard
-                time={ `${ this.state.value }` }
-                eventTitle='This Thing Called Life: A Celebration of Prince and His Legacy at MEZZANINE SF'
-                eventMainImg='http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d1_ktzilj.jpg'
-              />
+              {this.state.selectedDayEvent.map((data, index) => {
+                return (
+                  <CalendarCard
+                    key={ index }
+                    time={ data.event_date }
+                    eventTitle={ data.title }
+                    eventMainImg={ data.event_images[0] }
+                  />
+                );
+              })}
             </Col>
           </Row>
         </div>

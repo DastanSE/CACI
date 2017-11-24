@@ -41,7 +41,7 @@ const EVENTS = [
       ## hello
       - test
       `,
-    event_date: '2017-11-27T16:00:00.000Z',
+    event_date: '2017-11-23T16:00:00.000Z',
     event_images: ['https://res.cloudinary.com/cacicloud/image/upload/v1510129143/partners/support/香港理工大学_bk5ilv.png', 'https://goo.gl/images/oWijpU']
   },
   {
