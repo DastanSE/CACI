@@ -26,9 +26,7 @@ export default class Modals extends Component {
             <Image src={ images[0] } />
           )}
           <Modal.Header>
-            <button type='button' id='lightbox-close' onClick={ this.props.close }>
-              <span aria-hidden='true'>×</span>
-            </button>
+            <span id='lightbox-close' onClick={ this.props.close } aria-hidden='true' />
             <Modal.Title>{title}</Modal.Title>
             <i className='fa fa-clock-o' aria-hidden='true' /> {date}
           </Modal.Header>
