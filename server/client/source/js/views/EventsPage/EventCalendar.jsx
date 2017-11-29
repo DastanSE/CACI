@@ -61,13 +61,8 @@ export default class EventCalendar extends Component {
   }
 
   render() {
-    console.log('event calendar: ', this.props);
     const eventDates = [];
     this.props.events.forEach((item, i) => eventDates.push(item.event_date));
-
-    console.log(eventDates);
-
-    console.log('selected date event: ', this.state.selectedDayEvent);
 
     return (
       <section>

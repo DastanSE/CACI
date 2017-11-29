@@ -47,11 +47,13 @@ export default class ArticlePage extends Component {
                   img1='http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d4_kmwxcp.jpg'
                   title='活动五李侃；阿斯顿反馈栏喀纳斯；看到烦恼；卡森啊；上看到烦恼'
                   time='2017-12-01'
+                  images={['http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d4_kmwxcp.jpg','http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d4_kmwxcp.jpg']}
                 />
                 <Card
                   img1='http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d1_ktzilj.jpg'
                   title='活动五李侃；阿斯顿反馈栏喀纳斯；看到烦恼；卡森啊；上看到烦恼'
                   time='2017-12-01'
+                  images={['http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d4_kmwxcp.jpg','http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d4_kmwxcp.jpg']}
                 />
               </OwnMasonry>
             </div>
