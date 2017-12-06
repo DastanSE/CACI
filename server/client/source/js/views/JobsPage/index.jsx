@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
 import { Table, Button } from 'react-bootstrap';
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
+import JobDiscription from './JobDiscription';
 
-export default class JobsPage extends Component {
+class JobsPage extends Component {
   constructor() {
     super();
+  }
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+    this.props.fetchJobs();
   }
 
   render() {
@@ -22,21 +30,30 @@ export default class JobsPage extends Component {
                 <th>職位名稱</th>
                 <th>工作經驗</th>
                 <th>類型</th>
-                <th></th>
+                <th />
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>活动策划</td>
-                <td>有经验</td>
-                <td>实习/全职</td>
-                <td><Button  bsSize="xsmall" bsStyle="danger">了解更多</Button></td>
-              </tr>
+              {this.props.jobs.data.map((data, index) => (
+                <tr key={ index }>
+                  <td>{data.job_title}</td>
+                  <td>{data.job_experience}</td>
+                  <td>{data.job_type}</td>
+                  <td>
+                    <JobDiscription data={data} />
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </Table>
         </div>
-
       </section>
     );
   }
 }
+
+function mapStateToProps({ jobs }) {
+  return { jobs };
+}
+
+export default connect(mapStateToProps, actions)(JobsPage);

@@ -1,10 +1,21 @@
 import React, { Component } from 'react';
 import { Row, Col, Media, Image, Thumbnail, Button } from 'react-bootstrap';
+import Modals from '../../components/Global/Modals';
+
 
 export default class CalendarCard extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      show: false,
+    };
+  }
+  close() {
+    this.setState({ show: false });
+  }
+
+  open() {
+    this.setState({ show: true });
   }
 
   render() {
@@ -40,16 +51,24 @@ export default class CalendarCard extends Component {
               <span className='card-media-body-heading'>{this.props.eventTitle}</span>
               <div className='card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal'>
                 <span className='card-media-body-supporting-bottom-text subtle'>#Music #Party</span>
-                <a
-                  href='#/'
+                <span
                   className='card-media-body-supporting-bottom-text card-media-link u-float-right'
+                  onClick={ this.open.bind(this) }
                 >
                   閱讀更多
-                </a>
+                </span>
               </div>
             </Media.Body>
           </Media>
         </div>
+        <Modals
+          showModal={ this.state.show }
+          title={ this.props.eventTitle }
+          date={ this.props.time }
+          close={ this.close.bind(this) }
+          images={ this.props.images }
+          body={ this.props.body }
+        />
       </div>
     );
   }

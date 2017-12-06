@@ -15,7 +15,7 @@ export default class OurServices extends Component {
               <Col sm={ 6 } md={ 4 }>
                 <Media className='services-wrap'>
                   <Media.Left className='pull-left'>
-                    <Image src='http://res.cloudinary.com/cacicloud/image/upload/v1510125994/services1_uogu6j.png' responsive/>
+                    <Image src='http://res.cloudinary.com/cacicloud/image/upload/v1510125994/services/services1_uogu6j.png' responsive/>
                   </Media.Left>
                   <Media.Body>
                     <Media.Heading><h3>文化項目融資</h3></Media.Heading>
@@ -26,7 +26,7 @@ export default class OurServices extends Component {
               <Col sm={ 6 } md={ 4 }>
                 <Media className='services-wrap'>
                   <Media.Left className='pull-left'>
-                    <Image src='http://res.cloudinary.com/cacicloud/image/upload/v1510125994/services2_yls27r.png' responsive/>
+                    <Image src='http://res.cloudinary.com/cacicloud/image/upload/v1510125994/services/services2_yls27r.png' responsive/>
                   </Media.Left>
                   <Media.Body>
                     <Media.Heading><h3>演出項目經理</h3></Media.Heading>
@@ -37,7 +37,7 @@ export default class OurServices extends Component {
               <Col sm={ 6 } md={ 4 }>
                 <Media className='services-wrap'>
                   <Media.Left className='pull-left'>
-                    <Image src='http://res.cloudinary.com/cacicloud/image/upload/v1510125995/services3_esxauo.png' responsive/>
+                    <Image src='http://res.cloudinary.com/cacicloud/image/upload/v1510125995/services/services3_esxauo.png' responsive/>
                   </Media.Left>
                   <Media.Body>
                     <Media.Heading><h3>活動訂制服務</h3></Media.Heading>
@@ -48,7 +48,7 @@ export default class OurServices extends Component {
               <Col sm={ 6 } md={ 6 }>
                 <Media className='services-wrap'>
                   <Media.Left className='pull-left'>
-                    <Image src='http://res.cloudinary.com/cacicloud/image/upload/v1510125994/services4_ejboyo.png' responsive/>
+                    <Image src='http://res.cloudinary.com/cacicloud/image/upload/v1510125994/services/services4_ejboyo.png' responsive/>
                   </Media.Left>
                   <Media.Body>
                     <Media.Heading><h3>人才轉介</h3></Media.Heading>
@@ -59,7 +59,7 @@ export default class OurServices extends Component {
               <Col sm={ 6 } md={ 6 }>
                 <Media className='services-wrap'>
                   <Media.Left className='pull-left'>
-                    <Image src='http://res.cloudinary.com/cacicloud/image/upload/v1510125995/services5_zpjhar.png' responsive/>
+                    <Image src='http://res.cloudinary.com/cacicloud/image/upload/v1510125995/services/services5_zpjhar.png' responsive/>
                   </Media.Left>
                   <Media.Body>
                     <Media.Heading><h3>文化項目咨詢</h3></Media.Heading>

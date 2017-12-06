@@ -1,8 +1,21 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
 import NewsList from './NewsList';
 
 
-export default class NewsPage extends Component {
+class NewsPage extends Component {
+  constructor(props) {
+    super(props);
+
+  }
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+    this.props.fetchNews();
+  }
+
+
   render() {
     return (
       <div>
@@ -14,9 +27,16 @@ export default class NewsPage extends Component {
             <h2>媒體報導</h2>
             <p className='lead'>News</p>
           </div>
-          <NewsList />
+          <NewsList news={this.props.news.data} />
         </section>
       </div>
     );
   }
 }
+
+
+function mapStateToProps({ news }) {
+  return { news };
+}
+
+export default connect(mapStateToProps, actions)(NewsPage);

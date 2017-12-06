@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { Row, Col, Media, Image } from 'react-bootstrap';
 import CalendarCard from './CalendarCard';
 import InfiniteCalendar, { Calendar, withMultipleDates } from 'react-infinite-calendar';
-
+import { formatDate } from '../../services';
 const taiwaneseLocale = require('date-fns/locale/zh_tw');
+
 
 const ChineseCal = {
   locale: taiwaneseLocale,
-  blank: '请您选择日子...',
+  blank: '暂时没有活动...',
   headerFormat: 'MMM Do, ddd ',
   todayLabel: {
     long: '今天',
@@ -18,21 +19,6 @@ const ChineseCal = {
 
 const today = new Date();
 const lastWeek = new Date(today.getFullYear(), today.getMonth(), today.getDate() - 7);
-
-// function search(nameKey, myArray) {
-//   for (let i = 0; i < myArray.length; i++) {
-//     if (myArray[i].time === nameKey) {
-//       return myArray[i];
-//     }
-//   }
-// }
-
-// const array = [
-//   { name: 'string 1', value: 'thisasdasd', other: 'that' },
-//   { name: 'string 2', value: 'this', other: 'that' },
-// ];
-
-// const resultObject = search('string 1', array);
 
 const MultipleDatesCalendar = withMultipleDates(Calendar);
 
@@ -47,12 +33,10 @@ export default class EventCalendar extends Component {
 
 
   onClick(newValue) {
-    // console.log('clicked value: ', newValue);
     const test = new Date(newValue);
     const daylyEvent = this.props.events.filter(data => {
       return `${ test }` == `${ new Date(data.event_date) }`;
     });
-    // console.log('Dayly event', daylyEvent);
 
     this.setState({
       value: String(newValue),
@@ -63,7 +47,6 @@ export default class EventCalendar extends Component {
   render() {
     const eventDates = [];
     this.props.events.forEach((item, i) => eventDates.push(item.event_date));
-
     return (
       <section>
         <div className='center'>
@@ -105,9 +88,11 @@ export default class EventCalendar extends Component {
                 return (
                   <CalendarCard
                     key={ index }
-                    time={ data.event_date }
+                    time={ formatDate(new Date(data.event_date)) }
                     eventTitle={ data.title }
                     eventMainImg={ data.event_images[0] }
+                    images={data.event_images}
+                    body={data.event_body}
                   />
                 );
               })}
