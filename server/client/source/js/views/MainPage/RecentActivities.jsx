@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
-import MarkdownElement from '../../components/Global/MarkdownElement';
+import { routeCodes } from '../App';
+import { Link } from 'react-router-dom';
+import Modals from '../../components/Global/Modals';
 
 export default class RecentActivities extends Component {
   render() {
@@ -20,6 +22,9 @@ export default class RecentActivities extends Component {
                   <div className='overlay'>
                     <div className='recent-work-inner'>
                       <h2>{data.title}</h2>
+                      <Link style={{color: '#fff'}} to={ routeCodes.EVENTS }>
+                        <p>更多多信息访问活动信息页面</p>
+                      </Link>
                     </div>
                   </div>
                 </div>

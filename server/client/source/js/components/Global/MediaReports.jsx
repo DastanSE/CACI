@@ -5,33 +5,6 @@ import { PanelGroup, Panel, Media, Image } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { routeCodes } from '../../views/App';
 
-const NEWSDATA = [
-  {
-    title: '中关村大街：以“人”为本 吸引创新人才聚集-海淀网',
-    link: 'https://www.nur.kz/1661333-arestovan-figurant-krovavoy-draki-vo.html',
-    content: 'afasdjkfnaskdjnfasjndflksajndfklasjndfkasjdnf',
-    imgSrc: '../../assets/img/1.png',
-  },
-  {
-    title: 'test1',
-    link: 'https://www.nur.kz/1661333-arestovan-figurant-krovavoy-draki-vo.html',
-    content: 'afasdjkfnaskdjnfasjndflksajndfklasjndfkasjdnf',
-    imgSrc: '../../assets/img/2.png',
-  },
-  {
-    title: 'test2',
-    link: 'https://www.nur.kz/1661333-arestovan-figurant-krovavoy-draki-vo.html',
-    content: 'afasdjkfnaskdjnfasjndflksajndfklasjndfkasjdnf',
-    imgSrc: '../../assets/img/3.png',
-  },
-  {
-    title: 'test3',
-    link: 'https://www.nur.kz/1661333-arestovan-figurant-krovavoy-draki-vo.html',
-    content: 'afasdjkfnaskdjnfasjndflksajndfklasjndfkasjdnf',
-    imgSrc: '../../assets/img/4.png',
-  },
-];
-
 class MediaReports extends Component {
   constructor() {
     super();

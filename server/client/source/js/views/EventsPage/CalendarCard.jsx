@@ -66,7 +66,7 @@ export default class CalendarCard extends Component {
           title={ this.props.eventTitle }
           date={ this.props.time }
           close={ this.close.bind(this) }
-          images={ [] }
+          images={ this.props.images }
           body={ this.props.body }
         />
       </div>

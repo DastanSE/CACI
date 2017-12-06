@@ -34,19 +34,10 @@ class EventsPage extends Component {
             </span>
           }
         >
-          {[
-            {
-              imgsrc:
-                'http://res.cloudinary.com/cacicloud/image/upload/v1510122171/mainpage/%E8%88%9E%E8%B9%88%E5%A4%A7%E8%B5%9B_bir4rj.jpg',
-            },
-            {
-              imgsrc:
-                'http://res.cloudinary.com/cacicloud/image/upload/v1510128263/2017%E5%A4%8F%E4%BB%A4%E8%90%A5_itnwyq.png',
-            },
-          ].map((data, index) => {
+          {this.props.fetchedEvents.data.slice(0, 5).map((data, index) => {
             return (
               <Carousel.Item key={ index } animateIn={ true }>
-                <img src={ data.imgsrc } alt='Carousel' />
+                <img src={ data.event_images[0] } alt='Carousel' />
               </Carousel.Item>
             );
           })}

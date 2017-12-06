@@ -4,6 +4,7 @@ import * as actions from '../../actions';
 import { Row, Col, Carousel } from 'react-bootstrap';
 import Cards from './Cards';
 import JumuType from './JumuType';
+import { formatDate } from '../../services';
 
 const REPERTOIRE = [
   { typeFilterBy: '.wudao', type: '舞蹈' },
@@ -60,8 +61,6 @@ class RepertoirePage extends Component {
     this.props.fetchRepertoire();
   }
 
-
-
   render() {
     return (
       <div>
@@ -114,49 +113,19 @@ class RepertoirePage extends Component {
                 </div>
               </Col>
               <Col xs={ 12 } sm={ 8 } md={ 9 } lg={ 8 }>
-                <div className='cards article-items' style={ { minHeight: 300 } }>
-                  <Cards classname='xiju article-item jumu-cards' type='戲劇' />
-                  <Cards classname='wudao article-item jumu-cards' type='舞蹈' />
-                  <Cards classname='yinyue article-item jumu-cards' type='音樂' />
-                  <Cards classname='zhuchang article-item jumu-cards' type='駐場演出' />
-                  <Cards classname='ertong article-item jumu-cards' type='兒童劇' />
-                  <Cards classname='huaju article-item jumu-cards' type='話劇' />
-                  <Cards classname='lvyou article-item jumu-cards' type='旅遊演出' />
-                  <Cards classname='xiqu article-item jumu-cards' type='戲曲' />
-                  <Cards classname='zaji article-item jumu-cards' type='雜技' />
-                  <Cards classname='moshu article-item jumu-cards' type='魔術' />
-                  <Cards classname='qita article-item jumu-cards' type='其他' />
+                <div style={ { minHeight: 300 } }>
+                  {this.props.repertoire.data.map((data, index) => (
+                    <Cards
+                      key={index}
+                      title={data.repertoire_title}
+                      time={formatDate(new Date(data.repertoire_date))}
+                      imgSrc={data.repertoire_imgSrc}
+                      type={data.repertoire_type}
+                      discription={data.repertoire_discription}
+                    />
+                  ))}
                 </div>
 
-                <div className='cards article-items' style={ { minHeight: 300 } }>
-                  <Cards classname='beijing article-item jumu-cards' type='北京' />
-                  <Cards classname='shanghai article-item jumu-cards' type='上海' />
-                  <Cards classname='guangzhou article-item jumu-cards' type='廣州' />
-                  <Cards classname='tianjin article-item jumu-cards' type='天津' />
-                  <Cards classname='shenzhen article-item jumu-cards' type='深圳' />
-                  <Cards classname='nanjing article-item jumu-cards' type='南京' />
-                  <Cards classname='chengdu article-item jumu-cards' type='成都' />
-                  <Cards classname='chongqing article-item jumu-cards' type='重慶' />
-                  <Cards classname='zhengzhou article-item jumu-cards' type='鄭州' />
-                  <Cards classname='xian article-item jumu-cards' type='西安' />
-                  <Cards classname='wuhan article-item jumu-cards' type='武漢' />
-                  <Cards classname='changsha article-item jumu-cards' type='長沙' />
-                  <Cards classname='hefei article-item jumu-cards' type='合肥' />
-                  <Cards classname='qitac article-item jumu-cards' type='其他城市' />
-                </div>
-                <div className='cards article-items' style={ { minHeight: 300 } }>
-                  <Cards classname='huajut article-item jumu-cards' type='話劇團' />
-                  <Cards classname='ertongt article-item jumu-cards' type='兒童劇團' />
-                  <Cards classname='gejut article-item jumu-cards' type='歌劇團' />
-                  <Cards classname='wujut article-item jumu-cards' type='舞劇團' />
-                  <Cards classname='xijut article-item jumu-cards' type='戲劇團' />
-                  <Cards classname='quyit article-item jumu-cards' type='曲藝團' />
-                  <Cards classname='zajit article-item jumu-cards' type='雜技團' />
-                  <Cards classname='maxit article-item jumu-cards' type='馬戲團' />
-                  <Cards classname='muout article-item jumu-cards' type='木偶團' />
-                  <Cards classname='piyingt article-item jumu-cards' type='皮影團' />
-                  <Cards classname='qitat article-item jumu-cards' type='其他' />
-                </div>
               </Col>
             </Row>
           </div>

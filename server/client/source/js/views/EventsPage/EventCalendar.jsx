@@ -91,6 +91,8 @@ export default class EventCalendar extends Component {
                     time={ formatDate(new Date(data.event_date)) }
                     eventTitle={ data.title }
                     eventMainImg={ data.event_images[0] }
+                    images={data.event_images}
+                    body={data.event_body}
                   />
                 );
               })}

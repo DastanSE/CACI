@@ -27,18 +27,9 @@ export default class JumuType extends Component {
         <div className='jumu-type-name'>
           <h4 style={ { display: 'inline-block' } }>{this.props.typeName}</h4>
           {this.state.showTypes ? (
-            <i
-              className='fa fa-minus-circle fa-2x'
-              aria-hidden='true'
-              style={ {  float: 'right', color: 'red' } }
-            />
+            <i className='fa fa-minus-circle fa-2x jumu-right' aria-hidden='true' style={{color: 'red'}} onClick={ this.onClick } />
           ) : (
-            <i
-              className='fa fa-plus-circle fa-2x'
-              aria-hidden='true'
-              style={ {  float: 'right' } }
-
-            />
+            <i className='fa fa-plus-circle fa-2x jumu-right' aria-hidden='true' onClick={ this.onClick } />
           )}
         </div>
 

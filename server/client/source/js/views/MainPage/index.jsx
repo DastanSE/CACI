@@ -23,10 +23,9 @@ class MainPage extends Component {
   }
 
   render() {
-    console.log('mainpage: ', this.props);
     return (
       <div className='MainPage'>
-        <MainPageCarousel />
+        <MainPageCarousel events={ this.props.fetchedEvents.data } />
         <OurFeatures />
         <RecentActivities events={ this.props.fetchedEvents.data } />
         <OurServices />

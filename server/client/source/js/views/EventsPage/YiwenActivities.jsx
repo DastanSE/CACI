@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col, Media, Image, Thumbnail, Button } from 'react-bootstrap';
 import Card from '../../components/Global/Card';
 import OwnMasonry from '../../components/Global/OwnMasonry';
-
+import { formatDate } from '../../services';
 const brakePoints = [350, 576, 769, 992, 1200];
 
 export default class YiwenActivities extends Component {
@@ -29,6 +29,7 @@ export default class YiwenActivities extends Component {
                 images={ data.event_images }
                 title={ data.title }
                 body={ data.event_body }
+                date={ formatDate(new Date(data.event_date)) }
               />
             ))}
           </OwnMasonry>

@@ -11,7 +11,7 @@ export default class Menu extends Component {
         <Navbar.Header>
           <Navbar.Brand>
             <NavLink activeClassName='' exact to={ routeCodes.MAINPAGE }>
-              <Image style={{marginTop: '8px'}} src='http://res.cloudinary.com/cacicloud/image/upload/v1510122029/logo_etwmj2.png' />
+              <Image style={{marginTop: '8px'}} src='https://res.cloudinary.com/cacicloud/image/upload/v1510122029/mainpage/logo_etwmj2.png' />
             </NavLink>
           </Navbar.Brand>
           <Navbar.Toggle />
