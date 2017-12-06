@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
-import { Row, Col, Carousel, Image, Media, Panel, PanelGroup } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
 import { ContactInfo } from '../../components/Global/ContactInfo';
 import MediaReports from '../../components/Global/MediaReports';
-import Section7 from '../MainPage/Section7';
+import { Section7 } from '../MainPage/Section7';
 import { OurService } from './OurService';
 import { Members } from './Members';
-import JoinUs from './JoinUs';
-// const carouselData = [
-//   {
-//     imgsrc: '../../assets/img/slider_two.jpg',
-//   },
-//   {
-//     imgsrc: '../../assets/img/slider_two.jpg',
-//   },
-// ];
+import { JoinUs } from './JoinUs';
 
-export default class AboutPage extends Component {
+class AboutPage extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount() {
+    this.props.fetchJobs();
+  }
+
   render() {
     return (
       <div>
@@ -29,36 +31,10 @@ export default class AboutPage extends Component {
             </div>
 
             <div id='about-slider'>
-              {/* <Carousel
-                id='carousel-slider'
-                prevIcon={
-                  <a className='prev hidden-xs' href='#carousel-home' data-slide='prev'>
-                    <i className='fa fa-angle-left' />
-                  </a>
-                }
-                nextIcon={
-                  <a className='next hidden-xs' href='#carousel-home' data-slide='next'>
-                    <i className='fa fa-angle-right' />
-                  </a>
-                }
-                indicators={ false }
-              >
-                {carouselData.map((data, index) => {
-                  return (
-                    <Carousel.Item key={ index } animateIn={ true }>
-                      <Image src={ data.imgsrc } responsive />
-                      <Carousel.Caption>
-                        <h1 className=''>{data.text1}</h1>
-                        <h4 className=''>{data.text2}</h4>
-                        <a className='btn-slide' href={ data.link }>
-                          Read More
-                        </a>
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                  );
-                })}
-              </Carousel> */}
-              <Image src='http://res.cloudinary.com/cacicloud/image/upload/v1510122915/mainpage/slider_two_fmohd9.jpg' responsive />
+              <Image
+                src='http://res.cloudinary.com/cacicloud/image/upload/v1510122915/mainpage/slider_two_fmohd9.jpg'
+                responsive
+              />
             </div>
 
             <OurService />
@@ -66,7 +42,7 @@ export default class AboutPage extends Component {
             <div className=''>
               <Members />
               <MediaReports />
-              <JoinUs />
+              <JoinUs jobs={this.props.jobs}/>
             </div>
           </div>
         </section>
@@ -85,3 +61,9 @@ export default class AboutPage extends Component {
     );
   }
 }
+
+function mapStateToProps({ jobs }) {
+  return { jobs };
+}
+
+export default connect(mapStateToProps, actions)(AboutPage);

@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { Row, Col, Media, Image } from 'react-bootstrap';
-import CalendarCard from './CalendarCard';
 import InfiniteCalendar, { Calendar, withMultipleDates } from 'react-infinite-calendar';
-import { formatDate } from '../../services';
+
 const taiwaneseLocale = require('date-fns/locale/zh_tw');
 
+import CalendarCard from './CalendarCard';
+
+import { formatDate } from '../../services';
 
 const ChineseCal = {
   locale: taiwaneseLocale,
@@ -30,7 +32,6 @@ export default class EventCalendar extends Component {
       selectedDayEvent: [],
     };
   }
-
 
   onClick(newValue) {
     const test = new Date(newValue);
@@ -91,8 +92,8 @@ export default class EventCalendar extends Component {
                     time={ formatDate(new Date(data.event_date)) }
                     eventTitle={ data.title }
                     eventMainImg={ data.event_images[0] }
-                    images={data.event_images}
-                    body={data.event_body}
+                    images={ data.event_images }
+                    body={ data.event_body }
                   />
                 );
               })}

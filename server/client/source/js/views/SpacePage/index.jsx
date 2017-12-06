@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import ResourceSection from './ResourceSection';
+import { ResourceSection } from './ResourceSection';
 import { Project } from './Project';
 import { Group } from './Group';
 import { Process } from './Process';
 import { Partners } from './Partners';
 import { ContactInfo } from '../../components/Global/ContactInfo';
-import { Row, Col, Image, Thumbnail } from 'react-bootstrap';
+
 
 export default class SpacePage extends Component {
   render() {
@@ -22,7 +22,7 @@ export default class SpacePage extends Component {
         <Partners />
         <ResourceSection />
         <ContactInfo
-          contacts={`
+          contacts={ `
             <h2>想要聯繫我們？</h2>
             <p>
               連絡人：林先生 (010-5356 7027)
@@ -30,7 +30,7 @@ export default class SpacePage extends Component {
               <br />查詢電郵：ywchwx@126.com
               <br />辦公地址：海澱區四道口路2號京果商廈A座5015藝聚場 （北京）
             </p>
-          `}
+          ` }
         />
       </div>
     );

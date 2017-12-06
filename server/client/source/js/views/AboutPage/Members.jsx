@@ -1,17 +1,17 @@
 import React from 'react';
-import { Row, Col, Image, Media } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { MemberCard } from './MemberCard';
 
-export const Members = props => {
+export const Members = () => {
   return (
     <div>
       <div className='center'>
         <h2>團隊成員</h2>
       </div>
       <Row>
-        <Col md={6} lg={6}>
+        <Col md={ 6 } lg={ 6 }>
           <Row>
-            <Col md={ 6 } sm={ 6 } lg={6}>
+            <Col md={ 6 } sm={ 6 } lg={ 6 }>
               <MemberCard
                 imgSrc='http://res.cloudinary.com/cacicloud/image/upload/v1510127731/members/li_juo8jq.jpg'
                 name='李國輝'
@@ -19,7 +19,7 @@ export const Members = props => {
                 about='北京大學國際關係學院碩士、香港城市大學中國企業管理專業本科、中華商略聯合會北京秘書長，曾任職於香港中小企商會，提供進入內地市場的基金和落地服務，並自行開設遊學公司，擁有8年以上的活動運營經驗。'
               />
             </Col>
-            <Col md={ 6 } sm={ 6 } lg={6}>
+            <Col md={ 6 } sm={ 6 } lg={ 6 }>
               <MemberCard
                 imgSrc='http://res.cloudinary.com/cacicloud/image/upload/v1510127732/members/test_uowbb9.jpg'
                 name='張伊諾'
@@ -29,7 +29,7 @@ export const Members = props => {
             </Col>
           </Row>
         </Col>
-        <Col md={6}>
+        <Col md={ 6 }>
           <Row>
             <Col md={ 6 } sm={ 6 }>
               <MemberCard

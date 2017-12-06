@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Image, Thumbnail } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 
 export const PartnerCard = props => {
   return (

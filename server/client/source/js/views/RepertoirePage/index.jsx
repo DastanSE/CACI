@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import * as actions from '../../actions';
 import { Row, Col, Carousel } from 'react-bootstrap';
+import * as actions from '../../actions';
 import Cards from './Cards';
 import JumuType from './JumuType';
 import { formatDate } from '../../services';
@@ -54,7 +54,6 @@ const ACTGROUPS = [
 class RepertoirePage extends Component {
   constructor(props) {
     super(props);
-
   }
 
   componentDidMount() {
@@ -81,8 +80,14 @@ class RepertoirePage extends Component {
             interval={ 2000 }
           >
             {[
-              { imgsrc: 'http://res.cloudinary.com/cacicloud/image/upload/v1510128455/index-top1_rflzc7.jpg' },
-              { imgsrc: 'http://res.cloudinary.com/cacicloud/image/upload/v1510128455/index-top1_rflzc7.jpg' },
+              {
+                imgsrc:
+                  'http://res.cloudinary.com/cacicloud/image/upload/v1510128455/index-top1_rflzc7.jpg',
+              },
+              {
+                imgsrc:
+                  'http://res.cloudinary.com/cacicloud/image/upload/v1510128455/index-top1_rflzc7.jpg',
+              },
             ].map((data, index) => {
               return (
                 <Carousel.Item key={ index } animateIn={ true }>
@@ -116,16 +121,15 @@ class RepertoirePage extends Component {
                 <div style={ { minHeight: 300 } }>
                   {this.props.repertoire.data.map((data, index) => (
                     <Cards
-                      key={index}
-                      title={data.repertoire_title}
-                      time={formatDate(new Date(data.repertoire_date))}
-                      imgSrc={data.repertoire_imgSrc}
-                      type={data.repertoire_type}
-                      discription={data.repertoire_discription}
+                      key={ index }
+                      title={ data.repertoire_title }
+                      time={ formatDate(new Date(data.repertoire_date)) }
+                      imgSrc={ data.repertoire_imgSrc }
+                      type={ data.repertoire_type }
+                      discription={ data.repertoire_discription }
                     />
                   ))}
                 </div>
-
               </Col>
             </Row>
           </div>

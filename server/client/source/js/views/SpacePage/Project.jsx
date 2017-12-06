@@ -1,7 +1,7 @@
 import React from 'react';
-import { Row, Col, Image, Thumbnail } from 'react-bootstrap';
+import { Row, Col, Thumbnail } from 'react-bootstrap';
 
-export const Project = props => {
+export const Project = () => {
   return (
     <section id='feature'>
       <div className='container'>

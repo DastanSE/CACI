@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { Row, Col, Image, Thumbnail } from 'react-bootstrap';
+import React from 'react';
+import { Row, Col, Image } from 'react-bootstrap';
 import { Partners } from './Partners';
 
-export const SupportPage = props => {
+export const SupportPage = () => {
   return (
     <div>
       <div id='support'>
