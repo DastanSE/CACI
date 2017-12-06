@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
 import { Row, Col, Image, Tab, Nav, NavItem, Media } from 'react-bootstrap';
 
-export default class Section7 extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+export const Section7 = props => {
 
-  render() {
     return (
       <section id='content'>
         <div className='container'>
@@ -153,4 +148,3 @@ export default class Section7 extends Component {
       </section>
     );
   }
-}

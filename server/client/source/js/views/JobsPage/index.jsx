@@ -40,7 +40,7 @@ class JobsPage extends Component {
                   <td>{data.job_experience}</td>
                   <td>{data.job_type}</td>
                   <td>
-                    <JobDiscription data={data} />
+                    <JobDiscription data={ data } />
                   </td>
                 </tr>
               ))}

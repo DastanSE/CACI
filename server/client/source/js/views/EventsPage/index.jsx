@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import * as actions from '../../actions';
 import { Carousel } from 'react-bootstrap';
 import EventCalendar from './EventCalendar';
-import YiwenActivities from './YiwenActivities';
+import { YiwenActivities } from './YiwenActivities';
 import CommunityActivity from './CommunityActivity';
 import { Loading } from '../../components/Global/Loading';
 
@@ -16,7 +16,6 @@ class EventsPage extends Component {
     window.scrollTo(0, 0);
     this.props.fetchEvents();
   }
-
 
   render() {
     return (

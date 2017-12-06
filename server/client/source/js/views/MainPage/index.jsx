@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
-import MainPageCarousel from './MainPageCarousel';
-import OurFeatures from './OurFeatures';
-import RecentActivities from './RecentActivities';
-import OurServices from './OurServices';
-import OurResults from './OurResults';
-import OurPartners from './OurPartners';
-import Section7 from './Section7';
-import ArtAliance from './ArtAliance';
+import { MainPageCarousel } from './MainPageCarousel';
+import { OurFeatures } from './OurFeatures';
+import { RecentActivities } from './RecentActivities';
+import { OurServices } from './OurServices';
+import { OurResults } from './OurResults';
+import { OurPartners } from './OurPartners';
+import { Section7 } from './Section7';
+import { ArtAliance } from './ArtAliance';
 import { VenueRental } from './VenueRental';
 import { ContactInfo } from '../../components/Global/ContactInfo';
 

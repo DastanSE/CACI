@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
 
-export const Partners = props => {
+export const Partners = () => {
   return (
     <section>
       <div className='container'>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 
-export const OurService = props => {
+export const OurService = () => {
   return (
     <div className='skill-wrap clearfix'>
       <div className='center wow fadeInDown'>

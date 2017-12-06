@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Carousel, Image, Media } from 'react-bootstrap';
+import { Image, Media } from 'react-bootstrap';
 
 export const MemberCard = props => {
   return (

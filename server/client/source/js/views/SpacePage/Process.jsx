@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Process = props => {
+export const Process = () => {
   return (
     <div>
       <section>

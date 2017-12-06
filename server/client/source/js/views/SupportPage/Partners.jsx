@@ -1,8 +1,8 @@
 import React from 'react';
-import { Row, Col, Image, Thumbnail } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { PartnerCard } from './PartnerCard';
 
-export const Partners = props => {
+export const Partners = () => {
   return (
     <div>
       <section className='suptxt'>
