@@ -20,9 +20,9 @@ React and Redux, Webpack 2.
 
 - [x] React
 - [x] React router
-- [ ] Redux
-- [ ] Redux Thunk
-- [ ] Redux DevTools (you need to have [browser extension](https://github.com/zalmoxisus/redux-devtools-extension) installed)
+- [x] Redux
+- [x] Redux Thunk
+- [x] Redux DevTools (you need to have [browser extension](https://github.com/zalmoxisus/redux-devtools-extension) installed)
 - [ ] Immutable reducer data
 - [x] Webpack 2 (development and production config)
 - [x] Hot Module Replacement
@@ -39,8 +39,8 @@ React and Redux, Webpack 2.
 
 - [x] Create wepages
 - [ ] Clean code
-- [ ] Make it all webpages responsive
-- [ ] Backend
+- [x] Make it all webpages responsive
+- [x] Backend
 
 ## Setup
 
@@ -131,8 +131,9 @@ npm run hook-remove
 - [x] EventsPage
 - [x] ArticlePage
 
-#### 0.0.2
+#### 0.9
 
 Initial release
+Version 1.0 coming soon
 
 #### Author: Zhanibek Dastan

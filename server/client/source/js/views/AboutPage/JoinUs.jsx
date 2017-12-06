@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
 import { Row, Col, Carousel, Button, Table } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { routeCodes } from '../../views/App';
+import JobDiscription from '../JobsPage/JobDiscription';
 
-export default class JoinUs extends Component {
+class JoinUs extends Component {
+
+  componentDidMount() {
+    this.props.fetchJobs();
+  }
+
   render() {
     return (
       <div className='skill-wrap clearfix' id='join-us'>
@@ -23,20 +31,20 @@ export default class JoinUs extends Component {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>活动策划</td>
-              <td>有经验</td>
-              <td>实习/全职</td>
-              <td>
-                <Button bsSize='xsmall' bsStyle='danger'>
-                  了解更多
-                </Button>
-              </td>
-            </tr>
+            {this.props.jobs.data.map((data, index) => (
+              <tr key={ index }>
+                <td>{data.job_title}</td>
+                <td>{data.job_experience}</td>
+                <td>{data.job_type}</td>
+                <td>
+                  <JobDiscription data={ data } />
+                </td>
+              </tr>
+            ))}
             <tr>
               <td colSpan='4' className='center'>
                 <Button bsSize='xsmall' bsStyle='danger'>
-                  <NavLink style={{color: '#fff'}} activeClassName='' to={ routeCodes.JOBSPAGE }>
+                  <NavLink style={ { color: '#fff' } } activeClassName='' to={ routeCodes.JOBSPAGE }>
                     查看更多职位
                   </NavLink>
                 </Button>
@@ -48,3 +56,9 @@ export default class JoinUs extends Component {
     );
   }
 }
+
+function mapStateToProps({ jobs }) {
+  return { jobs };
+}
+
+export default connect(mapStateToProps, actions)(JoinUs);
