@@ -7,7 +7,7 @@ const initialState = {
 
 export default function (state = initialState, action) {
   switch (action.type) {
-    case AppTypes.FETCH_EVENTS:
+    case AppTypes.FETCH_JOBS:
       state = {
         ...state,
         _isLoading: true,

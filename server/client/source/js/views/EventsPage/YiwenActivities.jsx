@@ -8,9 +8,7 @@ const brakePoints = [350, 576, 769, 992, 1200];
 export default class YiwenActivities extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      selectedEvent: null,
-    };
+
   }
 
 

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
 import MainPageCarousel from './MainPageCarousel';
 import OurFeatures from './OurFeatures';
 import RecentActivities from './RecentActivities';
@@ -10,14 +12,23 @@ import ArtAliance from './ArtAliance';
 import { VenueRental } from './VenueRental';
 import { ContactInfo } from '../../components/Global/ContactInfo';
 
+class MainPage extends Component {
+  constructor(props) {
+    super(props);
+  }
 
-export default class MainPage extends Component {
+  componentDidMount() {
+    this.props.fetchEvents();
+    this.props.fetchNews();
+  }
+
   render() {
+    console.log('mainpage: ', this.props);
     return (
       <div className='MainPage'>
         <MainPageCarousel />
         <OurFeatures />
-        <RecentActivities />
+        <RecentActivities events={ this.props.fetchedEvents.data } />
         <OurServices />
         <OurResults />
         <OurPartners />
@@ -38,3 +49,9 @@ export default class MainPage extends Component {
     );
   }
 }
+
+function mapStateToProps({ news, fetchedEvents }) {
+  return { news, fetchedEvents };
+}
+
+export default connect(mapStateToProps, actions)(MainPage);

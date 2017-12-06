@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
 import { Row, Col, Carousel } from 'react-bootstrap';
 import Cards from './Cards';
 import JumuType from './JumuType';
@@ -48,7 +50,18 @@ const ACTGROUPS = [
   { typeFilterBy: '.othergroups', type: '其他' },
 ];
 
-export default class RepertoirePage extends Component {
+class RepertoirePage extends Component {
+  constructor(props) {
+    super(props);
+
+  }
+
+  componentDidMount() {
+    this.props.fetchRepertoire();
+  }
+
+
+
   render() {
     return (
       <div>
@@ -153,3 +166,9 @@ export default class RepertoirePage extends Component {
     );
   }
 }
+
+function mapStateToProps({ repertoire }) {
+  return { repertoire };
+}
+
+export default connect(mapStateToProps, actions)(RepertoirePage);
