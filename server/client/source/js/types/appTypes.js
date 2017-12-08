@@ -9,4 +9,5 @@ export default keyMirror({
 
   FETCH_REPERTOIRE: null,
 
+  FETCH_ARTICLE: null,
 });
