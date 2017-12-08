@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
 import OwnMasonry from '../../components/Global/OwnMasonry';
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
 import Card from '../../components/Global/Card';
 import { Loading } from '../../components/Global/Loading';
+import {formatDate} from '../../services/index';
 
 const brakePoints = [350, 576, 769, 992, 1200];
 
-export default class ArticlePage extends Component {
+class ArticlePage extends Component {
+  componentDidMount() {
+    this.props.fetchArticle();
+  }
+
   render() {
+    console.log('article', this.props);
     return (
       <div>
         <div id='primary' className='content-area'>
@@ -18,43 +26,33 @@ export default class ArticlePage extends Component {
             <div className='tb-category'>
               <ul className='article-filter' style={ { paddingLeft: 0 } }>
                 <li style={ { borderColor: 'rgb(255, 87, 34)' } }>
-                  <a className='article-btn1 active' href='#' data-filter='.zixun1'>
-                    藝術評論
-                  </a>
+                  <span className='article-btn1 active'>藝術評論</span>
                 </li>
 
                 <li style={ { borderColor: 'rgb(171, 71, 188)' } }>
-                  <a className='article-btn2' href='#' data-filter='.zixun2'>
-                    科技新聞
-                  </a>
+                  <span className='article-btn2'>科技新聞</span>
                 </li>
 
                 <li style={ { borderColor: 'rgb(255, 87, 34)' } }>
-                  <a className='article-btn1' href='#' data-filter='.zixun3'>
-                    文藝推薦
-                  </a>
+                  <span className='article-btn1'>文藝推薦</span>
                 </li>
                 <li style={ { borderColor: 'rgb(171, 71, 188)' } }>
-                  <a className='article-btn2' href='#' data-filter='.zixun4'>
-                    世相百科
-                  </a>
+                  <span className='article-btn2'>世相百科</span>
                 </li>
               </ul>
             </div>
             <div style={ { width: '70%', marginLeft: '15%' } }>
               <OwnMasonry brakePoints={ brakePoints }>
-                <Card
-                  img1='http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d4_kmwxcp.jpg'
-                  title='活动五李侃；阿斯顿反馈栏喀纳斯；看到烦恼；卡森啊；上看到烦恼'
-                  time='2017-12-01'
-                  images={['http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d4_kmwxcp.jpg','http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d4_kmwxcp.jpg']}
-                />
-                <Card
-                  img1='http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d1_ktzilj.jpg'
-                  title='活动五李侃；阿斯顿反馈栏喀纳斯；看到烦恼；卡森啊；上看到烦恼'
-                  time='2017-12-01'
-                  images={['http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d4_kmwxcp.jpg','http://res.cloudinary.com/cacicloud/image/upload/v1510128079/d4_kmwxcp.jpg']}
-                />
+                {this.props.article.data.map((data, index) => (
+                  <Card
+                    img1={ data.article_images[0] }
+                    title={ data.article_title }
+                    date={ formatDate(new Date(data.article_date)) }
+                    subtitle={ data.article_subtitle }
+                    images={ data.article_images }
+                    body={ data.article_content }
+                  />
+                ))}
               </OwnMasonry>
             </div>
           </div>
@@ -63,3 +61,9 @@ export default class ArticlePage extends Component {
     );
   }
 }
+
+function mapStateToProps({ article }) {
+  return { article };
+}
+
+export default connect(mapStateToProps, actions)(ArticlePage);
