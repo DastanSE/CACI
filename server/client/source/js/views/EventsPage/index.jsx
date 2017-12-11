@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import * as actions from '../../actions';
 import { Carousel } from 'react-bootstrap';
+import * as actions from '../../actions';
 import EventCalendar from './EventCalendar';
 import { YiwenActivities } from './YiwenActivities';
-import CommunityActivity from './CommunityActivity';
 import { Loading } from '../../components/Global/Loading';
 
 class EventsPage extends Component {
@@ -45,7 +44,7 @@ class EventsPage extends Component {
         <div className='container' style={ { paddingRight: 0, paddingLeft: 0, width: '89%' } }>
           <EventCalendar events={ this.props.fetchedEvents.data } />
           <YiwenActivities events={ this.props.fetchedEvents.data } />
-          <CommunityActivity />
+
         </div>
       </div>
     );

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import GoogleMapReact from 'google-map-react';
 import Form from './Form';
+import { ContactInfo } from '../../components/Global/ContactInfo';
 
 const Marker = ({ text }) => (
   <div>
@@ -80,8 +81,8 @@ export default class ContactPage extends Component {
             </div>
           </div>
         </section>
-
-        <section id='contact-page'>
+        <ContactInfo />
+        {/* <section id='contact-page'>
           <div className='container'>
             <div className='center'>
               <h2>您的信息</h2>
@@ -89,7 +90,7 @@ export default class ContactPage extends Component {
             </div>
             <Form />
           </div>
-        </section>
+        </section> */}
       </div>
     );
   }

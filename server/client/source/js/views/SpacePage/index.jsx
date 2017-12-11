@@ -27,7 +27,7 @@ export default class SpacePage extends Component {
             <p>
               連絡人：林先生 (010-5356 7027)
               <br />微信號：藝文君 （caci-wechat)
-              <br />查詢電郵：ywchwx@126.com
+              <br />查詢電郵：<a href="mailto:ywchwx@126.com?Subject=Hello%20again" target="_top">ywchwx@126.com</a>
               <br />辦公地址：海澱區四道口路2號京果商廈A座5015藝聚場 （北京）
             </p>
           ` }
