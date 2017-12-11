@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { connect } from 'react-redux';
-import * as actions from '../../actions';
 import PropTypes from 'prop-types';
 import MainPage from 'views/MainPage';
 import RepertoirePage from 'views/RepertoirePage';
@@ -15,7 +13,6 @@ import { SupportPage } from 'views/SupportPage';
 import EventsPage from 'views/EventsPage';
 import Menu from 'components/Global/Menu';
 import { Footer } from 'components/Global/Footer';
-import { Loading } from 'components/Global/Loading';
 
 const publicPath = '/';
 
@@ -37,15 +34,7 @@ class App extends Component {
     children: PropTypes.object,
   };
 
-  componentWillMount() {
-    this.props.fetchEvents();
-  }
-
   render() {
-    if (this.props.fetchedEvents._isLoading) {
-      return <Loading />
-    }
-    
     return (
       <BrowserRouter>
         <div className='App'>
@@ -71,8 +60,4 @@ class App extends Component {
   }
 }
 
-function mapStateToProps({ fetchedEvents }) {
-  return { fetchedEvents };
-}
-
-export default connect(mapStateToProps, actions)(App);
+export default App;
