@@ -34,7 +34,7 @@ class MainPage extends Component {
         <OurResults />
         <OurPartners />
         <Section7 />
-        <ArtAliance />
+        {/* <ArtAliance /> */}
         <VenueRental />
         <ContactInfo />
       </div>

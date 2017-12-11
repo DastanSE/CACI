@@ -51,7 +51,7 @@ export const Group = () => {
                 </Media>
               </div>
             </Col>
-            <Clearfix visibleSmBlock />
+            <Clearfix />
             <Col md={ 6 } sm={ 12 }>
               <div className='services-wrap'>
                 <Media>

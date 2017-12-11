@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { routeCodes } from '../../views/App';
 
-export const Footer = props => {
+export const Footer = () => {
   return (
     <div className='Footer'>
       <section id='bottom'>
@@ -80,22 +80,29 @@ export const Footer = props => {
 
             <div className='col-md-3 col-sm-3 col-xs-6'>
               <div className='widget'>
-                <h3>合作夥伴</h3>
+                <h3>友好單位</h3>
                 <ul>
                   <li>
-                    <a href=''>中華商略聯合會</a>
+                    <a href='http://yiwen-iei.com/'>藝文國際教育</a>
                   </li>
                   <li>
-                    <a href=''>ACTIVE Production</a>
+                    <a href='http://cbsa.asia/'>中華商略聯合會</a>
                   </li>
                   <li>
-                    <a href=''>澳門國際青年藝術創作人協會</a>
+                    <a href='https://www.facebook.com/dragondnascentre/?ref=br_rs
+'>龍騰舞蹈藝術中心</a>
                   </li>
                   <li>
-                    <a href=''>昂高教育科技有限公司</a>
+                    <a href='https://goo.gl/VGSyFm
+'>Active Production
+港澳非物質文化遺產發展研究會</a>
                   </li>
                   <li>
-                    <a href=''>其他單位</a>
+                    <a href='http://www.zgysyjy.org.cn/116/116_1.html
+'>中國藝術研究院戲曲研究所</a>
+                  </li>
+                  <li>
+                    <a href='http://www.zgxqbyxh.com/'>中国戏曲表演学会</a>
                   </li>
                 </ul>
               </div>
