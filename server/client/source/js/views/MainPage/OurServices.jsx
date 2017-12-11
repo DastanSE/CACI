@@ -15,7 +15,7 @@ export const OurServices = props => {
               <Media className='services-wrap'>
                 <Media.Left className='pull-left'>
                   <Image
-                    src='http://res.cloudinary.com/cacicloud/image/upload/v1510125994/services/services1_uogu6j.png'
+                    src='https://res.cloudinary.com/cacicloud/image/upload/v1510125994/services/services1_uogu6j.png'
                     responsive
                   />
                 </Media.Left>
@@ -31,7 +31,7 @@ export const OurServices = props => {
               <Media className='services-wrap'>
                 <Media.Left className='pull-left'>
                   <Image
-                    src='http://res.cloudinary.com/cacicloud/image/upload/v1510125994/services/services2_yls27r.png'
+                    src='https://res.cloudinary.com/cacicloud/image/upload/v1510125994/services/services2_yls27r.png'
                     responsive
                   />
                 </Media.Left>
@@ -49,7 +49,7 @@ export const OurServices = props => {
               <Media className='services-wrap'>
                 <Media.Left className='pull-left'>
                   <Image
-                    src='http://res.cloudinary.com/cacicloud/image/upload/v1510125995/services/services3_esxauo.png'
+                    src='https://res.cloudinary.com/cacicloud/image/upload/v1510125995/services/services3_esxauo.png'
                     responsive
                   />
                 </Media.Left>
@@ -65,7 +65,7 @@ export const OurServices = props => {
               <Media className='services-wrap'>
                 <Media.Left className='pull-left'>
                   <Image
-                    src='http://res.cloudinary.com/cacicloud/image/upload/v1510125994/services/services4_ejboyo.png'
+                    src='https://res.cloudinary.com/cacicloud/image/upload/v1510125994/services/services4_ejboyo.png'
                     responsive
                   />
                 </Media.Left>
@@ -83,7 +83,7 @@ export const OurServices = props => {
               <Media className='services-wrap'>
                 <Media.Left className='pull-left'>
                   <Image
-                    src='http://res.cloudinary.com/cacicloud/image/upload/v1510125995/services/services5_zpjhar.png'
+                    src='https://res.cloudinary.com/cacicloud/image/upload/v1510125995/services/services5_zpjhar.png'
                     responsive
                   />
                 </Media.Left>

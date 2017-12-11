@@ -24,7 +24,7 @@ export const Project = () => {
                   <div className='fuchi-top'>
                     <Thumbnail
                       className='media-teac'
-                      src='http://res.cloudinary.com/cacicloud/image/upload/v1510127295/changdi1_yyx7ez.jpg'
+                      src='https://res.cloudinary.com/cacicloud/image/upload/v1510127295/changdi1_yyx7ez.jpg'
                       alt=''
                     />
                   </div>
@@ -40,7 +40,7 @@ export const Project = () => {
                   <div className='fuchi-top'>
                     <Thumbnail
                       className='media-teac'
-                      src='http://res.cloudinary.com/cacicloud/image/upload/v1510127295/changdi2_ijtekl.jpg'
+                      src='https://res.cloudinary.com/cacicloud/image/upload/v1510127295/changdi2_ijtekl.jpg'
                       alt=''
                     />
                   </div>
@@ -56,7 +56,7 @@ export const Project = () => {
                   <div className='fuchi-top'>
                     <Thumbnail
                       className='media-teac'
-                      src='http://res.cloudinary.com/cacicloud/image/upload/v1510127297/changdi3_yztobd.jpg'
+                      src='https://res.cloudinary.com/cacicloud/image/upload/v1510127297/changdi3_yztobd.jpg'
                       alt=''
                     />
                   </div>
