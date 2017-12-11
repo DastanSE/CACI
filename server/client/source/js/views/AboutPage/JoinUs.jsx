@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Button, Table } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { routeCodes } from '../../views/App';
 import JobDiscription from '../JobsPage/JobDiscription';
@@ -38,9 +38,9 @@ export const JoinUs = props => {
           <tr>
             <td colSpan='4' className='center'>
               <Button bsSize='xsmall' bsStyle='danger'>
-                <NavLink style={ { color: '#fff' } } activeClassName='' to={ routeCodes.JOBSPAGE }>
+                <Link style={ { color: '#fff' } } to={ routeCodes.JOBSPAGE }>
                   查看更多职位
-                </NavLink>
+                </Link>
               </Button>
             </td>
           </tr>

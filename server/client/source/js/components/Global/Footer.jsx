@@ -17,14 +17,13 @@ export const Footer = props => {
                   </li>
                   <li>
                     <Link to={ routeCodes.NEWSPAGE }>
-                      <a href=''>媒體報導</a>
+                      媒體報導
                     </Link>
                   </li>
                   <li>
-                    <a href=''>加入我們</a>
-                  </li>
-                  <li>
-                    <a href=''>活動回顧</a>
+                    <Link to={ routeCodes.JOBSPAGE }>
+                      加入我們
+                    </Link>
                   </li>
                   <li>
                     <Link to={ routeCodes.CONTACT }>聯繫我們</Link>

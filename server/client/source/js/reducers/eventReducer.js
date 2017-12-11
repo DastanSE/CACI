@@ -1,7 +1,7 @@
 import AppTypes from '../types/appTypes';
 
 const initialState = {
-  _isLoading: false,
+  _isLoading: true,
   data: [],
 };
 
@@ -10,7 +10,7 @@ export default function (state = initialState, action) {
     case AppTypes.FETCH_EVENTS:
       state = {
         ...state,
-        _isLoading: true,
+        _isLoading: false,
         data: action.payload || false,
       };
       break;

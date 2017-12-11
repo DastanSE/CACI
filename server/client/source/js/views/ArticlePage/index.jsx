@@ -14,7 +14,6 @@ class ArticlePage extends Component {
   }
 
   render() {
-    console.log('article', this.props);
     return (
       <div>
         <div id='primary' className='content-area'>
