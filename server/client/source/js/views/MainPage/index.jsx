@@ -19,6 +19,11 @@ class MainPage extends Component {
     super(props);
   }
 
+  componentWillMount() {
+    this.props.fetchEvents();
+    this.props.fetchNews();
+  }
+
   render() {
     return (
       <div className='MainPage'>
