@@ -16,14 +16,10 @@ export const Footer = () => {
                     <Link to={ routeCodes.ABOUT }>關於我們</Link>
                   </li>
                   <li>
-                    <Link to={ routeCodes.NEWSPAGE }>
-                      媒體報導
-                    </Link>
+                    <Link to={ routeCodes.NEWSPAGE }>媒體報導</Link>
                   </li>
                   <li>
-                    <Link to={ routeCodes.JOBSPAGE }>
-                      加入我們
-                    </Link>
+                    <Link to={ routeCodes.JOBSPAGE }>加入我們</Link>
                   </li>
                   <li>
                     <Link to={ routeCodes.CONTACT }>聯繫我們</Link>
@@ -89,17 +85,24 @@ export const Footer = () => {
                     <a href='http://cbsa.asia/'>中華商略聯合會</a>
                   </li>
                   <li>
-                    <a href='https://www.facebook.com/dragondnascentre/?ref=br_rs
-'>龍騰舞蹈藝術中心</a>
+                    <a
+                      href='https://www.facebook.com/dragondnascentre/?ref=br_rs
+'
+                    >
+                      龍騰舞蹈藝術中心
+                    </a>
                   </li>
                   <li>
-                    <a href='https://goo.gl/VGSyFm
-'>Active Production
-港澳非物質文化遺產發展研究會</a>
+                    <a
+                      href='https://goo.gl/VGSyFm
+'
+                    >港澳非物質文化遺產發展研究會</a>
                   </li>
                   <li>
-                    <a href='http://www.zgysyjy.org.cn/116/116_1.html
-'>中國藝術研究院戲曲研究所</a>
+                    <a
+                      href='http://www.zgysyjy.org.cn/116/116_1.html
+'
+                    >中國藝術研究院戲曲研究所</a>
                   </li>
                   <li>
                     <a href='http://www.zgxqbyxh.com/'>中国戏曲表演学会</a>
