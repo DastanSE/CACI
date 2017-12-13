@@ -45,8 +45,7 @@ export const Footer = () => {
                 </ul>
               </div>
             </Col>
-            <Clearfix />
-
+            <Clearfix visibleXsBlock />
             <Col xs={ 6 } sm={ 3 } md={ 3 }>
               <div className='widget'>
                 <h3>合作咨詢</h3>
@@ -82,8 +81,7 @@ export const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href='https://www.facebook.com/dragondnascentre/?ref=br_rs
-'
+                      href='https://www.facebook.com/dragondnascentre/?ref=br_rs'
                     >
                       龍騰舞蹈藝術中心
                     </a>
