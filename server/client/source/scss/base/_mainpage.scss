@@ -25,7 +25,7 @@ Slider
   max-height: 800px;
   @include md {
     max-height: 600px;
-  };
+  }
   @include sm {
     height: 90vh !important;
     max-height: 470px;
@@ -33,7 +33,7 @@ Slider
 
   @include xs {
     height: 40vh !important;
-  };
+  }
 
   span .fa {
     background-color: #c52d2f;
@@ -46,12 +46,12 @@ Slider
     font-size: 0.8em;
     transform: translateY(-50%);
     color: #fff;
-    @include sm{
+    @include sm {
       height: 30px;
       width: 30px;
       line-height: 2em;
       font-size: 0.8em;
-    };
+    }
 
     &.fa-chevron-left {
       left: 0;
@@ -72,14 +72,14 @@ Slider
     max-height: 800px;
     @include md {
       max-height: 600px;
-    };
+    }
     @include sm {
       height: 90vh;
       max-height: 470px;
     }
     @include xs {
       height: 40vh;
-    };
+    }
   }
 
   .carousel-indicators li {
@@ -89,10 +89,10 @@ Slider
     margin: 0 15px 0 0;
     position: relative;
 
-    @include sm{
+    @include sm {
       width: 15px;
       height: 15px;
-    };
+    }
 
     &:after {
       position: absolute;
@@ -104,10 +104,10 @@ Slider
       border: 1px solid #fff;
       left: -3px;
       top: -3px;
-      @include sm{
+      @include sm {
         width: 19px;
         height: 19px;
-      };
+      }
     }
 
     &.active {
@@ -117,10 +117,10 @@ Slider
       margin: 0 15px 0 0;
       border: 1px solid #c52d2f;
       position: relative;
-      @include sm{
+      @include sm {
         width: 15px;
         height: 15px;
-      };
+      }
     }
     &.active:after {
       position: absolute;
@@ -131,10 +131,10 @@ Slider
       border: 1px solid #c52d2f;
       left: -3px;
       top: -3px;
-      @include sm{
+      @include sm {
         width: 19px;
         height: 19px;
-      };
+      }
     }
   }
 }
@@ -153,23 +153,20 @@ Slider
   }
 
   @include xs {
-
     width: 98%;
 
     h3 {
       font-weight: 500;
       font-size: 18px;
       letter-spacing: 1px;
-
     }
 
     p {
       font-weight: 500;
       font-size: 14px;
       letter-spacing: 1px;
-
     }
-  };
+  }
 }
 .feature-wrap .pull-left {
   margin-right: 25px;
@@ -191,7 +188,7 @@ Slider
   margin-right: 25px;
   @include xs {
     margin-right: 8px;
-  };
+  }
 }
 .feature-wrap i:hover {
   background: #c52d2f;
@@ -424,7 +421,6 @@ Slider
   @include sm {
     float: none !important;
   }
-
 }
 
 .tab-content img {
@@ -492,39 +488,48 @@ Slider
   background: #fff url(../assets/img/contact.png) no-repeat 90% 0;
   padding: 30px 0;
 }
-.contact-info i {
-  width: 60px;
-  height: 60px;
-  font-size: 40px;
-  line-height: 60px;
-  color: #fff;
-  background: #000;
-  text-align: center;
-  border-radius: 10px;
 
-}
-.contact-info h2 {
-  margin-top: 0;
-  color: #000;
-}
 .contact-info {
   color: #000;
-  .qr-code {
-    width: 55px;
+  .contact-info-header {
+    padding-top: 5px;
+    height: 50px;
     display: block;
-    border-radius: 4px;
-    margin-top: 4px;
-    margin-left: 3px;
-    &:hover {
-      width: 100px;
-      transition: 1s ease;
+    span {
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    img {
       position: absolute;
+      width: 50px;
+      top: -20px;
+      border-radius: 4px;
+      margin-left: 10px;
+
+      &:hover {
+        position: absolute;
+        width: 120px;
+        transition: 1s ease;
+      }
     }
   }
+
+  i {
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    line-height: 60px;
+    color: #fff;
+    background: #000;
+    text-align: center;
+    border-radius: 10px;
+  }
+  h2 {
+    margin-top: 0;
+    color: #000;
+  }
 }
-
-
-
 
 .venue-rental-wrap {
   position: relative;

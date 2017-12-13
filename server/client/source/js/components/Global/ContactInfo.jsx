@@ -10,10 +10,23 @@ export const ContactInfo = props => {
             <Media className='contact-info'>
               <Media.Left className='pull-left'>
                 <i className='fa fa-phone' />
-                <img className='qr-code' src='https://res.cloudinary.com/cacicloud/image/upload/v1513129322/caci_qr_yck7xp.png' alt='qr-code' />
               </Media.Left>
               <Media.Body>
-                <div dangerouslySetInnerHTML={ { __html: props.contacts } } />
+                <div>
+                  <div className='contact-info-header'>
+                    <span>想要聯繫我們？</span>
+                    <img
+                      style={ { display: 'inline-block' } }
+                      src='https://res.cloudinary.com/cacicloud/image/upload/v1513129322/caci_qr_yck7xp.png'
+                      alt='qr-code'
+                    />
+                  </div>
+                  <div
+                    style={ { display: 'inline-block' } }
+                    dangerouslySetInnerHTML={ { __html: props.contacts } }
+                  />
+
+                </div>
               </Media.Body>
             </Media>
           </Col>
@@ -25,7 +38,6 @@ export const ContactInfo = props => {
 
 ContactInfo.defaultProps = {
   contacts: `
-      <h2>想要聯繫我們？</h2>
       <p>
         (香港) 銅鑼灣摩理臣山道84-86號 1樓 | (852) 3610 9194 | <a href="mailto:info@caci.hk?Subject=Hello%20again" target="_top">info@caci.hk</a>
         <br /> (澳門) 提督馬路華隆工業大廈8樓 | (853) 2895-1000 | <a href="mailto:info.mac@caci.hk?Subject=Hello%20again" target="_top">info.mac@caci.hk</a>
