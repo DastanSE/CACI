@@ -4,13 +4,31 @@ import { connect } from 'react-redux';
 import * as actions from '../../actions';
 import Card from '../../components/Global/Card';
 import { Loading } from '../../components/Global/Loading';
-import {formatDate} from '../../services/index';
+import { formatDate } from '../../services/index';
 
 const brakePoints = [350, 576, 769, 992, 1200];
 
 class ArticlePage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      type: '',
+      articles: [],
+    };
+  }
+
   componentDidMount() {
-    this.props.fetchArticle();
+    this.props.fetchArticle().then(() => this.setState({ articles: this.props.article.data }));
+  }
+
+  filterArticles(sortByType) {
+    const sortedArticles = this.props.article.data.filter(data => {
+      return data.article_type === sortByType;
+    });
+
+    this.setState({
+      articles: sortedArticles,
+    });
   }
 
   render() {
@@ -24,26 +42,39 @@ class ArticlePage extends Component {
 
             <div className='tb-category'>
               <ul className='article-filter' style={ { paddingLeft: 0 } }>
-                <li style={ { borderColor: 'rgb(255, 87, 34)' } }>
+                <li
+                  style={ { borderColor: 'rgb(255, 87, 34)' } }
+                  onClick={ () => this.filterArticles('藝術評論') }
+                >
                   <span className='article-btn1 active'>藝術評論</span>
                 </li>
 
-                <li style={ { borderColor: 'rgb(171, 71, 188)' } }>
+                <li
+                  style={ { borderColor: 'rgb(171, 71, 188)' } }
+                  onClick={ () => this.filterArticles('科技新聞') }
+                >
                   <span className='article-btn2'>科技新聞</span>
                 </li>
 
-                <li style={ { borderColor: 'rgb(255, 87, 34)' } }>
+                <li
+                  style={ { borderColor: 'rgb(255, 87, 34)' } }
+                  onClick={ () => this.filterArticles('文藝推薦') }
+                >
                   <span className='article-btn1'>文藝推薦</span>
                 </li>
-                <li style={ { borderColor: 'rgb(171, 71, 188)' } }>
+                <li
+                  style={ { borderColor: 'rgb(171, 71, 188)' } }
+                  onClick={ () => this.filterArticles('世相百科') }
+                >
                   <span className='article-btn2'>世相百科</span>
                 </li>
               </ul>
             </div>
             <div style={ { width: '70%', marginLeft: '15%' } }>
               <OwnMasonry brakePoints={ brakePoints }>
-                {this.props.article.data.map((data, index) => (
+                {this.state.articles.map((data, index) => (
                   <Card
+                    key={ index }
                     img1={ data.article_images[0] }
                     title={ data.article_title }
                     date={ formatDate(new Date(data.article_date)) }

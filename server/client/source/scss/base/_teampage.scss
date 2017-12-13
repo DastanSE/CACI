@@ -95,5 +95,8 @@
   h2 {
     padding-top: 30px;
     margin-bottom: 20px;
+    @include sm {
+      font-size: 2em;
+    };
   }
 }
