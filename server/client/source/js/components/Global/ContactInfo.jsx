@@ -10,6 +10,7 @@ export const ContactInfo = props => {
             <Media className='contact-info'>
               <Media.Left className='pull-left'>
                 <i className='fa fa-phone' />
+                <img className='qr-code' src='https://res.cloudinary.com/cacicloud/image/upload/v1513129322/caci_qr_yck7xp.png' alt='qr-code' />
               </Media.Left>
               <Media.Body>
                 <div dangerouslySetInnerHTML={ { __html: props.contacts } } />
