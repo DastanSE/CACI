@@ -536,6 +536,9 @@ Slider
   width: 100%;
   border-radius: 0;
   margin-bottom: 0;
+  h3 {
+    margin-top: 41%;  
+  }
 }
 
 .venue-rental-wrap .overlay {
@@ -548,7 +551,7 @@ Slider
   border-radius: 50%;
   background: #000;
   text-align: center;
-  line-height: 3em;
+
   color: #fff;
   vertical-align: middle;
   transition: opacity 500ms;
