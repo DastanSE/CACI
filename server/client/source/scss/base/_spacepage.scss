@@ -86,44 +86,6 @@
   margin: 5px 0;
   background-color: #f2f2f2;
 }
-.clients-comments {
-  //background-image: url(../assets/img/image_bg.png);
-  background-position: center 118px;
-  background-repeat: no-repeat;
-  margin-bottom: 50px;
-}
-.clients-comments img {
-  background: #dddddd;
-  border: 1px solid #dddddd;
-  height: 182px;
-  padding: 3px;
-  width: 182px;
-  transition: all 0.9s ease 0s;
-  @include sm {
-    width: 120px;
-    height: auto;
-  }
-}
-.clients-comments h3 {
-  margin-top: 55px;
-  font-weight: 300;
-  padding: 0 40px;
-}
-.clients-comments h4 {
-  font-weight: 300;
-  margin-top: 15px;
-  @include sm {
-    font-size: 14px;
-  }
-}
-.clients-comments h4 span {
-  font-weight: 700;
-  font-style: oblique;
-  @include sm {
-    font-weight: 400;
-    font-size: 14px;
-  }
-}
 
 .space h1 {
   margin-top: 0;

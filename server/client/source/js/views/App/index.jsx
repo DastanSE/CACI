@@ -9,8 +9,10 @@ import ContactPage from 'views/ContactPage';
 import NewsPage from 'views/NewsPage';
 import SpacePage from 'views/SpacePage';
 import JobsPage from 'views/JobsPage';
+import TeamPage from 'views/TeamPage';
 import { SupportPage } from 'views/SupportPage';
 import EventsPage from 'views/EventsPage';
+import CrowdfundPage from 'views/CrowdfundPage';
 import Menu from 'components/Global/Menu';
 import { Footer } from 'components/Global/Footer';
 
@@ -27,6 +29,8 @@ export const routeCodes = {
   SUPPORT: `${ publicPath }support`,
   NEWSPAGE: `${ publicPath }news`,
   JOBSPAGE: `${ publicPath }jobs`,
+  TEAMPAGE: `${ publicPath }team`,
+  CROWDFUND: `${ publicPath }crowdfund`,
 };
 
 class App extends Component {
@@ -51,6 +55,8 @@ class App extends Component {
               <Route path={ routeCodes.SUPPORT } component={ SupportPage } />
               <Route path={ routeCodes.NEWSPAGE } component={ NewsPage } />
               <Route path={ routeCodes.JOBSPAGE } component={ JobsPage } />
+              <Route path={ routeCodes.TEAMPAGE } component={ TeamPage } />
+              <Route path={ routeCodes.CROWDFUND } component={ CrowdfundPage } />
             </Switch>
           </div>
           <Footer />

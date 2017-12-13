@@ -3,7 +3,7 @@ import { Row, Col, Image } from 'react-bootstrap';
 
 const CHANGDI = [
   {
-    name: '',
+    name: '藝聚場',
     img: 'https://res.cloudinary.com/cacicloud/image/upload/v1510126717/changdi/1_kaap3e.jpg',
   },
   {
@@ -11,7 +11,7 @@ const CHANGDI = [
     img: 'https://res.cloudinary.com/cacicloud/image/upload/v1510126717/changdi/3_dnyumu.jpg',
   },
   {
-    name: '',
+    name: '藝聚場',
     img: 'https://res.cloudinary.com/cacicloud/image/upload/v1510126716/changdi/2_jmrlyg.jpg',
   },
   {

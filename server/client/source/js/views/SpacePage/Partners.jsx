@@ -1,5 +1,7 @@
 import React from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { routeCodes } from '../App';
 
 export const Partners = () => {
   return (
@@ -48,7 +50,7 @@ export const Partners = () => {
         <div className='center'>
           <div>
             <h4>
-              <a href='/team/'>查看更多</a>
+              <Link to={routeCodes.TEAMPAGE}>查看更多</Link>
             </h4>
           </div>
         </div>
