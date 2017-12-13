@@ -9,6 +9,7 @@ import ContactPage from 'views/ContactPage';
 import NewsPage from 'views/NewsPage';
 import SpacePage from 'views/SpacePage';
 import JobsPage from 'views/JobsPage';
+import TeamPage from 'views/TeamPage';
 import { SupportPage } from 'views/SupportPage';
 import EventsPage from 'views/EventsPage';
 import Menu from 'components/Global/Menu';
@@ -27,6 +28,7 @@ export const routeCodes = {
   SUPPORT: `${ publicPath }support`,
   NEWSPAGE: `${ publicPath }news`,
   JOBSPAGE: `${ publicPath }jobs`,
+  TEAMPAGE: `${ publicPath }team`,
 };
 
 class App extends Component {
@@ -51,6 +53,7 @@ class App extends Component {
               <Route path={ routeCodes.SUPPORT } component={ SupportPage } />
               <Route path={ routeCodes.NEWSPAGE } component={ NewsPage } />
               <Route path={ routeCodes.JOBSPAGE } component={ JobsPage } />
+              <Route path={ routeCodes.TEAMPAGE } component={ TeamPage } />
             </Switch>
           </div>
           <Footer />

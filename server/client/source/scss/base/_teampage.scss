@@ -1,0 +1,99 @@
+.teampage-header {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 90vh;
+  background-image: url(../assets/img/team/team-top.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-shadow: 0 0 10px #000;
+  @include sm {
+    width: 100%;
+    background-position: center;
+    height: 40vh;
+  }
+  .teampage-title {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include sm {
+      top: 40%;
+    }
+    h1 {
+      font-size: 5em;
+      font-weight: 600;
+      margin-bottom: 15px;
+      @include sm {
+        font-size: 2em;
+        margin-bottom: 5px;
+      }
+    }
+    p {
+      font-size: 24px;
+      @include sm {
+        font-size: 12px;
+      }
+    }
+    @include xs {
+      top: 35%;
+    }
+  }
+}
+.clients-comments {
+  //background-image: url(../assets/img/image_bg.png);
+  background-position: center 118px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  height: 183px;
+  img {
+    background: #dddddd;
+    border: 1px solid #dddddd;
+    height: 182px;
+    padding: 3px;
+    width: 182px;
+    transition: all 0.9s ease 0s;
+    @include sm {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  h3 {
+    margin-top: 55px;
+    font-weight: 300;
+    padding: 0 40px;
+  }
+
+  h4 {
+    font-weight: 300;
+    margin-top: 15px;
+    @include sm {
+      font-size: 14px;
+    }
+    span {
+      font-weight: 700;
+      font-style: oblique;
+      @include sm {
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.get-started {
+  background: none repeat scroll 0 0 #f3f3f3;
+  border-radius: 3px;
+  padding-bottom: 30px;
+  position: relative;
+  margin-bottom: 18px;
+  margin-top: 60px;
+  h2 {
+    padding-top: 30px;
+    margin-bottom: 20px;
+  }
+}
