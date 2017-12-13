@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Clearfix } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { routeCodes } from '../../views/App';
 
@@ -45,6 +45,7 @@ export const Footer = () => {
                 </ul>
               </div>
             </Col>
+            <Clearfix />
 
             <Col xs={ 6 } sm={ 3 } md={ 3 }>
               <div className='widget'>
