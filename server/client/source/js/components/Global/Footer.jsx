@@ -1,4 +1,5 @@
 import React from 'react';
+import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { routeCodes } from '../../views/App';
 
@@ -7,8 +8,8 @@ export const Footer = () => {
     <div className='Footer'>
       <section id='bottom'>
         <div className='container wow fadeInDown' data-wow-duration='1000ms' data-wow-delay='600ms'>
-          <div className='row'>
-            <div className='col-md-3 col-sm-3 col-xs-6'>
+          <Row>
+            <Col xs={ 6 } sm={ 3 } md={ 3 }>
               <div className='widget'>
                 <h3>公司概況</h3>
                 <ul>
@@ -26,55 +27,49 @@ export const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </Col>
 
-            <div className='col-md-3 col-sm-3 col-xs-6'>
+            <Col xs={ 6 } sm={ 3 } md={ 3 }>
               <div className='widget'>
                 <h3>社區共享</h3>
                 <ul>
                   <li>
-                    <a href=''>眾籌</a>
+                    <Link to={ routeCodes.CROWDFUND }>眾籌</Link>
                   </li>
                   <li>
-                    <a href=''>文章</a>
+                    <Link to={ routeCodes.ARTICLE }>文章</Link>
                   </li>
                   <li>
-                    <a href=''>團隊</a>
-                  </li>
-                  <li>
-                    <a href=''>商店</a>
-                  </li>
-                  <li>
-                    <a href=''>其他</a>
+                    <Link to={ routeCodes.TEAMPAGE }>團隊</Link>
                   </li>
                 </ul>
               </div>
-            </div>
+            </Col>
 
-            <div className='col-md-3 col-sm-3 col-xs-6'>
+            <Col xs={ 6 } sm={ 3 } md={ 3 }>
               <div className='widget'>
                 <h3>合作咨詢</h3>
                 <ul>
                   <li>
-                    <a href=''>活動訂制</a>
+                    <Link to={ routeCodes.CONTACT }>活動訂制</Link>
                   </li>
                   <li>
-                    <a href=''>場地租賃</a>
+                    <Link to={ routeCodes.CONTACT }>場地租賃</Link>
                   </li>
                   <li>
-                    <a href=''>項目咨詢</a>
+                    <Link to={ routeCodes.CONTACT }>項目咨詢</Link>
                   </li>
                   <li>
-                    <a href=''>贊助支持</a>
+                    <Link to={ routeCodes.CONTACT }>贊助支持</Link>
                   </li>
                   <li>
-                    <a href=''>其他咨詢</a>
+                    <Link to={ routeCodes.CONTACT }>其他咨詢</Link>
                   </li>
                 </ul>
               </div>
-            </div>
+            </Col>
 
-            <div className='col-md-3 col-sm-3 col-xs-6'>
+            <Col xs={ 6 } sm={ 3 } md={ 3 }>
               <div className='widget'>
                 <h3>友好單位</h3>
                 <ul>
@@ -109,8 +104,8 @@ export const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </div>
       </section>
       <footer className='footer'>
