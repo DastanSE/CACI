@@ -15,7 +15,7 @@
     height: 40vh !important;
   }
   span .fa {
-    background-color: rgb(68, 138, 255);
+    background-color: #848181;
     height: 40px;
     width: 40px;
     border-radius: 4px;
@@ -92,9 +92,9 @@
     &.active {
       width: 20px;
       height: 20px;
-      background-color: rgb(68, 138, 255);
+      background-color: #848181;
       margin: 0 15px 0 0;
-      border: 1px solid rgb(68, 138, 255);
+      border: 1px solid #848181;
       position: relative;
       @include sm {
         width: 15px;
@@ -106,8 +106,8 @@
       width: 24px;
       height: 24px;
       border-radius: 100%;
-      background: rgb(68, 138, 255);
-      border: 1px solid rgb(68, 138, 255);
+      background: #848181;
+      border: 1px solid #848181;
       left: -3px;
       top: -3px;
       @include sm {
@@ -430,7 +430,7 @@
   @extend .modal-element;
   table {
     th {
-      background-color: rgb(68, 138, 255);
+      background-color: #848181;
     }
   }
 
