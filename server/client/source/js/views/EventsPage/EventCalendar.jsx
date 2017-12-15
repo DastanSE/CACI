@@ -61,20 +61,20 @@ export default class EventCalendar extends Component {
                 height={ 350 }
                 min={ new Date(2016, 0, 1) }
                 theme={ {
-                  accentColor: '#448AFF',
+                  accentColor: '#000',
                   floatingNav: {
                     background: 'rgba(56, 87, 138, 0.94)',
                     chevron: '#FFA726',
                     color: '#FFF',
                   },
-                  headerColor: '#448AFF',
-                  selectionColor: '#559FFF',
+                  headerColor: '#000',
+                  selectionColor: '#848181',
                   textColor: {
                     active: '#FFF',
                     default: '#333',
                   },
                   todayColor: '#FFA726',
-                  weekdayColor: '#559FFF',
+                  weekdayColor: '#848181',
                 } }
                 // selected={ today }
                 selected={ eventDates }

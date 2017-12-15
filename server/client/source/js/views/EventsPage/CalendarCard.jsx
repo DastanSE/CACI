@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Row, Col, Media, Image, Thumbnail, Button } from 'react-bootstrap';
 import Modals from '../../components/Global/Modals';
 
-
 export default class CalendarCard extends Component {
   constructor(props) {
     super(props);
@@ -28,7 +27,6 @@ export default class CalendarCard extends Component {
                 className='card-media-object'
                 style={ { backgroundImage: `url(${ this.props.eventMainImg })` } }
               />
-              <span className='card-media-object-tag subtle'>賣快</span>
             </Media.Left>
             <Media.Body className='card-media-body'>
               <Media.Heading>
@@ -50,7 +48,6 @@ export default class CalendarCard extends Component {
               </Media.Heading>
               <span className='card-media-body-heading'>{this.props.eventTitle}</span>
               <div className='card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal'>
-                <span className='card-media-body-supporting-bottom-text subtle'>#Music #Party</span>
                 <span
                   className='card-media-body-supporting-bottom-text card-media-link u-float-right'
                   onClick={ this.open.bind(this) }
