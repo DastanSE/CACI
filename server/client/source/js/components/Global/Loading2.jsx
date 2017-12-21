@@ -7,6 +7,7 @@ export const Loading2 = () => {
         <div>创</div>
         <div>文</div>
         <div>艺</div>
+        
       </div>
   );
 };
