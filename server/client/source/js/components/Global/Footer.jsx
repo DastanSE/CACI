@@ -108,7 +108,7 @@ export const Footer = () => {
         </div>
       </section>
       <footer className='footer'>
-        <p>© CACI – 藝文創薈文化傳播有限公司 2017 test</p>
+        <p>© CACI – 藝文創薈文化傳播有限公司 2017</p>
       </footer>
     </div>
   );
