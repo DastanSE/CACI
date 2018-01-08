@@ -22,8 +22,7 @@ export default class SpacePage extends Component {
         <Partners />
         <ResourceSection />
         <ContactInfo
-          contacts={ `
-            <h2>想要聯繫我們？</h2>
+          contacts={ `            
             <p>
               連絡人：林先生 (010-5356 7027)
               <br />微信號：藝文君 （caci-wechat)
