@@ -28,9 +28,9 @@ class MainPage extends Component {
     return (
       <div className='MainPage'>
         <MainPageCarousel events={ this.props.fetchedEvents.data } />
+        <OurServices />
         <OurFeatures />
         <RecentActivities events={ this.props.fetchedEvents.data } />
-        <OurServices />
         <OurResults />
         <OurPartners />
         <Section7 />
