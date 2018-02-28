@@ -95,7 +95,7 @@ export default class ContactPage extends Component {
 
         <ContactInfo />
 
-        {/* <section id='contact-page'>
+        <section id='contact-page'>
           <div className='container'>
             <div className='center'>
               <h2>您的信息</h2>
@@ -103,7 +103,7 @@ export default class ContactPage extends Component {
             </div>
             <Form />
           </div>
-        </section> */}
+        </section>
       </div>
     );
   }

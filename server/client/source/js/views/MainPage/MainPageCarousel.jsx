@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import { Carousel, Image } from 'react-bootstrap';
+import ReactSwipe from 'react-swipe';
 
 export const MainPageCarousel = props => {
   return (
+    <div>
+      <ReactSwipe swipeOptions={{continuous: true, auto: 3000, speed: 400}}>
+        {props.events.slice(0, 5).map((data, index) => {
+          return <Image src={ data.event_images[0] } style={{ height: '60vh' }} />
+        })}
+      </ReactSwipe>
     <Carousel
       id='main-slider'
       prevIcon={
@@ -31,6 +38,7 @@ export const MainPageCarousel = props => {
           </Carousel.Item>
         );
       })}
-    </Carousel>
+      </Carousel>
+    </div>
   );
 };

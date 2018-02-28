@@ -67,7 +67,7 @@
     "material-ui": "^0.19.1",
     "prop-types": "^15.5.10",
     "radium": "^0.19.4",
-    "react": "^15.5.4",
+    "react": "^15.6.2",
     "react-addons-css-transition-group": "^15.6.2",
     "react-bmap": "^1.0.56",
     "react-bootstrap": "^0.31.3",
@@ -78,8 +78,10 @@
     "react-redux": "^4.4.8",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
+    "react-swipe": "^5.1.1",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "swipe-js-iso": "^2.0.4"
   },
   "description": "CACI main website",
   "repository": {
