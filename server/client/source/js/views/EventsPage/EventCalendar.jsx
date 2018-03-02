@@ -34,9 +34,10 @@ export default class EventCalendar extends Component {
   }
 
   onClick(newValue) {
-    const test = new Date(newValue);
-    const daylyEvent = this.props.events.filter(data => {
-      return `${ test }` == `${ new Date(data.event_date) }`;
+
+    const { events } = this.props;
+    const daylyEvent = events.filter(data => {
+      return `${ formatDate(newValue) }` === `${ formatDate(new Date(data.event_date)) }`;
     });
 
     this.setState({
@@ -47,7 +48,9 @@ export default class EventCalendar extends Component {
 
   render() {
     const eventDates = [];
-    this.props.events.forEach((item, i) => eventDates.push(item.event_date));
+    const { events } = this.props;
+    events.forEach((item, i) => eventDates.push(item.event_date));
+
     return (
       <section>
         <div className='center'>
