@@ -12,12 +12,12 @@ export default class Cards extends Component {
   render() {
     return (
       <article>
-        <div className='jumu-card-wrap' onClick={ () => this.setState({ show: true }) }>
+        <div className='jumu-card-wrap' onClick={ () => this.setState({ show: true }) }>          
+          <div className='img-box'>
+            <img src={ this.props.imgSrc } alt='images' />
+          </div>
           <span className='type'>{this.props.type}</span>
           <span className='time'>{this.props.time}</span>
-          <div className='img-box'>
-            <img src={ this.props.imgSrc } alt='images' width='370' height='200' />
-          </div>
           <h4>{this.props.title}</h4>
         </div>
         <Modal

@@ -167,6 +167,17 @@
       padding: 2px 4px;
     }
   }
+
+  .types {
+    cursor: pointer;
+    text-align: center;
+    &:hover {
+      background-color: #c52d2f;
+      color: #fff;
+      border-radius: 3px;
+    }
+  }
+
   .clear {
     clear: both;
   }
@@ -174,14 +185,14 @@
 
 .jumu-type-name {
   display: block;
-  padding-right: 5px;
-	position: relative;
+  position: relative;
+  .jumu-right {
+    position: absolute;
+    right: 15px;
+  }
 }
 
-.jumu-right {
-  position: absolute;
-  right: 5px;
-}
+
 
 #jumu_con {
   margin-bottom: 5em;
@@ -237,13 +248,14 @@
 	display: block;
 }
 .jumu-card-wrap {
-	padding: 10px 24px ;
+	padding: 10px;
 	position: relative;
 	top: 0;
 	float: left;
-	width: 300px;
-	height: 250px;
-	margin: 15px;
+  min-width: 300px;
+  max-width: 500px;
+	max-height: 650px;
+	margin: 10px;
 	overflow: hidden;
 	margin-bottom: 30px;
 	background-color: #fff;
@@ -264,8 +276,9 @@
 	}
 	.img-box {
 		overflow: hidden;
-		width: 252px;
-		height: 162px;
+		// width: 252px;
+    min-height: 162px;
+    max-height: 300px;
 		border: 1px solid transparent;
 		img {
 			width: 100%;
@@ -275,7 +288,8 @@
 	}
 
 	h4 {
-		margin: 10px auto;
+    text-align: center;
+		margin: 20px auto;
 	}
 
 	@include sm {

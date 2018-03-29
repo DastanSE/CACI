@@ -5,6 +5,9 @@ import * as actions from '../../actions';
 import Cards from './Cards';
 import JumuType from './JumuType';
 import { formatDate } from '../../services';
+import OwnMasonry from '../../components/Global/OwnMasonry';
+
+const brakePoints = [350, 576];
 
 const REPERTOIRE = [
   { typeFilterBy: '.wudao', type: '舞蹈' },
@@ -54,11 +57,26 @@ const ACTGROUPS = [
 class RepertoirePage extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      content: [],
+    };
   }
 
   componentDidMount() {
-    this.props.fetchRepertoire();
+    this.props.fetchRepertoire().then(() => this.setState({ content: this.props.repertoire.data }));
   }
+
+
+  filterContent = async (sortByType) => {
+     const sortedContent = await this.props.repertoire.data.filter(data => {
+      return data.repertoire_type === sortByType;
+    });
+
+    await this.setState({
+      content: sortedContent,
+    });
+   }
+
 
   render() {
     return (
@@ -108,27 +126,29 @@ class RepertoirePage extends Component {
                   <div className='jumu-type'>
                     <h3>全部分類</h3>
                     <hr />
-                    <JumuType typeName='精品劇目' typesArray={ REPERTOIRE } />
+                    <JumuType typeName='精品劇目' filterContent={ this.filterContent } typesArray={ REPERTOIRE } />
                     <hr />
-                    <JumuType typeName='演出场馆' typesArray={ CITIES } />
+                    <JumuType typeName='演出场馆' filterContent={ this.filterContent } typesArray={ CITIES } />
                     <hr />
-                    <JumuType typeName='表演团队' typesArray={ ACTGROUPS } />
+                    <JumuType typeName='表演团队' filterContent={ this.filterContent } typesArray={ ACTGROUPS } />
                     <hr />
                   </div>
                 </div>
               </Col>
-              <Col xs={ 12 } sm={ 8 } md={ 9 } lg={ 8 }>
-                <div style={ { minHeight: 300 } }>
-                  {this.props.repertoire.data.map((data, index) => (
-                    <Cards
-                      key={ index }
-                      title={ data.repertoire_title }
-                      time={ formatDate(new Date(data.repertoire_date)) }
-                      imgSrc={ data.repertoire_imgSrc }
-                      type={ data.repertoire_type }
-                      discription={ data.repertoire_discription }
-                    />
-                  ))}
+              <Col xs={ 12 } sm={ 8 } md={ 9 } lg={ 7 }>
+                <div style={ { minHeight: 300 } } >
+                  <OwnMasonry brakePoints={ brakePoints } >
+                    {this.state.content.map((data, index) => (
+                      <Cards
+                        key={ index }
+                        title={ data.repertoire_title }
+                        time={ formatDate(new Date(data.repertoire_date)) }
+                        imgSrc={ data.repertoire_imgSrc }
+                        type={ data.repertoire_type }
+                        discription={ data.repertoire_discription }
+                      />
+                    ))}
+                  </OwnMasonry>
                 </div>
               </Col>
             </Row>
