@@ -6,6 +6,7 @@ export default class JumuType extends Component {
     super(props);
     this.state = {
       showTypes: false,
+      content: []
     };
   }
 
@@ -15,13 +16,17 @@ export default class JumuType extends Component {
     });
   };
 
+  filter = (type) => {    
+    return () => this.props.filterContent(type);
+  }
+
+
   render() {
     const typesClass = classNames({
       'article-filter': true,
       disabled: !this.state.showTypes,
     });
 
-    console.log(this.state);
     return (
       <div>
         <div className='jumu-type-name'>
@@ -36,7 +41,7 @@ export default class JumuType extends Component {
         <ul className={ typesClass }>
           {this.props.typesArray.map((data, index) => {
             return (
-              <li key={ index }>
+              <li key={ index } className='types' onClick={() => this.props.filterContent(data.type)}>
                 <span>{data.type}</span>
               </li>
             );

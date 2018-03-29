@@ -4,7 +4,7 @@ import { routeCodes } from '../App';
 import { Link } from 'react-router-dom';
 
 export const RecentActivities = props => {
-  const size = 6;
+  const size = 8;
   return (
     <section id='recent-works'>
       <div className='container'>
