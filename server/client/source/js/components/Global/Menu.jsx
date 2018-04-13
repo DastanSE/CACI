@@ -12,7 +12,7 @@ export default class Menu extends Component {
             <NavLink exact to={ routeCodes.MAINPAGE }>
               <Image
                 style={ { marginTop: '8px' } }
-                src='https://res.cloudinary.com/cacicloud/image/upload/v1510122029/mainpage/logo_etwmj2.png'
+                src='https://res.cloudinary.com/cacicloud/image/upload/v1523627458/mainpage/logo.png'
               />
             </NavLink>
           </Navbar.Brand>

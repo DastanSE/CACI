@@ -32,7 +32,7 @@ class AboutPage extends Component {
 
             <div id='about-slider'>
               <Image
-                src='https://res.cloudinary.com/cacicloud/image/upload/v1510122915/mainpage/slider_two_fmohd9.jpg'
+                src='https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/slider_two.jpg'
                 responsive
               />
             </div>

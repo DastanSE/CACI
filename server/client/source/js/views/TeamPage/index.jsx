@@ -8,29 +8,29 @@ const TEAM = [
   {
     company: '羅蘭數字音樂教育',
     img:
-      'https://res.cloudinary.com/cacicloud/image/upload/v1510129141/partners/support/罗兰_walqom.jpg',
+      'https://res.cloudinary.com/cacicloud/image/upload/v1522295774/partners/罗兰.jpg',
   },
   {
     company: '粵目演藝工作室',
     img:
-      'https://res.cloudinary.com/cacicloud/image/upload/v1510127465/partners/粤目演义_o9rlsx.jpg',
+      'https://res.cloudinary.com/cacicloud/image/upload/v1523630327/partners/粤目演义.jpg',
   },
   {
     company: '北京情定文化傳播有限公司',
     img:
-      'https://res.cloudinary.com/cacicloud/image/upload/v1510129140/partners/support/情定北京_j0idvn.jpg',
+      'https://res.cloudinary.com/cacicloud/image/upload/v1523630400/partners/情定北京.jpg',
   },
   {
     company: '龍騰舞蹈藝術中心',
-    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1513148700/partners/l-longt.jpg',
+    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1523630618/partners/l-longt.jpg',
   },
   {
     company: '北京馬馬虎虎文化轉播有限公司',
-    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1513148701/partners/馬虎-.jpg',
+    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1523630775/partners/馬虎-.jpg',
   },
   {
     company: '智途教育諮詢有限公司',
-    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1513148700/partners/ztjy.jpg',
+    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1523630775/partners/ztjy.jpg',
   },
   {
     company: '藝樹公學',
@@ -46,19 +46,19 @@ const TEAM = [
   },
   {
     company: '華麗轉身',
-    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1513148918/partners/hlzs.png',
+    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1523630893/partners/hlzs.png',
   },
   {
     company: '阿特拉斯（北京）文化傳播有限責任公司',
-    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1513148987/partners/阿特-1.png',
+    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1523630893/partners/阿特-1.png',
   },
   {
     company: '府身體劇場',
-    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1513149032/partners/fust.png',
+    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1523630893/partners/fust.png',
   },
   {
     company: '北京尚藝天成文化傳媒有限公司',
-    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1513149109/partners/sy.jpg',
+    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1523630893/partners/sy.jpg',
   },
   {
     company: '北京春江映畫文化傳播有限公司',

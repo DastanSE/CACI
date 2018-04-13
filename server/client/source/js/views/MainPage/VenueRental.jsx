@@ -4,19 +4,19 @@ import { Row, Col, Image } from 'react-bootstrap';
 const CHANGDI = [
   {
     name: '藝聚場',
-    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1510126717/changdi/1_kaap3e.jpg',
+    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/1.jpg',
   },
   {
     name: '香巴拉',
-    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1510126717/changdi/3_dnyumu.jpg',
+    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/3.jpg',
   },
   {
     name: '藝聚場',
-    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1510126716/changdi/2_jmrlyg.jpg',
+    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/2.jpg',
   },
   {
     name: '香巴拉',
-    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1510126717/changdi/4_tcqqoo.jpg',
+    img: 'https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/3.jpg',
   },
 ];
 
