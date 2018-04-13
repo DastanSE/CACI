@@ -83,7 +83,7 @@ export default class EventCalendar extends Component {
                 selected={ eventDates }
                 onSelect={ selected => this.onClick(selected) }
                 // displayOptions={ { layout: 'landscape' } }
-                minDate={ lastWeek }
+                // minDate={ lastWeek }
                 locale={ ChineseCal }
               />
             </Col>
