@@ -1,4 +1,4 @@
-# Run command pm2 start pmconfig.yml --env production
+# Run command pm2 start app.yml --env production
 apps:
   - script: ./index.js
     name  : 'CACI'
