@@ -24,7 +24,23 @@ export const Project = () => {
                   <div className='fuchi-top'>
                     <Thumbnail
                       className='media-teac'
-                      src='https://res.cloudinary.com/cacicloud/image/upload/v1510127295/changdi1_yyx7ez.jpg'
+                      src='https://res.cloudinary.com/cacicloud/image/upload/v1523629729/mainpage/changdi1.jpg'
+                      alt='Beijing'
+                    />
+                  </div>
+                </div>
+              </div>
+            </Col>
+
+            <Col md={ 4 } sm={ 4 }>
+              <div
+                className='single-profile-top'
+              >
+                <div className='media'>
+                  <div className='fuchi-top'>
+                    <Thumbnail
+                      className='media-teac'
+                      src='https://res.cloudinary.com/cacicloud/image/upload/v1523629729/mainpage/changdi2.jpg'
                       alt=''
                     />
                   </div>
@@ -40,23 +56,7 @@ export const Project = () => {
                   <div className='fuchi-top'>
                     <Thumbnail
                       className='media-teac'
-                      src='https://res.cloudinary.com/cacicloud/image/upload/v1510127295/changdi2_ijtekl.jpg'
-                      alt=''
-                    />
-                  </div>
-                </div>
-              </div>
-            </Col>
-
-            <Col md={ 4 } sm={ 4 }>
-              <div
-                className='single-profile-top'
-              >
-                <div className='media'>
-                  <div className='fuchi-top'>
-                    <Thumbnail
-                      className='media-teac'
-                      src='https://res.cloudinary.com/cacicloud/image/upload/v1510127297/changdi3_yztobd.jpg'
+                      src='https://res.cloudinary.com/cacicloud/image/upload/v1523629729/mainpage/changdi3.jpg'
                       alt=''
                     />
                   </div>

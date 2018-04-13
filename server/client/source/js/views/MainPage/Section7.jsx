@@ -124,7 +124,7 @@ export const Section7 = props => {
               <Media className='testimonial-inner'>
                 <Media.Left className='pull-left' align='top'>
                   <Image
-                    src='http://res.cloudinary.com/cacicloud/image/upload/v1510123897/icon_ahphsy.png'
+                    src='https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/icon.png'
                     responsive
                   />
                 </Media.Left>

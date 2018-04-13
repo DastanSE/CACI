@@ -100,11 +100,11 @@ class RepertoirePage extends Component {
             {[
               {
                 imgsrc:
-                  'https://res.cloudinary.com/cacicloud/image/upload/v1510128455/index-top1_rflzc7.jpg',
+                  'https://res.cloudinary.com/cacicloud/image/upload/v1523628779/mainpage/repertoire.jpg',
               },
               {
                 imgsrc:
-                  'https://res.cloudinary.com/cacicloud/image/upload/v1510128455/index-top1_rflzc7.jpg',
+                  'https://res.cloudinary.com/cacicloud/image/upload/v1523628779/mainpage/repertoire.jpg',
               },
             ].map((data, index) => {
               return (
@@ -137,6 +137,7 @@ class RepertoirePage extends Component {
               </Col>
               <Col xs={ 12 } sm={ 8 } md={ 9 } lg={ 7 }>
                 <div style={ { minHeight: 300 } } >
+                  {this.state.content.length === 0 && <h1>这个项目是空的</h1>}
                   <OwnMasonry brakePoints={ brakePoints } >
                     {this.state.content.map((data, index) => (
                       <Cards
@@ -148,6 +149,7 @@ class RepertoirePage extends Component {
                         discription={ data.repertoire_discription }
                       />
                     ))}
+                    
                   </OwnMasonry>
                 </div>
               </Col>

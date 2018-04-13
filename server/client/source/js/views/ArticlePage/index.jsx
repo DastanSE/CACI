@@ -21,12 +21,12 @@ class ArticlePage extends Component {
     this.props.fetchArticle().then(() => this.setState({ articles: this.props.article.data }));
   }
 
-  filterArticles(sortByType) {
-    const sortedArticles = this.props.article.data.filter(data => {
+  filterArticles = async (sortByType) => {
+    const sortedArticles = await this.props.article.data.filter(data => {
       return data.article_type === sortByType;
     });
 
-    this.setState({
+    await this.setState({
       articles: sortedArticles,
     });
   }
@@ -71,6 +71,7 @@ class ArticlePage extends Component {
               </ul>
             </div>
             <div style={ { width: '70%', marginLeft: '15%' } }>
+              {this.state.articles.length === 0 && <h1>对不起！暂时没有内容！</h1>}
               <OwnMasonry brakePoints={ brakePoints }>
                 {this.state.articles.map((data, index) => (
                   <Card

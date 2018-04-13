@@ -12,31 +12,31 @@ export const OurPartners = props => {
         <Row>
           <Col xs={ 6 } sm={ 2 } smOffset={ 1 }>
             <Image
-              src='https://res.cloudinary.com/cacicloud/image/upload/v1510123096/partners/cj_ivlgaq.png'
+              src='https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/mahu.png'
               responsive
             />
           </Col>
           <Col xs={ 6 } sm={ 2 }>
             <Image
-              src='https://res.cloudinary.com/cacicloud/image/upload/v1510123117/partners/macao_d0slfm.png'
+              src='https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/beauty.png'
               responsive
             />
           </Col>
           <Col xs={ 6 } sm={ 2 }>
             <Image
-              src='https://res.cloudinary.com/cacicloud/image/upload/v1510123113/partners/active_jfedbx.png'
+              src='https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/active.png'
               responsive
             />
           </Col>
           <Col xs={ 6 } sm={ 2 }>
             <Image
-              src='https://res.cloudinary.com/cacicloud/image/upload/v1510123117/partners/mahu_otpgng.png'
+              src='https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/cj.png'
               responsive
             />
           </Col>
           <Col xsOffset={ 3 } xs={ 6 } smOffset={ 0 } sm={ 2 }>
             <Image
-              src='https://res.cloudinary.com/cacicloud/image/upload/v1510123116/partners/fu_ga74ls.png'
+              src='https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/wow.png'
               responsive
             />
           </Col>
@@ -44,31 +44,31 @@ export const OurPartners = props => {
         <Row>
           <Col xs={ 6 } sm={ 2 } smOffset={ 1 }>
             <Image
-              src='https://res.cloudinary.com/cacicloud/image/upload/v1510123118/partners/wow_vlg6b5.png'
+              src='https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/muyi.png'
               responsive
             />
           </Col>
           <Col xs={ 6 } sm={ 2 }>
             <Image
-              src='https://res.cloudinary.com/cacicloud/image/upload/v1510123116/partners/beauty_jqfw04.png'
+              src='https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/atls.png'
               responsive
             />
           </Col>
           <Col xs={ 6 } sm={ 2 }>
             <Image
-              src='https://res.cloudinary.com/cacicloud/image/upload/v1510123118/partners/muyi_gyhzf1.png'
+              src='https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/cycber.png'
               responsive
             />
           </Col>
           <Col xs={ 6 } sm={ 2 }>
             <Image
-              src='https://res.cloudinary.com/cacicloud/image/upload/v1510123118/partners/shangyi_fr2wqw.png'
+              src='https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/shiwei.png'
               responsive
             />
           </Col>
           <Col xsOffset={ 3 } xs={ 6 } smOffset={ 0 } sm={ 2 }>
             <Image
-              src='https://res.cloudinary.com/cacicloud/image/upload/v1510123119/partners/zhitu_prduxc.png'
+              src='https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/yuemu.png'
               responsive
             />
           </Col>
@@ -76,31 +76,31 @@ export const OurPartners = props => {
         <Row>
           <Col xs={ 6 } sm={ 2 } smOffset={ 1 }>
             <Image
-              src='https://res.cloudinary.com/cacicloud/image/upload/v1510123119/partners/yuemu_azbqjl.png'
+              src='https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/zhitu.png'
               responsive
             />
           </Col>
           <Col xs={ 6 } sm={ 2 }>
             <Image
-              src='https://res.cloudinary.com/cacicloud/image/upload/v1510123115/partners/cycber_ufmfpd.png'
+              src='https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/shangyi.png'
               responsive
             />
           </Col>
           <Col xs={ 6 } sm={ 2 } smOffset={ 0 } xsOffset={ 3 }>
             <Image
-              src='https://res.cloudinary.com/cacicloud/image/upload/v1510123119/partners/shiwei_wx8y1y.png'
+              src='https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/fu.png'
               responsive
             />
           </Col>
           <Col xs={ 6 } sm={ 2 }>
             <Image
-              src='https://res.cloudinary.com/cacicloud/image/upload/v1510123116/partners/atls_auzahf.png'
+              src='https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/macao.png'
               responsive
             />
           </Col>
           <Col xs={ 6 } sm={ 2 }>
             <Image
-              src='https://res.cloudinary.com/cacicloud/image/upload/v1510123119/partners/vf_irnyzk.png'
+              src='https://res.cloudinary.com/cacicloud/image/upload/v1523627457/mainpage/vf.png'
               responsive
             />
           </Col>

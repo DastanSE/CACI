@@ -22,7 +22,7 @@ export const Process = () => {
                 >
                   <div className='media'>
                     <div className='fuchi-top'>
-                      <img className='media-teac' src='http://res.cloudinary.com/cacicloud/image/upload/v1510128796/ruzhu_opkq56.jpg' alt='' />
+                      <img className='media-teac' src='https://res.cloudinary.com/cacicloud/image/upload/v1523629729/mainpage/ruzhu.jpg' alt='' />
                     </div>
                   </div>
                 </div>
@@ -36,7 +36,7 @@ export const Process = () => {
                 >
                   <div className='media'>
                     <div className='fuchi-top'>
-                      <img className='media-teac' src='http://res.cloudinary.com/cacicloud/image/upload/v1510128801/zhidu_bmmued.jpg' alt='' />
+                      <img className='media-teac' src='https://res.cloudinary.com/cacicloud/image/upload/v1523629729/mainpage/zhidu.jpg' alt='' />
                     </div>
                   </div>
                 </div>
