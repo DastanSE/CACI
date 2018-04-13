@@ -15,7 +15,7 @@ export const Partners = () => {
           <Col xs={ 4 } sm={ 4 } md={ 4 } >
             <a href=''>
               <div className='clients-comments text-center'>
-                <Image src='https://res.cloudinary.com/cacicloud/image/upload/v1510127466/partners/%E7%BD%97%E5%85%B0_e5sz6l.jpg' circle alt='' />
+                <Image src='https://res.cloudinary.com/cacicloud/image/upload/v1522295774/partners/罗兰.jpg' circle alt='罗兰' />
                 <h4>
                   <span>羅蘭數字音樂教育</span>
                   <br />
@@ -26,7 +26,7 @@ export const Partners = () => {
           <Col xs={ 4 } sm={ 4 } md={ 4 } >
             <a href=''>
               <div className='clients-comments text-center'>
-                <Image src='https://res.cloudinary.com/cacicloud/image/upload/v1510127465/partners/%E7%B2%A4%E7%9B%AE%E6%BC%94%E4%B9%89_o9rlsx.jpg' circle alt='' />
+                <Image src='https://res.cloudinary.com/cacicloud/image/upload/v1523630327/partners/粤目演义.jpg' circle alt='粤目演义' />
                 <h4>
                   <span>粵目演藝工作室</span>
                   <br />
@@ -37,7 +37,7 @@ export const Partners = () => {
           <Col xs={ 4 } sm={ 4 } md={ 4 } >
             <a href=''>
               <div className='clients-comments text-center'>
-                <Image src='https://res.cloudinary.com/cacicloud/image/upload/v1510127465/partners/%E6%83%85%E5%AE%9A%E5%8C%97%E4%BA%AC_ltef7c.jpg' circle alt='' />
+                <Image src='https://res.cloudinary.com/cacicloud/image/upload/v1523630400/partners/情定北京.jpg' circle alt='情定北京' />
                 <h4>
                   <span>北京情定文化傳播有限公司</span>
                   <br />
